@@ -52,6 +52,7 @@ export default async function Home() {
                     alt="foto de miembro"
                   />
                   <h2>{nombreEquipo}</h2>
+                  <h1>asdsadsda</h1>
                   <h2>{cargo}</h2>
                   <h2>{colegiadoEquipo}</h2>
                 </div>
