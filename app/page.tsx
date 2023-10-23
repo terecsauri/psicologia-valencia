@@ -30,7 +30,7 @@ export default async function Home() {
               return (
                 <div key={slug}>
                   <Image
-                    src={fotoEquipo.fields.file.url} alt="asdf" width={100} height={100}
+                    src={'https://' + fotoEquipo.fields.file.url} alt="asdf" width={100} height={100}
                   />
                   <h2>{nombreEquipo}</h2>
                   <h2>{cargo}</h2>
