@@ -2,6 +2,7 @@ import { createClient } from "contentful";
 import Image from "next/image";
 import { getLandingEntries } from "./services/fetchService";
 import { getTeam } from "./services/fetchService";
+// import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 
 const landingEntries = await getLandingEntries();
 const landingTeam = await getTeam();
@@ -12,7 +13,7 @@ export default async function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
 
       {landingEntries.map((singlePost: any) => {
-        const { slug, ttulo, imagenUnica, descripcion } =
+        const { slug, ttulo, imagenUnica, descripcion, } =
           singlePost.fields;
         return (
           
@@ -37,6 +38,9 @@ export default async function Home() {
                 </div>
               );
             })}
+            <div>
+              <p>rich text aquí</p>
+            </div>
           </div>
         );
       })}
