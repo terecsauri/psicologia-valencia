@@ -18,7 +18,6 @@ export default async function Home() {
         const { slug, ttulo, imagenUnica, descripcion } =
           singlePost.fields;
         return (
-
           
           <div key={slug}>
             <h1>{ttulo}</h1>
