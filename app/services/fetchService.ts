@@ -19,3 +19,20 @@ export const getTeam = async () => {
 
   return response.items
 }
+export const getFooter = async () => {
+
+  let response = await client.getEntries({ content_type: "footer" })  
+  return response.items
+}
+export const getAboutUs = async () => {
+
+  let response = await client.getEntries({ content_type: "aboutUsMain" })
+  
+  return response.items
+}
+export const getAboutUsImages = async () => {
+
+  let response = await client.getEntries({ content_type: "aboutUsImages" })
+  
+  return response.items
+}
