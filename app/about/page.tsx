@@ -1,15 +1,13 @@
 import React from 'react'
-import { getAboutUs } from '../services/fetchService';
 import Image from "next/image";
-import { getAboutUsImages } from '../services/fetchService';
-
-const landingUs = await getAboutUs();
-const landingTeam = await getAboutUsImages()
+import { getData } from '../services/fetchService';
+const landingUs = await getData("aboutUsMain");
+const landingTeam = await getData("aboutUsImages")
 
 export default function AboutPage() {
   return (
 
-    landingUs.map((singlePost: any) => {
+    landingUs?.map((singlePost: any) => {
       const { id, title, photoUs, subtitle, cardTitle, cardText, cardButton, card } =
         singlePost.fields;
       return (
@@ -18,7 +16,7 @@ export default function AboutPage() {
 
        
             <div className='flex space-x-10'>
-              {landingTeam.map((singleMember: any) => {
+              {landingTeam?.map((singleMember: any) => {
                 const { id, image, name } =
                   singleMember.fields;
                 return (

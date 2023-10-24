@@ -6,34 +6,10 @@ const client = createClient({
 });
 
 
-export const getLandingEntries = async () => {
+export const getData = async (contentType: string) => {
+  if(!contentType) return
 
-  let response = await client.getEntries({ content_type: "landingPage" })
+  const response = await client.getEntries({ content_type: contentType })
 
-  return response.items
-}
-
-export const getTeam = async () => {
-
-  let response = await client.getEntries({ content_type: "equipo" })
-
-  return response.items
-}
-export const getFooter = async () => {
-
-  let response = await client.getEntries({ content_type: "footer" })  
-  // console.log(response.items)
-  return response.items
-}
-export const getAboutUs = async () => {
-  
-  let response = await client.getEntries({ content_type: "aboutUsMain" })
-  
-  return response.items
-}
-export const getAboutUsImages = async () => {
-
-  let response = await client.getEntries({ content_type: "aboutUsImages" })
-  
   return response.items
 }
