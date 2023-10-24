@@ -2,8 +2,11 @@ import React from 'react'
 import { getData } from '@/app/services/fetchService'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Image from 'next/image'
+import AutorRandom from '@/app/components/AutorRandom'
+
+
 const landingWhere = await getData("aboutUsWhere")
-const landingAutor = await getData("autorUno")
+
 
 
 export default function DondeEstamos() {
@@ -50,28 +53,7 @@ export default function DondeEstamos() {
             <label> <textarea /></label>
             <input type="submit" value="Submit" />
           </form>
-          <h1 className='font-bold text-2xl mt-10'>{author}</h1>
-
-          {landingAutor?.map((singleMember: any) => {
-            const { photo, title, text } =
-              singleMember.fields;
-            return (
-              <div key={""}
-                className="w-1/2 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  flex"
-              >
-                <Image
-                  src={'https://' + photo.fields.file.url} alt="asdf" width={50} height={50}
-                  className='mr-5 rounded-full h-14 w-14'
-                />
-                <div>
-                  <h1 className='font-bold '>{title}</h1>
-                  
-                  <button className='bg-yellow-500 flex p-1 bold'>{text}</button>
-                </div>
-
-              </div>
-            );
-          })}
+<AutorRandom/>
         </div>
       )
     })

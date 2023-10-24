@@ -2,6 +2,7 @@ import React from 'react'
 import { getData } from '@/app/services/fetchService'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Image from 'next/image'
+import AutorMain from '@/app/components/AutorMain'
 
 const landingTeam = await getData("aboutUsEquipo")
 const landingAutor = await getData("autorUno")
@@ -25,6 +26,7 @@ export default function Equipo() {
 <hr className='h-1 border-0 bg-yellow-400 mt-5 mb-5'></hr>
               {documentToReactComponents(bodyBot)}
 <hr className='h-1  border-0 bg-yellow-400 mt-5 mb-5'></hr>
+<AutorMain/>
           </div>
       )
   })
