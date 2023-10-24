@@ -5,7 +5,6 @@ const client = createClient({
   accessToken: process.env.ACCESS_TOKEN || ""
 });
 
-
 export const getData = async (contentType: string) => {
   if(!contentType) return
 

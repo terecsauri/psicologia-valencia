@@ -34,11 +34,8 @@ export default function AboutPage() {
               })}
          
           </div>
-
-
-
           <h1 className='font-bold text-2xl'>{subtitle}</h1>
-          <div className=" w-fit p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  flex ">
+          <div className=" w-1/2 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  flex ">
             <Image
               src={'https://' + card.fields.file.url} alt="asdf" width={100} height={100}
               className='rounded-full h-14 w-14'
