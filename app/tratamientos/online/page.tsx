@@ -1,7 +1,10 @@
+import AutorMain from '@/app/components/AutorMain'
 import React from 'react'
 
 export default function Online() {
   return (
-    <div>Online</div>
+    <div>
+      <AutorMain/>
+    </div>
   )
 }
