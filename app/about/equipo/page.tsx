@@ -2,7 +2,7 @@ import React from 'react'
 import { getData } from '@/app/services/fetchService'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Image from 'next/image'
-import AutorMain from '@/app/components/AutorMain'
+import AutorMain from '@/app/components/autores/AutorMain'
 
 const landingTeam = await getData("aboutUsEquipo")
 const landingAutor = await getData("autorUno")

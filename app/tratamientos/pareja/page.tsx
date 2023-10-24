@@ -1,4 +1,4 @@
-import AutorMain from '@/app/components/AutorMain'
+import AutorMain from '@/app/components/autores/AutorMain'
 import React from 'react'
 
 export default function Pareja() {

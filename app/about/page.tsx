@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import { getData } from '../services/fetchService';
-import AutorMain from '../components/AutorMain';
+import AutorMain from '../components/autores/AutorMain';
 const landingUs = await getData("aboutUsMain");
 const landingTeam = await getData("aboutUsImages")
 

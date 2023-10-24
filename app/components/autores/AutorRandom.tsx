@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
-import { getData } from '../services/fetchService';
+import { getData } from '../../services/fetchService';
 
 
 const landingAutor = await getData("autorUno")

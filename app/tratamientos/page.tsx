@@ -1,5 +1,5 @@
 import React from 'react'
-import AutorRandom from '../components/AutorRandom'
+import AutorRandom from '../components/autores/AutorRandom'
 import { getData } from '../services/fetchService';
 import Image from 'next/image';
 const landingTratamiento = await getData("tratamientosMain");

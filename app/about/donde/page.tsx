@@ -2,7 +2,7 @@ import React from 'react'
 import { getData } from '@/app/services/fetchService'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Image from 'next/image'
-import AutorRandom from '@/app/components/AutorRandom'
+import AutorRandom from '@/app/components/autores/AutorRandom'
 
 
 const landingWhere = await getData("aboutUsWhere")
