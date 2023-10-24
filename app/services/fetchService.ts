@@ -22,10 +22,11 @@ export const getTeam = async () => {
 export const getFooter = async () => {
 
   let response = await client.getEntries({ content_type: "footer" })  
+  // console.log(response.items)
   return response.items
 }
 export const getAboutUs = async () => {
-
+  
   let response = await client.getEntries({ content_type: "aboutUsMain" })
   
   return response.items

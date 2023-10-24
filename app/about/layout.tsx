@@ -1,8 +1,10 @@
 
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Footer from '../components/Footer'
+
 const inter = Inter({ subsets: ['latin'] })
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import Footer from '../components/Footer'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,11 +18,12 @@ export default async function RootLayout({
 }) {
 
 
+
   return (
 
     <div className={inter.className}>
       {children}
-      <Footer/>
+      <Footer />
     </div>
 
   )

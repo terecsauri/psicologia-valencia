@@ -1,22 +1,21 @@
 import { getFooter } from "../services/fetchService"
-
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import { BLOCKS, INLINES } from '@contentful/rich-text-types'
 
 export default async function Footer() {
 
     const landingFooter = await getFooter();
     return (
-        
-            landingFooter.map((singlePost: any) => {
-                const { footerTitle, footer, id } =
-                    singlePost.fields;
-                return (
-                    <div key={id}>
-                        <h1>{footerTitle}</h1>
-                        {/* <h2>{footer}</h2> */}
-                    </div>
 
-
-                )
-            })
-    )   
+        landingFooter.map((singlePost: any) => {
+            const { titletwo, footer, id } =
+                singlePost.fields;
+            return (
+                <div key={id}>
+                    <h1>{titletwo}</h1>
+                    {documentToReactComponents(footer)}
+                </div>
+            )
+        })
+    )
 }
