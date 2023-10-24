@@ -1,5 +1,5 @@
 import React from 'react'
-import AutorInes from '@/app/components/AutorInes'
+import AutorInes from '@/app/components/autores/AutorInes'
 export default function Adultos() {
   return (
     <div>
