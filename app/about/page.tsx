@@ -8,7 +8,7 @@ export default function AboutPage() {
   return (
 
     landingUs?.map((singlePost: any) => {
-      const { id, title, photoUs, subtitle, cardTitle, cardText, cardButton, card } =
+      const { id, title, subtitle, cardTitle, cardText, cardButton, card } =
         singlePost.fields;
       return (
         <div key={id} className='ml-10 mt-10'>
@@ -43,7 +43,7 @@ export default function AboutPage() {
             <div className='ml-5'>
               <h1 className='font-bold'>{cardTitle}</h1>
               <h1>{cardText}</h1>
-              <button className='bg-indigo-500 text-white rounded-lg p-1'>{cardButton}</button>
+              <button className='bg-indigo-500 text-white rounded-lg p-1 mt-2'>{cardButton}</button>
             </div>
           </div>
         </div>

@@ -34,7 +34,7 @@ export default function Navbar() {
                     <Link href="/about/metodo" className=" py-2 px-4">Método</Link>
                   </li>
                   <li className=" py-1">
-                    <Link href="/about/aseguradoras" className=" py-2 px-4" >Aseguradoras</Link>
+                    <Link href="/about/aseguradoras" className=" py-2 px-4" >Aseguradoras en las que trabajamos</Link>
                   </li>
                 </ul>
               </div>
