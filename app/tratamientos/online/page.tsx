@@ -79,23 +79,23 @@ export default function Online() {
             </div>
             {documentToReactComponents(text5)}
             <button className='text-yellow-400 bg-black w-1/3 p-2 rounded-2xl font-bold mt-5 mb-5'>
-            {button2}
+              {button2}
             </button>
             <h2 className='font-bold text-2xl mb-2'>
-            {title2}
+              {title2}
             </h2>
-              <hr className='h-1 border-0 bg-yellow-400 mt-5 mb-5 w-1/2'></hr>
+            <hr className='h-1 border-0 bg-yellow-400 mt-5 mb-5 w-1/2'></hr>
 
-              <div className='grid grid-cols-3 mb-10'>
+            <div className='grid grid-cols-3 mb-10'>
               {landingTextSix?.map((singlePost: any) => {
                 const { title, body, media } =
-                singlePost.fields;
+                  singlePost.fields;
                 return (
                   <div key={""} >
                     <div>
-                                  <Image
-              src={'https://' + media.fields.file.url} alt="asdf" width={150} height={150}
-            />
+                      <Image
+                        src={'https://' + media.fields.file.url} alt="asdf" width={150} height={150}
+                      />
                       <h1 className='font-bold mb-2 mt-2 text-xl' >{title}</h1>
                       <p className='w-1/2'>
                         <hr className='h-1 border-0 bg-black mt-5 mb-5 w-1/3'></hr>
@@ -106,71 +106,64 @@ export default function Online() {
                 )
               })}
             </div>
-              <hr className='h-1 border-0 bg-yellow-400 mt-5 mb-5 w-1/2'></hr>
-              {documentToReactComponents(text7)}
+            <hr className='h-1 border-0 bg-yellow-400 mt-5 mb-5 w-1/2'></hr>
+            {documentToReactComponents(text7)}
 
-              <form className='flex flex-col mt-10'>
-            <h3 className='font-bold'>Nombre</h3>
-            <label> <input type="text" name="name" /> </label>
-            <h3 className='font-bold'>Correo Electrónico</h3>
-            <label> <input type="text" name="email" /> </label>
-            <h3 className='font-bold'>Mensaje</h3>
-            <label> <textarea /></label>
-            <input type="submit" value="Submit" />
-          </form>
-          <h2 className='font-bold text-2xl mb-2'>
-          {title3}
-</h2>
+            <form className='flex flex-col mt-10'>
+              <h3 className='font-bold'>Nombre</h3>
+              <label> <input type="text" name="name" /> </label>
+              <h3 className='font-bold'>Correo Electrónico</h3>
+              <label> <input type="text" name="email" /> </label>
+              <h3 className='font-bold'>Mensaje</h3>
+              <label> <textarea /></label>
+              <input type="submit" value="Submit" />
+            </form>
+            <h2 className='font-bold text-2xl mb-2'>
+              {title3}
+            </h2>
 
 
-<div className='grid grid-cols-3 mb-10'>
+            <div className='grid grid-cols-3 mb-10'>
               {landingMedia?.map((singlePost: any) => {
                 const { media } =
-                singlePost.fields;
+                  singlePost.fields;
                 return (
-                  <div key={""} className='mb-3'>     
-                                  <Image
-              src={'https://' + media.fields.file.url} alt="asdf" width={350} height={350}
-            />
+                  <div key={""} className='mb-3'>
+                    <Image
+                      src={'https://' + media.fields.file.url} alt="asdf" width={350} height={350}
+                    />
                   </div>
                 )
               })}
             </div>
             <h2 className='font-bold text-2xl mb-2'>
-          {title4}
-</h2>
-<Image
+              {title4}
+            </h2>
+            <Image
               src={'https://' + media4.fields.file.url} alt="asdf" width={550} height={550}
               className='mb-5'
             />
 
-{documentToReactComponents(text8)}
+            {documentToReactComponents(text8)}
 
-<div className='grid grid-cols-2 mb-10'>
+            <div className='grid grid-cols-2 mb-10'>
               {landingMediaCinco?.map((singlePost: any) => {
                 const { media, title } =
-                singlePost.fields;
+                  singlePost.fields;
                 return (
-                  <div key={""} className='mb-3'>     
-                                  <Image
-              src={'https://' + media.fields.file.url} alt="asdf" width={450} height={450}
-            />
-            <p className='font-bold text-xl mb-2'>
-            {title}
-            </p>
+                  <div key={""} className='mb-3'>
+                    <Image
+                      src={'https://' + media.fields.file.url} alt="asdf" width={450} height={450}
+                    />
+                    <p className='font-bold text-xl mb-2'>
+                      {title}
+                    </p>
                   </div>
                 )
               })}
             </div>
-
             {documentToReactComponents(text9)}
-
-
-
-
-
           </div>
-
         )
       }
       )}
