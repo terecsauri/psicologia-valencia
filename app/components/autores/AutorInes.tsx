@@ -14,7 +14,7 @@ export default function AutorInes() {
           singleMember.fields;
         return (
           <div key={""}>
-            <h1 className='font-bold text-2xl mt-10'>{title}</h1>
+            <h1 className='font-bold text-3xl mt-10'>{title}</h1>
           <div 
           
             className="w-1/2 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex mt-5"

@@ -11,4 +11,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+    line-height: 2;
+    font-size: large;
+  }
+  

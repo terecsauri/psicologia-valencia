@@ -6,6 +6,7 @@ const landingUs = await getData("aboutUsMain");
 const landingTeam = await getData("aboutUsImages")
 
 export default function AboutPage() {
+  
   return (
 
     landingUs?.map((singlePost: any) => {
@@ -28,6 +29,7 @@ export default function AboutPage() {
                       src={'https://' + image.fields.file.url} alt="asdf" width={350} height={180}
                     />
                     <button className='bg-yellow-500 flex p-1 bold'>{name}</button>
+                    
 
 
                   </div>

@@ -21,7 +21,7 @@ export default function Equipo() {
                   
                 />
               {documentToReactComponents(body)}
-              <button className='bg-yellow-400 w-1/3 rounded-xl font-bold mt-5 mb-5'>{button}</button>
+              <button className='bg-yellow-400 w-1/3 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5'>{button}</button>
               {documentToReactComponents(bodyMid)}
 <hr className='h-1 border-0 bg-yellow-400 mt-5 mb-5'></hr>
               {documentToReactComponents(bodyBot)}

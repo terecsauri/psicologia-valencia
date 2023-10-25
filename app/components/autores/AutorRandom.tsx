@@ -13,7 +13,7 @@ export default function AutorRandom() {
           singleMember.fields;
         return (
           <div key={""}>
-                <p className='font-bold text-2xl mt-10 ' >{title}</p>
+                <p className='font-bold text-3xl mt-10 ' >{title}</p>
             <div className="w-1/2 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  flex">
             <Image
               src={'https://' + photo.fields.file.url} alt="asdf" width={70} height={70}
