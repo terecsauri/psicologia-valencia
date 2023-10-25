@@ -11,7 +11,7 @@ export default async function Footer() {
             return (
                 <div key={id} className="ml-10 mt-5">
                     <hr className="mb-10 mt-10"></hr>
-                    <h1 className='font-bold mb-2' >{tittle}</h1>
+                    <p className='font-bold mb-2' >{tittle}</p>
                     {documentToReactComponents(footer)}
                    <p className='font-bold mt-5 '>{web}</p>
                 </div>

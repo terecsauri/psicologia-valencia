@@ -73,23 +73,22 @@ export default function Niños() {
                 />
                 <p className='font-bold'>{tituloGrid4}</p>
               </div>
-
             </div>
             <h1 className='font-bold mt-5 mb-2 text-green-700 text-3xl' >{titulo7}</h1>
             {body5}
             <Image
-                  src={'https://' + media2.fields.file.url} alt="asdf" width={350} height={180}
-                  />
-                  {body6}
-                  <h1 className='font-bold mt-5 mb-2 text-green-700 text-3xl' >{titulo8}</h1>
-                  {documentToReactComponents(body7)}
-                  <h1 className='font-bold mt-5 mb-2 text-green-700 text-3xl' >{titulo9}</h1>
-                  {body8}
+              src={'https://' + media2.fields.file.url} alt="asdf" width={350} height={180}
+            />
+            {body6}
+            <h1 className='font-bold mt-5 mb-2 text-green-700 text-3xl' >{titulo8}</h1>
+            {documentToReactComponents(body7)}
+            <h1 className='font-bold mt-5 mb-2 text-green-700 text-3xl' >{titulo9}</h1>
+            {body8}
             <Image
-                  src={'https://' + media3.fields.file.url} alt="asdf" width={650} height={650}
-                  />
-                  <h1 className='font-bold mt-5 mb-2 text-green-700 text-3xl' >{titulo10}</h1>
-                  {documentToReactComponents(body9)}
+              src={'https://' + media3.fields.file.url} alt="asdf" width={650} height={650}
+            />
+            <h1 className='font-bold mt-5 mb-2 text-green-700 text-3xl' >{titulo10}</h1>
+            {documentToReactComponents(body9)}
           </div>
         )
       })}

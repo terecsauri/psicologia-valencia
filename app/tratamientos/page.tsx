@@ -36,14 +36,7 @@ export default function Tratamientos() {
                   <h2 className='font-bold text-xl'>{mediaText2}</h2>
                 </div>
               </div>
-
-
-
-
             </div>
-
-
-
           )
         })
       }

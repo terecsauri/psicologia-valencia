@@ -20,7 +20,7 @@ export default function AutorRandom() {
               className='mr-5 rounded-full mr-5 h-14 w-14'
             />
             <div>
-              <h1 className='font-bold underline text-blue-800'>{text}</h1>
+              <p className='font-bold underline text-blue-800'>{text}</p>
               
               <button className='bg-indigo-500 text-white rounded-lg p-1 mt-2'>{text2}</button>
             </div>
