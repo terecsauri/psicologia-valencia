@@ -77,6 +77,7 @@ export default function Navbar() {
         <Link href="/blog">BLOG</Link>
         <Link href="/contacto">CONTACTO</Link>
       </div>
+      <hr></hr>
 
 
     </nav>

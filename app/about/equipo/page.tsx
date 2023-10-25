@@ -14,7 +14,7 @@ export default function Equipo() {
           singlePost.fields;
       return (
           <div key={""} className="ml-10 mt-5">
-              <hr className="mb-10 mt-10"></hr>
+              
               <h1 className='font-bold mb-2' >{title}</h1>
               <Image
                   src={'https://' + photo.fields.file.url} alt="asdf" width={1250} height={550}
