@@ -22,10 +22,10 @@ export default function Adultos() {
 
             <div className='grid grid-cols-3 mb-10'>
               {landingMedia?.map((singlePost: any) => {
-                const { title, media } =
+                const { title, media, id } =
                   singlePost.fields;
                 return (
-                  <div key={""} className="ml-10 mt-5 p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center w-1/2">
+                  <div key={id} className="ml-10 mt-5 p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center w-1/2">
                     <Image
                       src={'https://' + media.fields.file.url} alt="asdf" width={350} height={180}
                     />
