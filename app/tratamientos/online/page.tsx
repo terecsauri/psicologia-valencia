@@ -6,10 +6,9 @@ import Image from 'next/image';
 
 const landingOnline = await getData("tratamientosOnline");
 const landingText = await getData("tratamientosOnlineText3");
-const landingTextFour = await getData("tratamientosOnlineText4");
 const landingTextSix = await getData("tratamientosOnlineText6");
 const landingMedia = await getData("tratamientosOnlineMedia3");
-const landingMediaCinco = await getData("tratamientosOnlineMedia5");
+
 
 
 
@@ -19,7 +18,7 @@ export default function Online() {
     <div>
 
       {landingOnline?.map((singlePost: any) => {
-        const { title, photo1, text1, text2, media2, bottonText, text5, button2, title2, text7, title3, title4, media4, text8, text9 } =
+        const { title, photo1, text1, text2, media2, bottonText,text4, text4bis, text5, button2, title2, text7, title3, title4, media4, text8, text9, media5, media6, title5, title6 } =
           singlePost.fields;
         return (
           <div key={""} className="ml-10 mt-5">
@@ -60,22 +59,17 @@ export default function Online() {
               })}
             </div>
             <button className='bg-yellow-400 w-1/3 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5'>{bottonText}</button>
-            <div className='grid grid-cols-2 mb-10'>
-              {landingTextFour?.map((singlePost: any) => {
-                const { title, body } =
-                  singlePost.fields;
-                return (
-                  <div key={""} >
-                    <div>
-                      <h1 className='font-bold mb-2 mt-2' >{title}</h1>
-                      <p className='w-1/2'>
-                        {documentToReactComponents(body)}
-                        <hr className='h-1 border-0 bg-yellow-400 mt-5 mb-5 w-1/2'></hr>
-                      </p>
-                    </div>
-                  </div>
-                )
-              })}
+
+            <div className='grid grid-cols-2  mb-20'>
+              <div className='w-1/2'>
+            {documentToReactComponents(text4)}
+            <hr className='h-1 border-0 bg-yellow-400 mt-5 mb-5 w-64'></hr>
+              </div>
+              <div className='w-1/2'>
+            {documentToReactComponents(text4bis)}
+            <hr className='h-1 border-0 bg-yellow-400 mt-5 mb-5 w-64'></hr>
+              </div>
+
             </div>
             {documentToReactComponents(text5)}
             <button className='text-yellow-400 bg-black w-1/3 p-2 rounded-2xl font-bold mt-5 mb-5'>
@@ -147,21 +141,25 @@ export default function Online() {
             {documentToReactComponents(text8)}
 
             <div className='grid grid-cols-2 mb-10'>
-              {landingMediaCinco?.map((singlePost: any) => {
-                const { media, title } =
-                  singlePost.fields;
-                return (
-                  <div key={""} className='mb-3'>
-                    <Image
-                      src={'https://' + media.fields.file.url} alt="asdf" width={450} height={450}
+             <div> 
+            <Image
+                      src={'https://' + media5.fields.file.url} alt="asdf" width={450} height={450}
                     />
                     <p className='font-bold text-xl mb-2'>
-                      {title}
+                      {title5}
                     </p>
-                  </div>
-                )
-              })}
             </div>
+             <div> 
+            <Image
+                      src={'https://' + media6.fields.file.url} alt="asdf" width={450} height={450}
+                    />
+                    <p className='font-bold text-xl mb-2'>
+                      {title6}
+                    </p>
+            </div>
+
+
+              </div> 
             {documentToReactComponents(text9)}
           </div>
         )
