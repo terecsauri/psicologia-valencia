@@ -40,6 +40,7 @@ export default function Online() {
           <div key={""} className="ml-10 mt-5">
             <hr className="mb-10 mt-10"></hr>
             <h1 className="font-bold mb-6 text-6xl ">{title}</h1>
+            <div className="flex justify-center">
             <img
               src={"https://" + photo1.fields.file.url}
               alt="asdf"
@@ -47,11 +48,12 @@ export default function Online() {
               height="600"
               className="mb-10"
             />
+            </div>
 
             {documentToReactComponents(text1)}
             <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-64"></hr>
             <div className="flex">
-              <div className="w-1/3">{documentToReactComponents(text2)}</div>
+              <div className="w-1/3 mr-4">{documentToReactComponents(text2)}</div>
               <img
                 src={"https://" + media2.fields.file.url}
                 alt="asdf"
@@ -59,9 +61,11 @@ export default function Online() {
                 height="500"
               />
             </div>
+          <div className="flex justify-center">
             <button className="bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5">
               {bottonText}
             </button>
+            </div>
             <div className="grid grid-cols-2">
               {landingText?.map((singlePost: any) => {
                 const { title, body, id } = singlePost.fields;
@@ -76,10 +80,11 @@ export default function Online() {
                 );
               })}
             </div>
+            <div className="flex justify-center">
             <button className="bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5">
               {bottonText}
             </button>
-
+</div>
             <div className="grid grid-cols-2  mb-20">
               <div className="w-1/2">
                 {documentToReactComponents(text4)}
@@ -91,10 +96,13 @@ export default function Online() {
               </div>
             </div>
             {documentToReactComponents(text5)}
+            <div className="flex justify-center">
             <button className="text-yellow-400 bg-black w-1/3 p-2 rounded-2xl font-bold mt-5 mb-5">
               {button2}
             </button>
-            <h2 className="font-bold text-2xl mb-2">{title2}</h2>
+            </div>
+            
+            <h2 className="flex justify-center font-bold text-2xl mb-2">{title2}</h2>
             <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-1/2"></hr>
 
             <div className="grid grid-cols-3 mb-10">
@@ -122,18 +130,18 @@ export default function Online() {
             <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-1/2"></hr>
             {documentToReactComponents(text7)}
 
-            <form className="flex flex-col mt-10">
-              <h3 className="font-bold">Nombre</h3>
+            <form className="flex flex-col mb-10 mt-10">
+              <p className="font-bold">Nombre</p>
               <label>
                 {" "}
                 <input type="text" name="name" />{" "}
               </label>
-              <h3 className="font-bold">Correo Electrónico</h3>
+              <p className="font-bold">Correo Electrónico</p>
               <label>
                 {" "}
                 <input type="text" name="email" />{" "}
               </label>
-              <h3 className="font-bold">Mensaje</h3>
+              <p className="font-bold">Mensaje</p>
               <label>
                 {" "}
                 <textarea />
