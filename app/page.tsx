@@ -75,48 +75,68 @@ export default async function Home() {
                 const { id, fotoEquipo, nombreEquipo, cargo, colegiadoEquipo } =
                   singleMember.fields;
                 return (
-                  <div key={id} className="mb-6">
+                  <div
+                    key={id}
+                    className="mb-6 flex flex-col justify-center items-center text-center w-62"
+                  >
                     <img
                       src={"https://" + fotoEquipo.fields.file.url}
                       alt="asdf"
                       width="200"
                       height="200"
-                      className="rounded-full"
+                      className="rounded-full mb-4 mt-8"
                     />
 
-                    <p className="mb-3.5">{nombreEquipo}</p>
-                    <p>{cargo}</p>
-                    <p>{colegiadoEquipo}</p>
+                    <p className="mb-3.5 text-sm font-extrabold">
+                      {nombreEquipo}
+                    </p>
+                    <p className="mb-6 text-lg">{cargo}</p>
+                    <p className="text-lg">{colegiadoEquipo}</p>
                   </div>
                 );
               })}
             </div>
-            <div>{documentToReactComponents(subtitulo2)}</div>
-            <div>{subtituloMejora}</div>
-            <div>
-              <Link href={"/contacto"}>{reservar}</Link>
-              <Link href={"tel:644921185"}>{numTelefono}</Link>
+            <div className="text-center">
+              {documentToReactComponents(subtitulo2)}
             </div>
-            <div>{documentToReactComponents(serviciosTratamientos)}</div>
-            <div>{tituloMadridCentro}</div>
-            {landingCard1?.map((singleCard: any) => {
-              const { slug, fotoLanding, tituloLanding, subtituloLanding } =
-                singleCard.fields;
-              return (
-                <div key={slug}>
-                  <img
-                    src={"https://" + fotoLanding.fields.file.url}
-                    alt="asdf"
-                    width="100"
-                    height="100"
-                  />
-                  <div>{documentToReactComponents(tituloLanding)}</div>
-                  <div>{subtituloLanding}</div>
-                </div>
-              );
-            })}
-            <div>
-              <video controls>
+            <div className="bg-slate-50 h-20 flex flex-col items-center justify-center">
+              <div className="mt-5 mb-7 font-extrabold">{subtituloMejora}</div>
+            </div>
+            <div className="flex flex-row justify-center gap-x-2 mt-30">
+              <div className="w-75 h-13 bg-emerald-800 text-white rounded-2xl flex items-center justify-center text-center">
+                <Link href={"/contacto"}>{reservar}</Link>
+              </div>
+              <div className="w-75 h-13 bg-yellow-400 rounded-2xl flex items-center justify-center text-center font-bold">
+                <Link href={"tel:644921185"}>{numTelefono}</Link>
+              </div>
+            </div>
+            <div className="text-center">
+              {documentToReactComponents(serviciosTratamientos)}
+            </div>
+            <h2 className="text-center mt-18">{tituloMadridCentro}</h2>
+            <div className="flex justify-evenly mb-6">
+              {landingCard1?.map((singleCard: any) => {
+                const { slug, fotoLanding, tituloLanding, subtituloLanding } =
+                  singleCard.fields;
+                return (
+                  <div
+                    key={slug}
+                    className="w-85 flex flex-col justify-center items-center"
+                  >
+                    <img
+                      src={"https://" + fotoLanding.fields.file.url}
+                      alt="asdf"
+                      width="152"
+                      height="152"
+                    />
+                    <div>{documentToReactComponents(tituloLanding)}</div>
+                    <div>{subtituloLanding}</div>
+                  </div>
+                );
+              })}
+            </div>
+            <div className="mt-6 grid grid-cols-2">
+              <video controls width={524} height={414}>
                 {"https://" + videoMiPsicologo.fields.file.url}
               </video>
               <div>
@@ -153,11 +173,11 @@ export default async function Home() {
             <div>{textoSesion}</div>
             <div>{madridPsicologos}</div>
             <div>
-              <Image
+              <img
                 src={"https://" + fotoEleccion.fields.file.url}
                 alt="asdf"
-                width={536}
-                height={365}
+                width="536"
+                height="365"
               />
               <div>{documentToReactComponents(textoEleccion)}</div>
             </div>
