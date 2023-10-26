@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -11,11 +16,13 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    line-height: 2;
-    font-size: large;
-  }
-  
+  line-height: 2;
+  font-size: large;
+  width: 1112px;
+  margin: 16px;
+}
+
 h1 {
-font-size: xx-large;
-margin-top: 2px;
+  font-size: xx-large;
+  margin-top: 2px;
 }
