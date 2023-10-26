@@ -76,11 +76,11 @@ export default async function Home() {
                   singleMember.fields;
                 return (
                   <div key={id} className="mb-6">
-                    <Image
+                    <img
                       src={"https://" + fotoEquipo.fields.file.url}
                       alt="asdf"
-                      width={200}
-                      height={200}
+                      width="200"
+                      height="200"
                       className="rounded-full"
                     />
 
@@ -104,11 +104,11 @@ export default async function Home() {
                 singleCard.fields;
               return (
                 <div key={slug}>
-                  <Image
+                  <img
                     src={"https://" + fotoLanding.fields.file.url}
                     alt="asdf"
-                    width={100}
-                    height={100}
+                    width="100"
+                    height="100"
                   />
                   <div>{documentToReactComponents(tituloLanding)}</div>
                   <div>{subtituloLanding}</div>
@@ -126,11 +126,11 @@ export default async function Home() {
             </div>
             <div>{documentToReactComponents(tratamientosPsicologos)}</div>
             <div>{documentToReactComponents(descripcionPilares)}</div>
-            <Image
+            <img
               src={"https://" + enLosMedios.fields.file.url}
               alt="asdf"
-              width={883}
-              height={38}
+              width="883"
+              height="38"
             />
             <div>{documentToReactComponents(textoPrioridad)}</div>
             {landingCardIcon?.map((singleCardIcon: any) => {
@@ -143,7 +143,7 @@ export default async function Home() {
                 </div>
               );
             })}
-            <Image
+            <img
               src={"https://" + imagenElegante.fields.file.url}
               alt="asdf"
               width={537}
@@ -163,11 +163,11 @@ export default async function Home() {
             </div>
             <div>
               <div>{documentToReactComponents(textoAyuda)}</div>
-              <Image
+              <img
                 src={"https://" + fotoAgua.fields.file.url}
                 alt="asdf"
-                width={536}
-                height={365}
+                width="536"
+                height="365"
               />
             </div>
             <div>{textoProceso}</div>
@@ -178,23 +178,23 @@ export default async function Home() {
             <div>{nuestroCentro}</div>
             <Link href={"/tratamientos"}>{botonEspecialidades}</Link>
             <div>
-              <Image
+              <img
                 src={
                   "https://images.ctfassets.net/06jdt9isp37n/4gyAHq4klFPmuNRlU6mylL/5955f2e1ee2d3e0612df9947ecb107f1/15081525278135.jpeg"
                 }
                 alt="asdf"
-                width={524}
-                height={393}
+                width="524"
+                height="393"
               />
               <div>{documentToReactComponents(textoCentro)}</div>
             </div>
             <div>
               <div>{documentToReactComponents(texto900)}</div>
-              <Image
+              <img
                 src={"https://" + fotoTorres.fields.file.url}
                 alt="asdf"
-                width={524}
-                height={393}
+                width="524"
+                height="393"
               />
             </div>
             <div>{textoBlog}</div>
@@ -204,11 +204,11 @@ export default async function Home() {
                   "https://www.youtube.com/watch?v=ihW_zHCskzs&feature=youtu.be"
                 }
               >
-                <Image
+                <img
                   src={"https://" + videoAnsiedad.fields.file.url}
                   alt="asdf"
-                  width={400}
-                  height={300}
+                  width="400"
+                  height="300"
                 />
               </Link>
             </div>
