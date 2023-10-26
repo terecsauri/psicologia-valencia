@@ -25,11 +25,11 @@ export default function Adultos() {
                 const { title, media, id } =
                   singlePost.fields;
                 return (
-                  <div key={id} className="ml-10 mt-5 p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center w-1/2">
+                  <div key={id} className="ml-10 mt-5 p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center ">
                     <Image
                       src={'https://' + media.fields.file.url} alt="asdf" width={350} height={180}
                     />
-                    <h1 className='font-bold mb-2' >{title}</h1>
+                    <h2 className='font-bold mb-2' >{title}</h2>
                   </div>
                 )
               })

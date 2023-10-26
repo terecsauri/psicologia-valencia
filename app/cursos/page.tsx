@@ -2,6 +2,7 @@ import React from 'react'
 import { getData } from '../services/fetchService';
 import Image from 'next/image';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import AutorMain from '../components/autores/AutorMain';
 
 const landingCursos = await getData("cursos");
 
@@ -99,6 +100,7 @@ export default function Cursos() {
           </div>
 
 
+<AutorMain/>
         </div>
       )
     })
