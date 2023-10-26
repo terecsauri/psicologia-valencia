@@ -14,7 +14,7 @@ const landingCardIcon = await getData("cardIconoLanding");
 
 export default async function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between">
       {landingEntries?.map((singlePost: any) => {
         const {
           slug,
@@ -64,25 +64,30 @@ export default async function Home() {
               width={510}
               height={150}
             />
-            {documentToReactComponents(descripcion2)}
-            {landingTeam?.map((singleMember: any) => {
-              const { id, fotoEquipo, nombreEquipo, cargo, colegiadoEquipo } =
-                singleMember.fields;
-              return (
-                <div key={id}>
-                  <Image
-                    src={"https://" + fotoEquipo.fields.file.url}
-                    alt="asdf"
-                    width={100}
-                    height={100}
-                  />
+            <div className="text-center">
+              {documentToReactComponents(descripcion2)}
+            </div>
+            <div className="grid grid-cols-4 text-base gap-x-20">
+              {landingTeam?.map((singleMember: any) => {
+                const { id, fotoEquipo, nombreEquipo, cargo, colegiadoEquipo } =
+                  singleMember.fields;
+                return (
+                  <div key={id} className="mb-6">
+                    <Image
+                      src={"https://" + fotoEquipo.fields.file.url}
+                      alt="asdf"
+                      width={200}
+                      height={200}
+                      className="rounded-full"
+                    />
 
-                  <h2>{nombreEquipo}</h2>
-                  <h2>{cargo}</h2>
-                  <h2>{colegiadoEquipo}</h2>
-                </div>
-              );
-            })}
+                    <h2>{nombreEquipo}</h2>
+                    <h2>{cargo}</h2>
+                    <h2>{colegiadoEquipo}</h2>
+                  </div>
+                );
+              })}
+            </div>
             <div>{documentToReactComponents(subtitulo2)}</div>
             <div>{subtituloMejora}</div>
             <div>
@@ -191,7 +196,11 @@ export default async function Home() {
             </div>
             <div>{textoBlog}</div>
             <div>
-              <Link href={"https://www.youtube.com/watch?v=ihW_zHCskzs&feature=youtu.be"}>
+              <Link
+                href={
+                  "https://www.youtube.com/watch?v=ihW_zHCskzs&feature=youtu.be"
+                }
+              >
                 <Image
                   src={"https://" + videoAnsiedad.fields.file.url}
                   alt="asdf"

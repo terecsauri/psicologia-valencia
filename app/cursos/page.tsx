@@ -15,13 +15,14 @@ export default function Cursos() {
         singlePost.fields;
       return (
         <div key={""} className="ml-10 mt-5">
-          <p className='font-bold mb-2' >{titulo}</p>
-          <div className='grid grid-cols-2'>
+          <p className='font-bold text-4xl mb-2' >{titulo}</p>
+          <div className='grid grid-cols-2 mb-10 bg-gradient-to-r from-green-600'>
+            
             <Image
               src={'https://' + media.fields.file.url} alt="asdf" width={450} height={450}
-              className='rounded-full'
+              
             />
-            <div className='font-bold text-3xl'>
+            <div className='font-bold mt-5 text-3xl'>
               {mediaText}
             </div>
           </div>
