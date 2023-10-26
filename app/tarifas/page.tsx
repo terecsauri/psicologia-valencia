@@ -17,12 +17,15 @@ export default function Tarifas() {
       return (
         <div key={""} className="ml-10 mt-5">
           <h1 className='mb-2' >{titulo}</h1>
+          <div className='flex justify-center mb-5'>
           <img
-            src={'https://' + media.fields.file.url} alt="asdf" width="650" height="650"
+            src={'https://' + media.fields.file.url} alt="asdf" width="750" height="750"
           />
+          </div>
           {documentToReactComponents(body)}
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
           <div className='grid grid-cols-2'>
+            
             <img
               src={'https://' + media2.fields.file.url} alt="asdf" width="250" height="250"
             />
@@ -30,20 +33,29 @@ export default function Tarifas() {
               {documentToReactComponents(body2)}
             </div>
           </div>
+          <div className='flex justify-center'>
           <button className='bg-yellow-400 w-1/2 p-2 border-2 rounded-2xl font-bold mt-5 mb-5'>{button}</button>
+          </div>
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
+          <div className='flex justify-center m-5'>
           <img
             src={'https://' + media3.fields.file.url} alt="asdf" width="850" height="850"
+            className='m-5'
           />
+          </div>
           {documentToReactComponents(body3)}
+          <div className='flex justify-center m-5'>
           <img
             src={'https://' + media4.fields.file.url} alt="asdf" width="650" height="650"
           />
-          <p className='text-xl'>{titulo2}</p>
+          </div>
+          <p className='text-xl flex justify-center'>{titulo2}</p>
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
           <h2>{titulo3}</h2>
           {documentToReactComponents(body4)}
-          <button className='bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5'>{button2}</button>
+          <div className='flex justify-center'>
+          <button className='bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5 '>{button2}</button>
+          </div>
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
           {documentToReactComponents(body5)}
 <div className='grid grid-cols-3 mt-10'>

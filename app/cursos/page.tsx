@@ -32,8 +32,8 @@ export default function Cursos() {
           {documentToReactComponents(body)}
           <h2 className='flex justify-center bg-yellow-400 text-3xl p-2 font-bold mt-5 mb-5'>{titulo2}</h2>
 
-          <div className='grid grid-cols-3 bg-gradient-to-r from-green-600'>
-            <div className='border-solid border-2 border-black p-3'>
+          <div className='grid grid-cols-3 bg-gradient-to-r from-green-600 '>
+            <div className='border-solid border-2 border-black flex flex-col items-center gap-5 p-3'>
               
               <img
                 src={'https://' + mediaGrid.fields.file.url} alt="asdf" width="150" height="150"
@@ -43,7 +43,7 @@ export default function Cursos() {
               {documentToReactComponents(bodyGrid)}
               <button className='bg-yellow-400 text-xl rounded-2xl w-1/2 p-2 border-2 border-black font-bold mt-5 mb-5'>{button}</button>
             </div>
-            <div className='border-solid border-2 border-black p-3'>
+            <div className='border-solid border-2 border-black flex flex-col items-center gap-5 p-3'>
               
               <img
                 src={'https://' + mediaGrid2.fields.file.url} alt="asdf" width="150" height="150"
@@ -53,7 +53,7 @@ export default function Cursos() {
               {documentToReactComponents(bodyGrid2)}
               <button className='bg-yellow-400 text-xl rounded-2xl w-1/2 p-2 border-2 border-black font-bold mt-5 mb-5'>{button}</button>
             </div>
-            <div className='border-solid border-2 border-black p-3'>
+            <div className='border-solid border-2 border-black flex flex-col items-center gap-5 p-3'>
               
               <img
                 src={'https://' + mediaGrid3.fields.file.url} alt="asdf" width="150" height="150"
@@ -67,7 +67,7 @@ export default function Cursos() {
           </div>
           <h2 className='flex justify-center bg-yellow-400 text-3xl p-2 font-bold mt-12 mb-5'>{titulo3}</h2>
           <div className='grid grid-cols-3 bg-gradient-to-r from-green-600'>
-            <div className='border-solid border-2 border-black p-3'>
+            <div className='border-solid border-2 border-black flex flex-col items-center gap-5 p-3'>
               
               <img
                 src={'https://' + mediaGrid4.fields.file.url} alt="asdf" width="150" height="150"
@@ -77,7 +77,7 @@ export default function Cursos() {
               {documentToReactComponents(bodyGrid4)}
               <button className='bg-yellow-400 text-xl rounded-2xl w-1/2 p-2 border-2 border-black font-bold mt-5 mb-5'>{button}</button>
             </div>
-            <div className='border-solid border-2 border-black p-3'>
+            <div className='border-solid border-2 border-black flex flex-col items-center gap-5 p-3'>
               
               <img
                 src={'https://' + mediaGrid5.fields.file.url} alt="asdf" width="150" height="150"
@@ -87,7 +87,7 @@ export default function Cursos() {
               {documentToReactComponents(bodyGrid5)}
               <button className='bg-yellow-400 text-xl rounded-2xl w-1/2 p-2 border-2 border-black font-bold mt-5 mb-5'>{button}</button>
             </div>
-            <div className='border-solid border-2 border-black p-3'>
+            <div className='border-solid border-2 border-black flex flex-col items-center gap-5 p-3'>
               
               <img
                 src={'https://' + mediaGrid6.fields.file.url} alt="asdf" width="150" height="150"

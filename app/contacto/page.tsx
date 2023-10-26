@@ -13,15 +13,20 @@ export default function contactos() {
       return (
           <div key={""} className="ml-10 mt-5">
               <h1 className='font-bold mb-2' >{titulo}</h1>
+              <div className='flex justify-center'>
               <img
-              src={'https://' + media.fields.file.url} alt="asdf" width="650" height="680"
+              src={'https://' + media.fields.file.url} alt="asdf" width="850" height="850"
+              
               />
+              </div>
               {documentToReactComponents(body)}
+              <div className='flex justify-center'>
               <button className='bg-yellow-400 p-2 border-2 border-black rounded-3xl font-bold mt-5 mb-5'>
               {documentToReactComponents(button)}
               </button>
+              </div>
               {documentToReactComponents(body2)}
-              <div className='grid grid-cols-2'>
+              <div className='grid grid-cols-2 m-5'>
                 <p></p>
                 <div>
               {documentToReactComponents(body3)}
@@ -41,13 +46,17 @@ export default function contactos() {
           <p className='mt-5'>
           {documentToReactComponents(body4)}
           </p>
+          <div className='flex justify-center m-5'>
           <img
-              src={'https://' + media2.fields.file.url} alt="asdf" width="650" height="680"
+              src={'https://' + media2.fields.file.url} alt="asdf" width="450" height="480"
               />
+          </div>
               {documentToReactComponents(body5)}
+              <div className='flex justify-center'>
               <button className='bg-yellow-400 p-2 border-2 border-black rounded-3xl font-bold mt-10 mb-5'>
               {documentToReactComponents(button2)}
               </button>
+              </div>
           </div>
       )
   })
