@@ -21,35 +21,35 @@ export default function DondeEstamos() {
             src={'https://' + photo.fields.file.url} alt="asdf" width={600} height={600}
 
           />
-          <h2 className='mt-5 mb-5'>{adress}</h2>
+          <p className='mt-5 mb-5'>{adress}</p>
           <Image
             src={'https://' + photoMaps.fields.file.url} alt="asdf" width={300} height={300}
             className='mb-5'
 
           />
-          <h2 className='leading-8'>
+          <p className='leading-8'>
             {documentToReactComponents(body)}
 
-          </h2>
+          </p>
           <p className='mt-5 mb-5'>{adress}</p>
           <Image
             src={'https://' + sofa.fields.file.url} alt="asdf" width={500} height={500}
             className='mb-5'
 
           />
-          <h2 className='leading-8'>
+          <p className='leading-8'>
 
             {documentToReactComponents(contacto)}
-          </h2>
+          </p>
 
           <form className='flex flex-col '>
-            <h3 className='font-bold'>Nombre</h3>
+            <p className='font-bold'>Nombre</p>
             <label> <input type="text" name="name" /> </label>
-            <h3 className='font-bold'>Correo Electrónico</h3>
+            <p className='font-bold'>Correo Electrónico</p>
             <label> <input type="text" name="email" /> </label>
-            <h3 className='font-bold'>Asunto</h3>
+            <p className='font-bold'>Asunto</p>
             <label>  <input type="text" name="asunto" /> </label>
-            <h3 className='font-bold'>Mensaje</h3>
+            <p className='font-bold'>Mensaje</p>
             <label> <textarea /></label>
             <input type="submit" value="Submit" />
           </form>

@@ -13,7 +13,7 @@ export default function Navbar() {
 
     <nav  >
       <div className='flex justify-between mx-auto p-2'>
-        <Link href="/">Logo Home</Link>
+        <Link href="/">HOME</Link>
         <div>
           <div
             onMouseEnter={() => setHover(true)}
