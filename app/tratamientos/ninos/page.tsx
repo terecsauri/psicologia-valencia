@@ -30,44 +30,44 @@ export default function Niños() {
             <h1 className='font-bold mb-2 text-green-700 text-3xl' >{titulo6}</h1>
             <div className='grid grid-cols-3'>
 
-              <div className="p-3 bg-white mt-5 border border-gray-200 shadow w-1/2 dark:bg-gray-800 dark:border-gray-700 justify-center">
+              <div className="p-3 bg-white  border border-gray-200 shadow m-5 dark:bg-gray-800 dark:border-gray-700 justify-center">
                 <Image
                   src={'https://' + mediaGrid1.fields.file.url} alt="asdf" width={350} height={180}
                 />
                 <p className='font-bold'>{tituloGrid1}</p>
               </div>
-              <div className="p-3 bg-white mt-5 border border-gray-200 shadow w-1/2 dark:bg-gray-800 dark:border-gray-700 justify-center">
+              <div className="p-3 bg-white  border border-gray-200 shadow m-5 dark:bg-gray-800 dark:border-gray-700 justify-center">
                 <Image
                   src={'https://' + mediaGrid2.fields.file.url} alt="asdf" width={350} height={180}
                 />
                 <p className='font-bold'>{tituloGrid3}</p>
               </div>
-              <div className="p-3 bg-white mt-5 border border-gray-200 shadow w-1/2 dark:bg-gray-800 dark:border-gray-700 justify-center">
+              <div className="p-3 bg-white border border-gray-200 shadow m-5 dark:bg-gray-800 dark:border-gray-700 justify-center">
                 <Image
                   src={'https://' + mediaGrid3.fields.file.url} alt="asdf" width={350} height={180}
                 />
                 <p className='font-bold'>{tituloGrid2}</p>
 
               </div>
-              <div className="p-3 bg-white mt-5 border border-gray-200 shadow w-1/2 dark:bg-gray-800 dark:border-gray-700 justify-center">
+              <div className="p-3 bg-white mt-5 border border-gray-200 shadow m-5 dark:bg-gray-800 dark:border-gray-700 justify-center">
                 <Image
                   src={'https://' + mediaGrid4.fields.file.url} alt="asdf" width={350} height={180}
                 />
                 <p className='font-bold'>{tituloGrid5}</p>
               </div>
-              <div className="p-3 bg-white mt-5 border border-gray-200 shadow w-1/2 dark:bg-gray-800 dark:border-gray-700 justify-center">
+              <div className="p-3 bg-white  border border-gray-200 shadow m-5 dark:bg-gray-800 dark:border-gray-700 justify-center">
                 <Image
                   src={'https://' + mediaGrid5.fields.file.url} alt="asdf" width={350} height={180}
                 />
                 <p className='font-bold'>{tituloGrid7}</p>
               </div>
-              <div className="p-3 bg-white mt-5 border border-gray-200 shadow w-1/2 dark:bg-gray-800 dark:border-gray-700 justify-center">
+              <div className="p-3 bg-white  border border-gray-200 shadow m-5 dark:bg-gray-800 dark:border-gray-700 justify-center">
                 <Image
                   src={'https://' + mediaGrid6.fields.file.url} alt="asdf" width={350} height={180}
                 />
                 <p className='font-bold'>{tituloGrid6}</p>
               </div>
-              <div className="p-3 bg-white mt-5 border border-gray-200 shadow w-1/2 dark:bg-gray-800 dark:border-gray-700 justify-center">
+              <div className="p-3 bg-white  border border-gray-200 shadow m-5 dark:bg-gray-800 dark:border-gray-700 justify-center">
                 <Image
                   src={'https://' + mediaGrid7.fields.file.url} alt="asdf" width={350} height={180}
                 />

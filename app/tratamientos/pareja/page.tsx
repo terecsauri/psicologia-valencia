@@ -22,7 +22,7 @@ export default function Pareja() {
                     <p className='font-bold text-xl mt-2 mb-2' >{title2}</p>
                     {body}
                     <div>
-                    <button className='bg-yellow-400 w-1/3 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5'>{button}</button>
+                    <button className='bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5'>{button}</button>
                     </div>
                     <p className='mb-2'> {documentToReactComponents(body2bis)} </p>           
                     <h1 className='font-bold text-2xl mt-2 mb-2' >{title3}</h1>

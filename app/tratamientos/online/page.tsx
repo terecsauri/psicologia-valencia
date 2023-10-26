@@ -40,7 +40,7 @@ export default function Online() {
               />
 
             </div>
-            <button className='bg-yellow-400 w-1/3 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5'>{bottonText}</button>
+            <button className='bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5'>{bottonText}</button>
             <div className='grid grid-cols-2'>
               {landingText?.map((singlePost: any) => {
                 const { title, body, id } =
@@ -58,7 +58,7 @@ export default function Online() {
                 )
               })}
             </div>
-            <button className='bg-yellow-400 w-1/3 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5'>{bottonText}</button>
+            <button className='bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5'>{bottonText}</button>
 
             <div className='grid grid-cols-2  mb-20'>
               <div className='w-1/2'>

@@ -40,7 +40,7 @@ export default function Cursos() {
               />
               <p className='font-bold text-xl'>{titleGrid}</p>
               {documentToReactComponents(bodyGrid)}
-              <button className='bg-yellow-400 text-xl rounded-2xl w-1/3 p-2 border-2 border-black font-bold mt-5 mb-5'>{button}</button>
+              <button className='bg-yellow-400 text-xl rounded-2xl w-1/2 p-2 border-2 border-black font-bold mt-5 mb-5'>{button}</button>
             </div>
             <div className='border-solid border-2 border-black p-3'>
               
@@ -50,7 +50,7 @@ export default function Cursos() {
               />
               <p className='font-bold text-xl'>{titleGrid2}</p>
               {documentToReactComponents(bodyGrid2)}
-              <button className='bg-yellow-400 text-xl rounded-2xl w-1/3 p-2 border-2 border-black font-bold mt-5 mb-5'>{button}</button>
+              <button className='bg-yellow-400 text-xl rounded-2xl w-1/2 p-2 border-2 border-black font-bold mt-5 mb-5'>{button}</button>
             </div>
             <div className='border-solid border-2 border-black p-3'>
               
@@ -60,7 +60,7 @@ export default function Cursos() {
               />
               <p className='font-bold text-xl'>{titleGrid3}</p>
               {documentToReactComponents(bodyGrid3)}
-              <button className='bg-yellow-400 text-xl rounded-2xl w-1/3 p-2 border-2 border-black font-bold mt-5 mb-5'>{button}</button>
+              <button className='bg-yellow-400 text-xl rounded-2xl w-1/2 p-2 border-2 border-black font-bold mt-5 mb-5'>{button}</button>
             </div>
 
           </div>
@@ -74,7 +74,7 @@ export default function Cursos() {
               />
               <p className='font-bold text-xl'>{titleGrid4}</p>
               {documentToReactComponents(bodyGrid4)}
-              <button className='bg-yellow-400 text-xl rounded-2xl w-1/3 p-2 border-2 border-black font-bold mt-5 mb-5'>{button}</button>
+              <button className='bg-yellow-400 text-xl rounded-2xl w-1/2 p-2 border-2 border-black font-bold mt-5 mb-5'>{button}</button>
             </div>
             <div className='border-solid border-2 border-black p-3'>
               
@@ -84,7 +84,7 @@ export default function Cursos() {
               />
               <p className='font-bold text-xl'>{titleGrid5}</p>
               {documentToReactComponents(bodyGrid5)}
-              <button className='bg-yellow-400 text-xl rounded-2xl w-1/3 p-2 border-2 border-black font-bold mt-5 mb-5'>{button}</button>
+              <button className='bg-yellow-400 text-xl rounded-2xl w-1/2 p-2 border-2 border-black font-bold mt-5 mb-5'>{button}</button>
             </div>
             <div className='border-solid border-2 border-black p-3'>
               
@@ -94,7 +94,7 @@ export default function Cursos() {
               />
               <p className='font-bold text-xl'>{titleGrid6}</p>
               {documentToReactComponents(bodyGrid6)}
-              <button className='bg-yellow-400 text-xl rounded-2xl w-1/3 p-2 border-2 border-black font-bold mt-5 mb-5'>{button}</button>
+              <button className='bg-yellow-400 text-xl rounded-2xl w-1/2 p-2 border-2 border-black font-bold mt-5 mb-5'>{button}</button>
             </div>
 
           </div>
