@@ -21,20 +21,20 @@ export default function Navbar() {
 
           >
             {hover ?
-              <div>
+              <div className='bg-white'>
                 <Link href="/about">SOBRE NOSOTROS</Link>
                 <ul>
-                  <li className=" py-1">
-                    <Link href="/about/donde" className=" py-2 px-4 display:none" >Donde Estamos</Link>
+                  <li className=" py-1 hover:underline">
+                    <Link href="/about/donde" className=" py-2 px-4" >Donde Estamos</Link>
                   </li>
-                  <li className=" py-1">
+                  <li className=" py-1 hover:underline">
                     <Link href="/about/equipo" className=" py-2 px-4">Equipo</Link>
                   </li>
-                  <li className=" py-1">
+                  <li className=" py-1 hover:underline">
                     <Link href="/about/metodo" className=" py-2 px-4">Método</Link>
                   </li>
-                  <li className=" py-1">
-                    <Link href="/about/aseguradoras" className=" py-2 px-4" >Aseguradoras en las que trabajamos</Link>
+                  <li className=" py-1 hover:underline">
+                    <Link href="/about/aseguradoras" className=" py-2 px-4" >Aseguradoras</Link>
                   </li>
                 </ul>
               </div>
@@ -48,21 +48,21 @@ export default function Navbar() {
           onMouseLeave={() => setHoverDos(false)}
         >
           {hoverDos ?
-            <div>
+            <div className=' bg-white ' >
               <Link href="/tratamientos">TRATAMIENTOS</Link>
               <ul>
 
-                <li className=" py-1">
-                  <Link href="/tratamientos/online" className=" py-2 px-4 display:none" >Terapia Online</Link>
+                <li className=" py-1 hover:underline">
+                  <Link href="/tratamientos/online" className=" py-2 px-4 " >Terapia Online</Link>
                 </li>
-                <li className=" py-1">
-                  <Link href="/tratamientos/adultos" className=" py-2 px-4 display:none" >Terapia Adultos</Link>
+                <li className=" py-1 hover:underline">
+                  <Link href="/tratamientos/adultos" className=" py-2 px-4 " >Terapia Adultos</Link>
                 </li>
-                <li className=" py-1">
-                  <Link href="/tratamientos/ninos" className=" py-2 px-4 display:none" >Terapia Niños</Link>
+                <li className=" py-1 hover:underline">
+                  <Link href="/tratamientos/ninos" className=" py-2 px-4 " >Terapia Niños</Link>
                 </li>
-                <li className=" py-1">
-                  <Link href="/tratamientos/pareja" className=" py-2 px-4 display:none" >Terapia Pareja</Link>
+                <li className=" py-1 hover:underline">
+                  <Link href="/tratamientos/pareja" className=" py-2 px-4 " >Terapia Pareja</Link>
                 </li>
               </ul>
 
