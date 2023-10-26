@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { createClient } from "contentful";
 import Image from "next/image";
 import Link from "next/link";
@@ -59,11 +60,11 @@ export default async function Home() {
           <div key={slug}>
             <h1>{ttulo}</h1>
             <div className="flex justify-center">
-              <Image
+              <img
                 src={"https://" + imagenUnica.fields.file.url}
                 alt="asdf"
-                width={900}
-                height={271}
+                width="900"
+                height="271"
               />
             </div>
             <div className="text-center">
