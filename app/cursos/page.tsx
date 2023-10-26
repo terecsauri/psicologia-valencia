@@ -29,7 +29,7 @@ export default function Cursos() {
           </div>
 
           {documentToReactComponents(body)}
-          <h2 className='bg-yellow-400 text-3xl w-1/3 p-2 border-2 border-black font-bold mt-5 mb-5'>{titulo2}</h2>
+          <h2 className='bg-yellow-400 text-3xl p-2 font-bold mt-5 mb-5'>{titulo2}</h2>
 
           <div className='grid grid-cols-3 bg-gradient-to-r from-green-600'>
             <div className='border-solid border-2 border-black p-3'>
@@ -64,7 +64,7 @@ export default function Cursos() {
             </div>
 
           </div>
-          <h2 className='bg-yellow-400 text-3xl w-1/3 p-2 border-2 border-black font-bold mt-12 mb-5'>{titulo3}</h2>
+          <h2 className='bg-yellow-400 text-3xl p-2 font-bold mt-12 mb-5'>{titulo3}</h2>
           <div className='grid grid-cols-3 bg-gradient-to-r from-green-600'>
             <div className='border-solid border-2 border-black p-3'>
               
