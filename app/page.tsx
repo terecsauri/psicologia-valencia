@@ -58,12 +58,14 @@ export default async function Home() {
         return (
           <div key={slug}>
             <h1>{ttulo}</h1>
-            <Image
-              src={"https://" + imagenUnica.fields.file.url}
-              alt="asdf"
-              width={510}
-              height={150}
-            />
+            <div className="flex justify-center">
+              <Image
+                src={"https://" + imagenUnica.fields.file.url}
+                alt="asdf"
+                width={900}
+                height={271}
+              />
+            </div>
             <div className="text-center">
               {documentToReactComponents(descripcion2)}
             </div>
@@ -81,9 +83,9 @@ export default async function Home() {
                       className="rounded-full"
                     />
 
-                    <h2>{nombreEquipo}</h2>
-                    <h2>{cargo}</h2>
-                    <h2>{colegiadoEquipo}</h2>
+                    <p className="mb-3.5">{nombreEquipo}</p>
+                    <p>{cargo}</p>
+                    <p>{colegiadoEquipo}</p>
                   </div>
                 );
               })}
