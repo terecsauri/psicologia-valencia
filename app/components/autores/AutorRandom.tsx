@@ -1,4 +1,4 @@
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { getData } from '../../services/fetchService';
 
@@ -15,8 +15,8 @@ export default function AutorRandom() {
           <div key={""}>
                 <p className='font-bold text-3xl mt-10 ' >{title}</p>
             <div className=" p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  flex">
-            <Image
-              src={'https://' + photo.fields.file.url} alt="asdf" width={70} height={70}
+            <img
+              src={'https://' + photo.fields.file.url} alt="asdf" width="70" height="70"
               className='mr-5 rounded-full mr-5 h-14 w-14'
             />
             <div>

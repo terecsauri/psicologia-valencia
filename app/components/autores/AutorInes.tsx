@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import { getData } from '@/app/services/fetchService'
-import Image from 'next/image'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 const landingAutor = await getData("autor2")
@@ -20,8 +20,8 @@ export default function AutorInes() {
             className="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex mt-5"
           >
            
-            <Image
-              src={'https://' + photo.fields.file.url} alt="asdf" width={50} height={50}
+            <img
+              src={'https://' + photo.fields.file.url} alt="asdf" width="50" height="50"
               className='mr-5 rounded-full h-14 w-14'
             />
             <div>

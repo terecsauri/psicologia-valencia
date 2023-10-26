@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import AutorRandom from '../components/autores/AutorRandom'
 import { getData } from '../services/fetchService';
-import Image from 'next/image';
 const landingTratamiento = await getData("tratamientosMain");
 
 
@@ -21,16 +21,16 @@ export default function Tratamientos() {
               <div className='grid grid-cols-2'>
                 <div className="p-3 bg-white border border-gray-200 shadow w-1/2 dark:bg-gray-800 dark:border-gray-700 justify-center" >
 
-                  <Image
-                    src={'https://' + media.fields.file.url} alt="asdf" width={450} height={450}
+                  <img
+                    src={'https://' + media.fields.file.url} alt="asdf" width="450" height="450"
 
                   />
                   <h2 className='font-bold text-xl'>{mediaText}</h2>
                 </div>
                 <div className="p-3 bg-white border border-gray-200 shadow w-1/2 dark:bg-gray-800 dark:border-gray-700 justify-center" >
 
-                  <Image
-                    src={'https://' + media2.fields.file.url} alt="asdf" width={450} height={450}
+                  <img
+                    src={'https://' + media2.fields.file.url} alt="asdf" width="450" height="450"
 
                   />
                   <h2 className='font-bold text-xl'>{mediaText2}</h2>
