@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { getData } from '../services/fetchService';
 import Image from 'next/image';
@@ -19,8 +20,8 @@ export default function Cursos() {
           <p className='font-bold text-4xl mb-2' >{titulo}</p>
           <div className='grid grid-cols-2 mb-10 bg-gradient-to-r from-green-600'>
             
-            <Image
-              src={'https://' + media.fields.file.url} alt="asdf" width={450} height={450}
+            <img
+              src={'https://' + media.fields.file.url} alt="asdf" width="450" height="450"
               
             />
             <div className='font-bold mt-5 text-3xl'>
@@ -29,13 +30,13 @@ export default function Cursos() {
           </div>
 
           {documentToReactComponents(body)}
-          <h2 className='bg-yellow-400 text-3xl p-2 font-bold mt-5 mb-5'>{titulo2}</h2>
+          <h2 className='flex justify-center bg-yellow-400 text-3xl p-2 font-bold mt-5 mb-5'>{titulo2}</h2>
 
           <div className='grid grid-cols-3 bg-gradient-to-r from-green-600'>
             <div className='border-solid border-2 border-black p-3'>
               
-              <Image
-                src={'https://' + mediaGrid.fields.file.url} alt="asdf" width={150} height={150}
+              <img
+                src={'https://' + mediaGrid.fields.file.url} alt="asdf" width="150" height="150"
                 className='rounded-full'
               />
               <p className='font-bold text-xl'>{titleGrid}</p>
@@ -44,8 +45,8 @@ export default function Cursos() {
             </div>
             <div className='border-solid border-2 border-black p-3'>
               
-              <Image
-                src={'https://' + mediaGrid2.fields.file.url} alt="asdf" width={150} height={150}
+              <img
+                src={'https://' + mediaGrid2.fields.file.url} alt="asdf" width="150" height="150"
                 className='rounded-full'
               />
               <p className='font-bold text-xl'>{titleGrid2}</p>
@@ -54,8 +55,8 @@ export default function Cursos() {
             </div>
             <div className='border-solid border-2 border-black p-3'>
               
-              <Image
-                src={'https://' + mediaGrid3.fields.file.url} alt="asdf" width={150} height={150}
+              <img
+                src={'https://' + mediaGrid3.fields.file.url} alt="asdf" width="150" height="150"
                 className='rounded-full'
               />
               <p className='font-bold text-xl'>{titleGrid3}</p>
@@ -64,12 +65,12 @@ export default function Cursos() {
             </div>
 
           </div>
-          <h2 className='bg-yellow-400 text-3xl p-2 font-bold mt-12 mb-5'>{titulo3}</h2>
+          <h2 className='flex justify-center bg-yellow-400 text-3xl p-2 font-bold mt-12 mb-5'>{titulo3}</h2>
           <div className='grid grid-cols-3 bg-gradient-to-r from-green-600'>
             <div className='border-solid border-2 border-black p-3'>
               
-              <Image
-                src={'https://' + mediaGrid4.fields.file.url} alt="asdf" width={150} height={150}
+              <img
+                src={'https://' + mediaGrid4.fields.file.url} alt="asdf" width="150" height="150"
                 className='rounded-full'
               />
               <p className='font-bold text-xl'>{titleGrid4}</p>
@@ -78,8 +79,8 @@ export default function Cursos() {
             </div>
             <div className='border-solid border-2 border-black p-3'>
               
-              <Image
-                src={'https://' + mediaGrid5.fields.file.url} alt="asdf" width={150} height={150}
+              <img
+                src={'https://' + mediaGrid5.fields.file.url} alt="asdf" width="150" height="150"
                 className='rounded-full'
               />
               <p className='font-bold text-xl'>{titleGrid5}</p>
@@ -88,8 +89,8 @@ export default function Cursos() {
             </div>
             <div className='border-solid border-2 border-black p-3'>
               
-              <Image
-                src={'https://' + mediaGrid6.fields.file.url} alt="asdf" width={150} height={150}
+              <img
+                src={'https://' + mediaGrid6.fields.file.url} alt="asdf" width="150" height="150"
                 className='rounded-full'
               />
               <p className='font-bold text-xl'>{titleGrid6}</p>
@@ -98,8 +99,6 @@ export default function Cursos() {
             </div>
 
           </div>
-
-
 <AutorMain/>
         </div>
       )
