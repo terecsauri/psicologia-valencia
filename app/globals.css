@@ -18,8 +18,7 @@ body {
     rgb(var(--background-start-rgb));
   line-height: 2;
   font-size: large;
-  width: 1112px;
-  margin: 16px;
+  width: 1080px;
 }
 
 h1 {
@@ -32,9 +31,11 @@ h1 {
 h2 {
   font-size: 36px;
   font-weight: bold;
+  line-height: 36px;
 }
 
 h3 {
   font-size: 28px;
   font-weight: bold;
+  line-height: 35px;
 }

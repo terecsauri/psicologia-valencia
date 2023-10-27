@@ -38,6 +38,7 @@ export default async function Home() {
           textoPrioridad,
           imagenElegante,
           miraPrecios,
+          tituloConsulta,
           textoSesion,
           madridPsicologos,
           fotoEleccion,
@@ -51,6 +52,7 @@ export default async function Home() {
           texto900,
           fotoTorres,
           textoBlog,
+          textoVideo,
           videoAnsiedad,
           psicoEmdr,
           faq,
@@ -152,7 +154,7 @@ export default async function Home() {
             <div className="text-center">
               {documentToReactComponents(descripcionPilares)}
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center mb-2 mt-18">
               <img
                 src={"https://" + enLosMedios.fields.file.url}
                 alt="asdf"
@@ -160,41 +162,65 @@ export default async function Home() {
                 height="38"
               />
             </div>
-            <div className="bg-slate-50 h-20 flex flex-col items-center justify-center">
+            <div className="bg-slate-50 h-20 mt-18 mb-24 flex flex-col items-center justify-center">
               <div>{pacientes}</div>
               <div>{textoPsicosEspecialistas}</div>
             </div>
-            <div>{documentToReactComponents(textoPrioridad)}</div>
-            {landingCardIcon?.map((singleCardIcon: any) => {
-              const { id, tituloIcono, descripcionIcono } =
-                singleCardIcon.fields;
-              return (
-                <div key={id}>
-                  <div>{tituloIcono}</div>
-                  <div>{documentToReactComponents(descripcionIcono)}</div>
-                </div>
-              );
-            })}
-            <img
-              src={"https://" + imagenElegante.fields.file.url}
-              alt="asdf"
-              width={537}
-              height={718}
-            />
-            <div>{miraPrecios}</div>
-            <div>{textoSesion}</div>
-            <div>{madridPsicologos}</div>
-            <div>
+            <div className="grid grid-cols-4 gap-x-8">
+              {landingCardIcon?.map((singleCardIcon: any) => {
+                const { id, tituloIcono, descripcionIcono } =
+                  singleCardIcon.fields;
+                return (
+                  <div
+                    key={id}
+                    className="flex flex-col items-center text-center"
+                  >
+                    <h3>{tituloIcono}</h3>
+                    <div className="leading-7">
+                      {documentToReactComponents(descripcionIcono)}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            <div className="grid grid-cols-2 mt-36 gap-x-9 items-center">
+              <div>
+                <h2>{tituloConsulta}</h2>
+                <div>{documentToReactComponents(textoPrioridad)}</div>
+              </div>
+              <img
+                src={"https://" + imagenElegante.fields.file.url}
+                alt="asdf"
+                width={537}
+                height={718}
+              />
+            </div>
+            <div className="my-14 flex items-center justify-center">
+              <div className="w-96 h-13 border-2 border-black bg-yellow-400 rounded-2xl flex items-center justify-center text-center font-bold">
+                <Link href={"/tarifas"}>{miraPrecios}</Link>
+              </div>
+            </div>
+            <div className="bg-slate-50 h-20 mt-18 mb-24 flex flex-col items-center justify-center font-bold">
+              <div>{textoSesion}</div>
+            </div>
+            <h3 className="text-yellow-400 text-center my-14">
+              {madridPsicologos}
+            </h3>
+            <div className="grid grid-cols-2 items-center mb-12">
               <img
                 src={"https://" + fotoEleccion.fields.file.url}
                 alt="asdf"
                 width="536"
                 height="365"
               />
-              <div>{documentToReactComponents(textoEleccion)}</div>
+              <div className="mx-11">
+                {documentToReactComponents(textoEleccion)}
+              </div>
             </div>
-            <div>
-              <div>{documentToReactComponents(textoAyuda)}</div>
+            <div className="grid grid-cols-2 items-center mb-12">
+              <div className="mx-11">
+                {documentToReactComponents(textoAyuda)}
+              </div>
               <img
                 src={"https://" + fotoAgua.fields.file.url}
                 alt="asdf"
@@ -202,14 +228,24 @@ export default async function Home() {
                 height="365"
               />
             </div>
-            <div>{textoProceso}</div>
-            <div>
-              <Link href={"/contacto"}>{reservar}</Link>
-              <Link href={"tel:644921185"}>{numTelefono}</Link>
+            <div className="bg-slate-50 h-20 mt-18 mb-24 flex flex-col items-center justify-center">
+              <div>{textoProceso}</div>
             </div>
-            <div>{nuestroCentro}</div>
-            <Link href={"/tratamientos"}>{botonEspecialidades}</Link>
-            <div>
+            <div className="flex flex-row justify-center gap-x-2 mt-30">
+              <div className="w-75 h-13 bg-emerald-800 text-white rounded-2xl flex items-center justify-center text-center">
+                <Link href={"/contacto"}>{reservar}</Link>
+              </div>
+              <div className="w-75 h-13 bg-yellow-400 rounded-2xl flex items-center justify-center text-center font-bold">
+                <Link href={"tel:644921185"}>{numTelefono}</Link>
+              </div>
+            </div>
+            <div className="h-70 flex flex-col items-center justify-center">
+              <h3 className="text-yellow-400">{nuestroCentro}</h3>
+              <div className="w-96 h-13 mt-5 bg-emerald-800 text-white rounded-2xl flex items-center justify-center text-center">
+                <Link href={"/tratamientos"}>{botonEspecialidades}</Link>
+              </div>
+            </div>
+            <div className="flex flex-row justify-center gap-x-2 mt-30">
               <img
                 src={
                   "https://images.ctfassets.net/06jdt9isp37n/4gyAHq4klFPmuNRlU6mylL/5955f2e1ee2d3e0612df9947ecb107f1/15081525278135.jpeg"
@@ -220,7 +256,7 @@ export default async function Home() {
               />
               <div>{documentToReactComponents(textoCentro)}</div>
             </div>
-            <div>
+            <div className="flex flex-row justify-center gap-x-2 mt-30">
               <div>{documentToReactComponents(texto900)}</div>
               <img
                 src={"https://" + fotoTorres.fields.file.url}
@@ -229,7 +265,8 @@ export default async function Home() {
                 height="393"
               />
             </div>
-            <div>{textoBlog}</div>
+            <div className="text-center font-bold">{textoBlog}</div>
+            <h2 className="text-emerald-800">{textoVideo}</h2>
             <div>
               <Link
                 href={
