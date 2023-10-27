@@ -23,6 +23,7 @@ const config: Config = {
       },
       height: {
         "13": "55px",
+        "70": "268px",
       },
       fontSize: {
         "text-sm-2": "14.4px",
