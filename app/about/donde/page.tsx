@@ -12,21 +12,25 @@ export default function DondeEstamos() {
       singlePost.fields;
     return (
       <div key={""} className="ml-10 mt-5">
-        <h1 className="font-bold text-2xl mb-2">{title}</h1>
+        <h1 className="font-bold mb-2">{title}</h1>
+        <div className="flex justify-center mb-5">
         <img
           src={"https://" + photo.fields.file.url}
           alt="asdf"
           width="600"
           height="600"
         />
+        </div>
         <p className="mt-5 mb-5">{adress}</p>
+        
         <img
           src={"https://" + photoMaps.fields.file.url}
           alt="asdf"
-          width="300"
-          height="300"
+          width="900"
+          height="900"
           className="mb-5"
         />
+
         <p className="leading-8">{documentToReactComponents(body)}</p>
         <p className="mt-5 mb-5">{adress}</p>
         <img
@@ -38,26 +42,26 @@ export default function DondeEstamos() {
         />
         <p className="leading-8">{documentToReactComponents(contacto)}</p>
 
-        <form className="flex flex-col ">
-          <p className="font-bold">Nombre</p>
+        <form className="flex flex-col mt-5">
+          <p className="font-bold">Nombre (requerido)</p>
           <label>
             {" "}
-            <input type="text" name="name" />{" "}
+            <input type="text" name="name" className="border-2 border-gray w-1/2" />{" "}
           </label>
-          <p className="font-bold">Correo Electrónico</p>
+          <p className="font-bold">Correo Electrónico (requerido)</p>
           <label>
             {" "}
-            <input type="text" name="email" />{" "}
+            <input type="text" name="email" className="border-2 border-gray w-1/2"/>{" "}
           </label>
           <p className="font-bold">Asunto</p>
           <label>
             {" "}
-            <input type="text" name="asunto" />{" "}
+            <input type="text" name="asunto" className="border-2 border-gray w-1/2"/>{" "}
           </label>
           <p className="font-bold">Mensaje</p>
-          <label>
+          <label >
             {" "}
-            <textarea />
+            <textarea className="border-2 border-gray w-1/2"/>
           </label>
           <input type="submit" value="Submit" />
         </form>

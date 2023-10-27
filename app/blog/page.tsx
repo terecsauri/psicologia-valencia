@@ -16,19 +16,19 @@ export default function Blog() {
             <div className=' h-96 bg-gradient-to-r from-gray-600 to-gray-300'> 
               <h3 className='font-bold text-white p-5' >{gridTitle}</h3>
             </div>
-            <div className='relative'>
+            <div className='relative z-0'>
               <img
-                src={'https://' + media.fields.file.url} alt="asdf" width="600" height="380"
-                className='absolute'
+                src={'https://' + media.fields.file.url} alt="asdf" width="560" height="380"
+                
               />
-              <p className='font-bold absolute text-white text-2xl top-80 z-100' >{gridTitle2}</p>
+              <p className='font-bold absolute text-white text-2xl top-80' >{gridTitle2}</p>
             </div>
             <div className='relative'>
               <img
                 src={'https://' + media2.fields.file.url} alt="asdf" width="600" height="380"
-                className='absolute'
+                
               />
-              <p className='font-bold absolute text-white text-2xl top-80 z-100' >{gridTitle3}</p>
+              <p className='font-bold absolute text-white text-2xl top-80' >{gridTitle3}</p>
             </div>
           </div>
 

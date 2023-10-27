@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
 
-    <nav  >
+    <nav>
       <div className='flex justify-between mx-auto p-2'>
         <Link href="/">HOME</Link>
         <div>

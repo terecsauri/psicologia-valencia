@@ -29,6 +29,7 @@ export default function Tarifas() {
             <img
               src={'https://' + media2.fields.file.url} alt="asdf" width="250" height="250"
             />
+            
             <div>
               {documentToReactComponents(body2)}
             </div>

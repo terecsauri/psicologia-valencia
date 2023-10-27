@@ -34,14 +34,14 @@ export default function contactos() {
               </div>
               <form className='flex flex-col mt-5'>
             <p className='font-bold'>Nombre</p>
-            <label> <input type="text" name="name" className='border-2 border-black rounded-xl' /> </label>
+            <label> <input type="text" name="name" className='border-2 border-gray w-1/2' /> </label>
             <p className='font-bold'>Correo Electrónico</p>
-            <label> <input type="text" name="email" className='border-2 border-black rounded-xl'/> </label>
+            <label> <input type="text" name="email" className='border-2 border-gray w-1/2'/> </label>
             <p className='font-bold'>Asunto</p>
-            <label>  <input type="text" name="asunto" className='border-2 border-black rounded-xl'/> </label>
+            <label>  <input type="text" name="asunto" className='border-2 border-gray w-1/2'/> </label>
             <p className='font-bold '>Mensaje</p>
-            <label> <textarea className='border-2 border-black rounded-xl '/></label>
-            <input type="submit" value="Submit" className='border-2 border-black rounded-xl w-20'/>
+            <label> <textarea className='border-2 border-gray w-1/2'/></label>
+            <input type="submit" value="Submit" className='border-2 border-black w-20'/>
           </form>
           <p className='mt-5'>
           {documentToReactComponents(body4)}
