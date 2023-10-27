@@ -59,62 +59,62 @@ export default function Tarifas() {
           </div>
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
           {documentToReactComponents(body5)}
-<div className='grid grid-cols-3 mt-10'>
+<div className='grid grid-cols-3 mt-10 gap-5'>
   <div className='p-2'>
   <img 
             src={'https://' + mediaGrid.fields.file.url} alt="asdf" width="350" height="180"
           />
-          <p className='font-bold pl-1'>{titleGrid}</p>
+          <p className='font-bold'>{titleGrid}</p>
           
   </div>
   <div>
   <img
             src={'https://' + mediaGrid2.fields.file.url} alt="asdf" width="350" height="180"
           />
-          <p className='font-bold pl-1'>{titleGrid2}</p>
+          <p className='font-bold'>{titleGrid2}</p>
           
   </div>
   <div>
   <img
             src={'https://' + mediaGrid3.fields.file.url} alt="asdf" width="350" height="350"
           />
-          <p className='font-bold pl-1'>{titleGrid3}</p>       
+          <p className='font-bold'>{titleGrid3}</p>       
   </div>
   <div>
   <img
             src={'https://' + mediaGrid4.fields.file.url} alt="asdf" width="350" height="350"
           />
-          <p className='font-bold pl-1'>{titleGrid4}</p>
+          <p className='font-bold'>{titleGrid4}</p>
   </div>
   <div>
   <img
             src={'https://' + mediaGrid5.fields.file.url} alt="asdf" width="350" height="350"
           />
-          <p className='font-bold pl-1'>{titleGrid5}</p>
+          <p className='font-bold'>{titleGrid5}</p>
   </div>
   <div>
   <img
             src={'https://' + mediaGrid6.fields.file.url} alt="asdf" width="350" height="350"
           />
-          <p className='font-bold pl-1'>{titleGrid6}</p>
+          <p className='font-bold'>{titleGrid6}</p>
   </div>
   <div>
   <img
             src={'https://' + mediaGrid7.fields.file.url} alt="asdf" width="350" height="350"
           />
-          <p className='font-bold pl-1'>{titleGrid7}</p>
+          <p className='font-bold'>{titleGrid7}</p>
   </div>
   <div>
   <img
             src={'https://' + mediaGrid8.fields.file.url} alt="asdf" width="350" height="350"
           />
-          <p className='font-bold pl-1'>{titleGrid8}</p>
+          <p className='font-bold'>{titleGrid8}</p>
   </div>
   <div>
   <img
             src={'https://' + mediaGrid9.fields.file.url} alt="asdf" width="350" height="350" 
           />
-          <p className='font-bold pl-1'>{titleGrid9}</p>
+          <p className='font-bold'>{titleGrid9}</p>
   </div>
 </div>
 <p className='mt-5'>{documentToReactComponents(body6)}</p>

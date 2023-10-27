@@ -59,6 +59,12 @@ export default function Pareja() {
             </div>
             <div className="mt-5 mb-5">
             {documentToReactComponents(body5)}
+            <div className="flex justify-center mb-5 mt-5">
+            <button className="bg-blue-600 rounded-xl text-white p-2 hover:bg-blue-800">601 406 025</button>
+            </div>
+            <div className="flex justify-center">
+            <button className="bg-blue-600 rounded-xl text-white p-2 hover:bg-blue-800"><p className="underline">Pedir Cita</p></button>
+            </div>
             </div>
           </div>
         );

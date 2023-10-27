@@ -29,7 +29,7 @@ export default function AutorMain() {
               <p className='font-bold underline text-blue-800'>{cardTitle}</p>
               <p>{cardText}</p>
               
-              <button className='bg-indigo-500 text-white rounded-lg p-1 mt-2'>{cardButton}</button>
+              <button className='bg-indigo-500 text-white rounded-lg p-1 mt-2 hover:bg-indigo-700'>{cardButton}</button>
             </div>
 
           </div>

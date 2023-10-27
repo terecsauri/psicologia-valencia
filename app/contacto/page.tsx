@@ -13,7 +13,7 @@ export default function contactos() {
       return (
           <div key={""} className="ml-10 mt-5">
               <h1 className='font-bold mb-2' >{titulo}</h1>
-              <div className='flex justify-center'>
+              <div className='flex justify-center mb-5'>
               <img
               src={'https://' + media.fields.file.url} alt="asdf" width="850" height="850"
               

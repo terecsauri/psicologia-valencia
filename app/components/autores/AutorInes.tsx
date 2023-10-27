@@ -27,7 +27,7 @@ export default function AutorInes() {
             <div>
               <p className='font-bold underline text-blue-800'>{name}</p>
               {documentToReactComponents(body)}
-              <button className='bg-indigo-500 text-white rounded-lg p-1 mt-2'>{footer}</button>
+              <button className='bg-indigo-500 text-white rounded-lg p-1 mt-2 hover:bg-indigo-700'>{footer}</button>
             </div>
 
           </div>

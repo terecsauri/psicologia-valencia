@@ -22,7 +22,7 @@ export default function AutorRandom() {
             <div>
               <p className='font-bold underline text-blue-800'>{text}</p>
               
-              <button className='bg-indigo-500 text-white rounded-lg p-1 mt-2'>{text2}</button>
+              <button className='bg-indigo-500 text-white rounded-lg p-1 mt-2 hover:bg-indigo-700'>{text2}</button>
             </div>
             </div>
 
