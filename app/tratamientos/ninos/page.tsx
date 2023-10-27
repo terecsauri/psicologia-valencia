@@ -51,29 +51,31 @@ export default function Niños() {
         return (
           <div key={""} className="ml-10 mt-5">
             <h1 className="font-bold mb-2 text-4xl">{titulo}</h1>
+            <div className="flex justify-center m-5">
             <img
               src={"https://" + media.fields.file.url}
               alt="asdf"
-              width="650"
-              height="450"
+              width="850"
+              height="650"
             />
-            <h1 className="font-bold mb-2 text-green-700 text-3xl">
+            </div>
+            <h1 className="font-bold mb-2 text-green-700 text-3xl mb-5">
               {titulo2}
             </h1>
             {documentToReactComponents(body)}
-            <h1 className="font-bold mb-2 text-green-700 text-3xl">
+            <h1 className="font-bold mb-2 text-green-700 text-3xl mt-5 mb-5">
               {titulo3}
             </h1>
             {documentToReactComponents(body2)}
-            <h1 className="font-bold mb-2 text-green-700 text-3xl">
+            <h1 className="font-bold mb-2 text-green-700 text-3xl mt-5 mb-5">
               {titulo4}
             </h1>
             {documentToReactComponents(body3)}
-            <h1 className="font-bold mb-2 text-green-700 text-3xl">
+            <h1 className="font-bold mb-2 text-green-700 text-3xl mt-5 mb-5">
               {titulo5}
             </h1>
             {documentToReactComponents(body4)}
-            <h1 className="font-bold mb-2 text-green-700 text-3xl">
+            <h1 className="font-bold mb-2 text-green-700 text-3xl mt-5 mb-5">
               {titulo6}
             </h1>
             <div className="grid grid-cols-3">
@@ -102,7 +104,7 @@ export default function Niños() {
                   width="350"
                   height="180"
                 />
-                <p className="font-bold">{tituloGrid2}</p>
+                <p className="font-bold ">{tituloGrid2}</p>
               </div>
               <div className="p-3 bg-white mt-5 border border-gray-200 shadow m-5 dark:bg-gray-800 dark:border-gray-700 justify-center">
                 <img
@@ -141,32 +143,36 @@ export default function Niños() {
                 <p className="font-bold">{tituloGrid4}</p>
               </div>
             </div>
-            <h1 className="font-bold mt-5 mb-2 text-green-700 text-3xl">
+            <h1 className="font-bold mt-5 mb-2 text-green-700 text-3xl mt-5 mb-5">
               {titulo7}
             </h1>
             {body5}
+            <div className="flex justify-center mt-5 mb-5"> 
             <img
               src={"https://" + media2.fields.file.url}
               alt="asdf"
               width="350"
               height="180"
             />
+            </div>
             {body6}
-            <h1 className="font-bold mt-5 mb-2 text-green-700 text-3xl">
+            <h1 className="font-bold mt-5 mb-2 text-green-700 text-3xl mt-5 mb-5">
               {titulo8}
             </h1>
             {documentToReactComponents(body7)}
-            <h1 className="font-bold mt-5 mb-2 text-green-700 text-3xl">
+            <h1 className="font-bold mt-5 mb-2 text-green-700 text-3xl mt-5 mb-5">
               {titulo9}
             </h1>
             {body8}
+            <div className="flex justify-center mt-5 mb-5">
             <img
               src={"https://" + media3.fields.file.url}
               alt="asdf"
-              width="650"
-              height="650"
+              width="850"
+              height="850"
             />
-            <h1 className="font-bold mt-5 mb-2 text-green-700 text-3xl">
+            </div>
+            <h1 className="font-bold mt-5 mb-2 text-green-700 text-3xl mt-5 mb-5">
               {titulo10}
             </h1>
             {documentToReactComponents(body9)}

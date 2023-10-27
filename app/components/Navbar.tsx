@@ -23,7 +23,7 @@ export default function Navbar() {
             {hover ?
               <div className='bg-white'>
                 <Link href="/about">SOBRE NOSOTROS</Link>
-                <ul>
+                <ul className='absolute bg-white border-solid border-2 rounded-xl'>
                   <li className=" py-1 hover:underline">
                     <Link href="/about/donde" className=" py-2 px-4" >Donde Estamos</Link>
                   </li>
@@ -39,7 +39,23 @@ export default function Navbar() {
                 </ul>
               </div>
               :
+              <div>
               <Link href="/about">SOBRE NOSOTROS</Link>
+              <ul className='hidden'>
+                  <li className=" py-1 hover:underline">
+                    <Link href="/about/donde" className=" py-2 px-4" >Donde Estamos</Link>
+                  </li>
+                  <li className=" py-1 hover:underline">
+                    <Link href="/about/equipo" className=" py-2 px-4">Equipo</Link>
+                  </li>
+                  <li className=" py-1 hover:underline">
+                    <Link href="/about/metodo" className=" py-2 px-4">Método</Link>
+                  </li>
+                  <li className=" py-1 hover:underline">
+                    <Link href="/about/aseguradoras" className=" py-2 px-4" >Aseguradoras</Link>
+                  </li>
+                </ul>
+              </div>
             }
           </div>
         </div>
@@ -48,9 +64,9 @@ export default function Navbar() {
           onMouseLeave={() => setHoverDos(false)}
         >
           {hoverDos ?
-            <div className=' bg-white ' >
+            <div>
               <Link href="/tratamientos">TRATAMIENTOS</Link>
-              <ul>
+              <ul className='absolute bg-white border-solid border-2 rounded-xl'>
 
                 <li className=" py-1 hover:underline">
                   <Link href="/tratamientos/online" className=" py-2 px-4 " >Terapia Online</Link>
@@ -68,7 +84,24 @@ export default function Navbar() {
 
             </div>
             :
+            <div>
             <Link href="/tratamientos">TRATAMIENTOS</Link>
+            <ul className='hidden'>
+
+                <li className=" py-1 hover:underline">
+                  <Link href="/tratamientos/online" className=" py-2 px-4 " >Terapia Online</Link>
+                </li>
+                <li className=" py-1 hover:underline">
+                  <Link href="/tratamientos/adultos" className=" py-2 px-4 " >Terapia Adultos</Link>
+                </li>
+                <li className=" py-1 hover:underline">
+                  <Link href="/tratamientos/ninos" className=" py-2 px-4 " >Terapia Niños</Link>
+                </li>
+                <li className=" py-1 hover:underline">
+                  <Link href="/tratamientos/pareja" className=" py-2 px-4 " >Terapia Pareja</Link>
+                </li>
+              </ul>
+            </div>
           }
         </div>
 
@@ -78,8 +111,6 @@ export default function Navbar() {
         <Link href="/contacto">CONTACTO</Link>
       </div>
       <hr></hr>
-
-
     </nav>
   )
 }
