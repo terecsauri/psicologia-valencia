@@ -33,6 +33,8 @@ export default async function Home() {
           tratamientosPsicologos,
           descripcionPilares,
           enLosMedios,
+          pacientes,
+          textoPsicosEspecialistas,
           textoPrioridad,
           imagenElegante,
           miraPrecios,
@@ -139,18 +141,30 @@ export default async function Home() {
                 {"https://" + videoMiPsicologo.fields.file.url}
               </video>
               <div>
-                <h2>{tituloExperiencia}</h2>
-                <div>{documentToReactComponents(textoSaludEmocional)}</div>
+                <h3 className="text-yellow-400">{tituloExperiencia}</h3>
+                <div className="text-sm">
+                  {documentToReactComponents(textoSaludEmocional)}
+                </div>
               </div>
             </div>
-            <div>{documentToReactComponents(tratamientosPsicologos)}</div>
-            <div>{documentToReactComponents(descripcionPilares)}</div>
-            <img
-              src={"https://" + enLosMedios.fields.file.url}
-              alt="asdf"
-              width="883"
-              height="38"
-            />
+            <div className="text-center">
+              {documentToReactComponents(tratamientosPsicologos)}
+            </div>
+            <div className="text-center">
+              {documentToReactComponents(descripcionPilares)}
+            </div>
+            <div className="flex justify-center">
+              <img
+                src={"https://" + enLosMedios.fields.file.url}
+                alt="asdf"
+                width="883"
+                height="38"
+              />
+            </div>
+            <div className="bg-slate-50 h-20 flex flex-col items-center justify-center">
+              <div>{pacientes}</div>
+              <div>{textoPsicosEspecialistas}</div>
+            </div>
             <div>{documentToReactComponents(textoPrioridad)}</div>
             {landingCardIcon?.map((singleCardIcon: any) => {
               const { id, tituloIcono, descripcionIcono } =
