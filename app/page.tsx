@@ -47,7 +47,6 @@ export default async function Home() {
           textoProceso,
           nuestroCentro,
           botonEspecialidades,
-          mapa,
           textoCentro,
           texto900,
           fotoTorres,

@@ -51,14 +51,14 @@ export default function Online() {
             </div>
 
             {documentToReactComponents(text1)}
-            <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-64"></hr>
-            <div className="flex">
+            <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-64 flex"></hr>
+            <div className="flex mt-5 mb-5">
               <div className="w-1/3 mr-4">{documentToReactComponents(text2)}</div>
               <img
                 src={"https://" + media2.fields.file.url}
                 alt="asdf"
-                width="500"
-                height="500"
+                width="650"
+                height="650"
               />
             </div>
           <div className="flex justify-center">
@@ -97,7 +97,7 @@ export default function Online() {
             </div>
             {documentToReactComponents(text5)}
             <div className="flex justify-center">
-            <button className="text-yellow-400 bg-black w-1/3 p-2 rounded-2xl font-bold mt-5 mb-5">
+            <button className="text-yellow-400 bg-black w-1/3 p-2 rounded-2xl font-bold mt-10 mb-10">
               {button2}
             </button>
             </div>
@@ -131,24 +131,26 @@ export default function Online() {
             {documentToReactComponents(text7)}
 
             <form className="flex flex-col mb-10 mt-10">
-              <p className="font-bold">Nombre</p>
-              <label>
+              <p className="font-bold flex justify-center">Nombre</p>
+              <label className="flex justify-center">
                 {" "}
-                <input type="text" name="name" />{" "}
+                <input type="text" name="name" className="border-2 border-gray w-1/2 " placeholder="Juan" />{" "}
               </label>
-              <p className="font-bold">Correo Electrónico</p>
-              <label>
+              <p className="font-bold flex justify-center ">Correo Electrónico</p>
+              <label className="flex justify-center">
                 {" "}
-                <input type="text" name="email" />{" "}
+                <input type="text" name="email" className="border-2 border-gray w-1/2" placeholder="pepito@ejemplo.es "/>{" "}
               </label>
-              <p className="font-bold">Mensaje</p>
-              <label>
+              <p className="font-bold flex justify-center">Mensaje</p>
+              <label className="flex justify-center">
                 {" "}
-                <textarea />
-              </label>
-              <input type="submit" value="Submit" />
+                <textarea className="border-2 border-gray w-1/2 " placeholder="introduce tu mensaje "/>
+              </label >
+              <div className="flex justify-center mt-6">
+              <input type="submit" value="Submit" className="font-bold border-2 border-black w-1/4 rounded-3xl"/>
+              </div>
             </form>
-            <h2 className="font-bold text-2xl mb-2">{title3}</h2>
+            <h2 className="font-bold text-2xl mb-5">{title3}</h2>
 
             <div className="grid grid-cols-3 mb-10">
               {landingMedia?.map((singlePost: any) => {
@@ -165,18 +167,18 @@ export default function Online() {
                 );
               })}
             </div>
-            <h2 className="font-bold text-2xl mb-2">{title4}</h2>
+            <h2 className="font-bold text-2xl mb-5">{title4}</h2>
             <img
               src={"https://" + media4.fields.file.url}
               alt="asdf"
-              width="550"
-              height="550"
+              width="650"
+              height="650"
               className="mb-5"
             />
 
             {documentToReactComponents(text8)}
 
-            <div className="grid grid-cols-2 mb-10">
+            <div className="grid grid-cols-2 mb-10 mt-10">
               <div>
                 <img
                   src={"https://" + media5.fields.file.url}
@@ -196,7 +198,9 @@ export default function Online() {
                 <p className="font-bold text-xl mb-2">{title6}</p>
               </div>
             </div>
+
             {documentToReactComponents(text9)}
+
           </div>
         );
       })}

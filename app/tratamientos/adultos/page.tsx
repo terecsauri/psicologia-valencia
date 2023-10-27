@@ -14,16 +14,16 @@ export default function Adultos() {
         const { title, body, body2 } = singlePost.fields;
         return (
           <div key={""} className="ml-10 mt-5">
-            <h1 className="font-bold mb-6 text-4xl">{title}</h1>
+            <h1 className="font-bold mb-6">{title}</h1>
             {documentToReactComponents(body)}
 
-            <div className="grid grid-cols-3 mb-10">
+            <div className="grid grid-cols-3 mb-16 mt-16 gap-5">
               {landingMedia?.map((singlePost: any) => {
                 const { title, media, id } = singlePost.fields;
                 return (
                   <div
                     key={id}
-                    className="ml-10 mt-5 p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center "
+                    className=" p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center "
                   >
                     <img
                       src={"https://" + media.fields.file.url}
@@ -31,12 +31,11 @@ export default function Adultos() {
                       width="350"
                       height="180"
                     />
-                    <h2 className="font-bold mb-2">{title}</h2>
+                    <p className="font-bold mb-2">{title}</p>
                   </div>
                 );
               })}
             </div>
-
             {documentToReactComponents(body2)}
           </div>
         );
