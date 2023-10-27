@@ -33,9 +33,9 @@ export default function contactos() {
                 </div>
               </div>
               <form className='flex flex-col mt-5'>
-            <p className='font-bold'>Nombre</p>
+            <p className='font-bold'>Nombre (requerido)</p>
             <label> <input type="text" name="name" className='border-2 border-gray w-1/2' /> </label>
-            <p className='font-bold'>Correo Electrónico</p>
+            <p className='font-bold'>Correo Electrónico (requerido)</p>
             <label> <input type="text" name="email" className='border-2 border-gray w-1/2'/> </label>
             <p className='font-bold'>Asunto</p>
             <label>  <input type="text" name="asunto" className='border-2 border-gray w-1/2'/> </label>

@@ -8,7 +8,7 @@ const landingWhere = await getData("aboutUsWhere");
 
 export default function DondeEstamos() {
   return landingWhere?.map((singlePost: any) => {
-    const { title, photo, adress, photoMaps, body, sofa, contacto, author } =
+    const { title, photo, adress, photoMaps, body, sofa, contacto } =
       singlePost.fields;
     return (
       <div key={""} className="ml-10 mt-5">
@@ -31,13 +31,13 @@ export default function DondeEstamos() {
           className="mb-5"
         />
 
-        <p className="leading-8">{documentToReactComponents(body)}</p>
+        <p className="leading-8 mt-10">{documentToReactComponents(body)}</p>
         <p className="mt-5 mb-5">{adress}</p>
         <img
           src={"https://" + sofa.fields.file.url}
           alt="asdf"
-          width="500"
-          height="500"
+          width="700"
+          height="700"
           className="mb-5"
         />
         <p className="leading-8">{documentToReactComponents(contacto)}</p>

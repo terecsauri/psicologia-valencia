@@ -20,9 +20,11 @@ export default function Equipo() {
           height="550"
         />
         {documentToReactComponents(body)}
+        <div className="flex justify-center">
         <button className="bg-yellow-400 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5">
           {button}
         </button>
+        </div>
         {documentToReactComponents(bodyMid)}
         <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5"></hr>
         {documentToReactComponents(bodyBot)}
