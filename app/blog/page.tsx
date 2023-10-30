@@ -21,14 +21,14 @@ export default function Blog() {
                 src={'https://' + media.fields.file.url} alt="asdf" width="560" height="380"
                 
               />
-              <p className='font-bold absolute text-white text-2xl top-80' >{gridTitle2}</p>
+              <div className='font-bold absolute text-white text-2xl top-80' >{gridTitle2}</div>
             </div>
             <div className='relative'>
               <img
                 src={'https://' + media2.fields.file.url} alt="asdf" width="600" height="380"
                 
               />
-              <p className='font-bold absolute text-white text-2xl top-80' >{gridTitle3}</p>
+              <div className='font-bold absolute text-white text-2xl top-80' >{gridTitle3}</div>
             </div>
           </div>
 
@@ -39,35 +39,35 @@ export default function Blog() {
             src={'https://' + gridMedia3.fields.file.url} alt="asdf" width="600" height="380"
             
           />
-          <p className='font-bold' >{gridTitle4}</p>
+          <div className='font-bold' >{gridTitle4}</div>
             </div>
             <div>
           <img
             src={'https://' + gridMedia4.fields.file.url} alt="asdf" width="600" height="380"
             
           />
-          <p className='font-bold' >{gridTitle5}</p>
+          <div className='font-bold' >{gridTitle5}</div>
             </div>
             <div>
           <img
             src={'https://' + gridMedia5.fields.file.url} alt="asdf" width="600" height="380"
             
           />
-          <p className='font-bold' >{gridTitle6}</p>
+          <div className='font-bold' >{gridTitle6}</div>
             </div>
             <div>
           <img
             src={'https://' + gridMedia6.fields.file.url} alt="asdf" width="600" height="380"
             
           />
-          <p className='font-bold' >{gridTitle7}</p>
+          <div className='font-bold' >{gridTitle7}</div>
             </div>
             <div>
           <img
             src={'https://' + gridMedia8.fields.file.url} alt="asdf" width="600" height="380"
             
           />
-          <p className='font-bold' >{gridTitle8}</p>
+          <div className='font-bold' >{gridTitle8}</div>
             </div>
             <div>
 
@@ -75,14 +75,14 @@ export default function Blog() {
             src={'https://' + gridMedia9.fields.file.url} alt="asdf" width="600" height="380"
             
           />
-          <p className='font-bold' >{gridTitle9}</p>
+          <div className='font-bold' >{gridTitle9}</div>
             </div>
             <div>
           <img
             src={'https://' + gridMedia7.fields.file.url} alt="asdf" width="600" height="380"
             
           />
-          <p className='font-bold' >{gridTitle10}</p>
+          <div className='font-bold' >{gridTitle10}</div>
             </div>
           </div>
         </div>

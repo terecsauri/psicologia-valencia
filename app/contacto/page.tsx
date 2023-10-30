@@ -43,9 +43,9 @@ export default function contactos() {
             <label> <textarea className='border-2 border-gray w-1/2'/></label>
             <input type="submit" value="Submit" className='border-2 border-black w-20'/>
           </form>
-          <p className='mt-5 mb-5'>
+          <div className='mt-5 mb-5'>
           {documentToReactComponents(body4)}
-          </p>
+          </div>
           <h3 >{titulo2}</h3>
           <div className='flex justify-center m-5'>
           <img

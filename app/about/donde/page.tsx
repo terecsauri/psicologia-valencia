@@ -31,9 +31,9 @@ export default function DondeEstamos() {
           className="mb-5"
         />
 
-        <p className="leading-8 mt-10">{documentToReactComponents(body)}</p>
-        <p className="leading-8 mt-10">{documentToReactComponents(body2)}</p>
-        <p className="mt-5 mb-5">{adress}</p>
+        <div className="leading-8 mt-10">{documentToReactComponents(body)}</div>
+        <div className="leading-8 mt-10">{documentToReactComponents(body2)}</div>
+        <div className="mt-5 mb-5">{adress}</div>
         <img
           src={"https://" + sofa.fields.file.url}
           alt="asdf"
@@ -41,7 +41,7 @@ export default function DondeEstamos() {
           height="700"
           className="mb-5"
         />
-        <p className="leading-8">{documentToReactComponents(contacto)}</p>
+        <div className="leading-8">{documentToReactComponents(contacto)}</div>
 
         <form className="flex flex-col mt-5">
           <p className="font-bold">Nombre (requerido)</p>
