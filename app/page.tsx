@@ -283,8 +283,8 @@ export default async function Home() {
               </Link>
             </div>
             <div className="mt-12">{documentToReactComponents(psicoEmdr)}</div>
-            <div className="font-bold italic mt-7 mb-11 text-center">{faq}</div>
-            <div>{documentToReactComponents(preguntasFrecuentes)}</div>
+            <div className="font-bold italic mt-7 text-center">{faq}</div>
+            <div className="faq">{documentToReactComponents(preguntasFrecuentes)}</div>
             <div className="mb-18">
               <AutorRandom />
             </div>
