@@ -4,6 +4,7 @@ import React from 'react'
 import { getData } from '../services/fetchService';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import AutorRandom from '@/app/components/autores/AutorRandom'
+import Link from 'next/link';
 
 
 const landingTarifas = await getData("tarifas");
@@ -59,7 +60,10 @@ export default function Tarifas() {
           <h2>{titulo3}</h2>
           {documentToReactComponents(body4)}
           <div className='flex justify-center'>
-          <button className='bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5 '>{button2}</button>
+          <button className='bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5 '>
+           <Link href="about/aseguradoras">{button2}</Link>
+            
+            </button>
           </div>
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
           {documentToReactComponents(body5)}

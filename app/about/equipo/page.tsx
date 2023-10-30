@@ -3,6 +3,7 @@ import React from "react";
 import { getData } from "@/app/services/fetchService";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import AutorMain from "@/app/components/autores/AutorMain";
+import Link from "next/link";
 
 const landingTeam = await getData("aboutUsEquipo");
 const landingAutor = await getData("autorUno");
@@ -22,7 +23,7 @@ export default function Equipo() {
         {documentToReactComponents(body)}
         <div className="flex justify-center">
         <button className="bg-yellow-400 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5">
-          {button}
+          <Link href="/tarifas">{button}</Link>
         </button>
         </div>
         {documentToReactComponents(bodyMid)}

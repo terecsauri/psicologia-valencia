@@ -3,6 +3,7 @@ import AutorMain from "@/app/components/autores/AutorMain";
 import React from "react";
 import { getData } from "@/app/services/fetchService";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Link from "next/link";
 
 const landingOnline = await getData("tratamientosOnline");
 const landingText = await getData("tratamientosOnlineText3");
@@ -98,7 +99,8 @@ export default function Online() {
             {documentToReactComponents(text5)}
             <div className="flex justify-center">
             <button className="text-yellow-400 bg-black w-1/3 p-2 rounded-2xl font-bold mt-10 mb-10">
-              {button2}
+              <Link href="/tarifas">{button2}</Link>
+              
             </button>
             </div>
             

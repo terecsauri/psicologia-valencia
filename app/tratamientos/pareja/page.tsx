@@ -3,6 +3,7 @@ import AutorMain from "@/app/components/autores/AutorMain";
 import React from "react";
 import { getData } from "@/app/services/fetchService";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Link from "next/link";
 
 const landingPareja = await getData("tratamientosPareja");
 
@@ -41,7 +42,8 @@ export default function Pareja() {
             {body}
             <div className="flex justify-center mt-10 mb-10">
               <button className="bg-yellow-400 w-1/2 p-2 font-bold rounded-2xl font-bold">
-                {button}
+                <Link href="/tarifas"> {button}</Link>
+               
               </button>
             </div>
             <p className="mb-2"> {documentToReactComponents(body2bis)} </p>
