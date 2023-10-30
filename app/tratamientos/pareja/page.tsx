@@ -41,7 +41,7 @@ export default function Pareja() {
             <h2 className="font-bold mt-2 mb-2">{title2}</h2>
             {body}
             <div className="flex justify-center mt-10 mb-10">
-              <button className="bg-yellow-400 w-1/2 p-2 font-bold rounded-2xl font-bold">
+              <button className="bg-yellow-400 w-1/2 p-2 font-bold rounded-2xl font-bold  max-xl:w-fit">
                 <Link href="/tarifas"> {button}</Link>
                
               </button>

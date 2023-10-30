@@ -18,7 +18,9 @@ body {
 
 @media (max-width: 750px) {
   body {
-    padding: 2px
+    padding: 2px;
+    margin: 4px;
+    
   }
 }
 
