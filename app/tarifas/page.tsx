@@ -10,7 +10,7 @@ export default function Tarifas() {
 
   return (
     landingTarifas?.map((singlePost: any) => {
-      const { titulo, titulo2, titulo3, media, media2, media3, media4, body, body2, body3, body4, body5, body6,
+      const { titulo, titulo2, titulo3, titulo4, media, media2, media3, media4, body, body2, body3, body4, body5, body6, body7, body8, body9,
         button, button2, titleGrid, titleGrid2, titleGrid3, titleGrid4, titleGrid5, titleGrid6, titleGrid7, titleGrid8, titleGrid9,
         mediaGrid, mediaGrid2, mediaGrid3, mediaGrid4, mediaGrid5, mediaGrid6, mediaGrid7, mediaGrid8, mediaGrid9 } =
         singlePost.fields;
@@ -59,6 +59,10 @@ export default function Tarifas() {
           </div>
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
           {documentToReactComponents(body5)}
+          <p className='mt-5 mb-5'>{documentToReactComponents(body6)}</p>
+          <p className='mt-5 mb-5'>{documentToReactComponents(body7)}</p>
+          <p className='mt-5 mb-5'>{documentToReactComponents(body8)}</p>
+          <h3>{titulo4}</h3>
 <div className='grid grid-cols-3 mt-10 gap-5'>
   <div className='p-2'>
   <img 

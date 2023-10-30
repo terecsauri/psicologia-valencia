@@ -8,7 +8,7 @@ const landingFooter = await getData("contacto");
 export default function contactos() {
   return (
     landingFooter?.map((singlePost: any) => {
-      const { titulo, media, media2, button, button2, body, body2, body3, body4, body5 } =
+      const { titulo, titulo2, media, media2, button, button2, body, body2, body3, body4, body5 } =
           singlePost.fields;
       return (
           <div key={""} className="ml-10 mt-5">
@@ -43,9 +43,10 @@ export default function contactos() {
             <label> <textarea className='border-2 border-gray w-1/2'/></label>
             <input type="submit" value="Submit" className='border-2 border-black w-20'/>
           </form>
-          <p className='mt-5'>
+          <p className='mt-5 mb-5'>
           {documentToReactComponents(body4)}
           </p>
+          <h3 >{titulo2}</h3>
           <div className='flex justify-center m-5'>
           <img
               src={'https://' + media2.fields.file.url} alt="asdf" width="450" height="480"
