@@ -8,11 +8,11 @@ const landingMetodo = await getData("aboutUsMtodo");
 
 export default function Metodo() {
   return landingMetodo?.map((singlePost: any) => {
-    const { title, body, photo, author } = singlePost.fields;
+    const { title, body, body2, body3 , photo, } = singlePost.fields;
     return (
       <div key={""} className="mt-5">
         <h1 className="font-bold text-5xl mb-5">{title}</h1>
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-5">
         <img
           src={"https://" + photo.fields.file.url}
           alt="asdf"
@@ -21,6 +21,8 @@ export default function Metodo() {
         />
         </div>
         {documentToReactComponents(body)}
+        <div className="mt-5 mb-5">{documentToReactComponents(body2)}</div>
+        <div className="mt-5 mb-5">{documentToReactComponents(body3)}</div>
         <AutorRandom />
       </div>
     );

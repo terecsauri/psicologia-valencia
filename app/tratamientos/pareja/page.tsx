@@ -20,6 +20,8 @@ export default function Pareja() {
           body3,
           body4,
           body5,
+          body6, 
+          body7,
           media,
           media2,
           button,
@@ -59,6 +61,10 @@ export default function Pareja() {
             </div>
             <div className="mt-5 mb-5">
             {documentToReactComponents(body5)}
+            <div className="mt-5 mb-5">{documentToReactComponents(body6)}</div>
+            <div className="mt-5 mb-5">{documentToReactComponents(body7)}</div>
+            
+            
             <div className="flex justify-center mb-5 mt-5">
             <button className="bg-blue-600 rounded-xl text-white p-2 hover:bg-blue-800">601 406 025</button>
             </div>
