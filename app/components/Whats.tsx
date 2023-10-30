@@ -16,11 +16,11 @@ export default function Whats() {
     return (
 
 
-        <div className="ml-10 mt-5 fixed left-[5px] bottom-[35px]">
+        <div className=" ">
             <button onClick={toggleMenu}>
                 {
                     openMenu ?
-                        <div className='bg-green-400 rounded-full w-16 h-16'>
+                        <div className='bg-green-400 rounded-full w-16 h-16 fixed ml-10 mt-5 left-[5px] bottom-[35px]'>
                             <img
                                 src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"}
                                 alt="asdf"
@@ -30,7 +30,7 @@ export default function Whats() {
                             />
                         </div>
                         :
-                        <div>
+                        <div className='fixed ml-10 mt-5 left-[5px] bottom-[35px]'>
                             <div className='bg-green-400 flex gap-2 w-64 p-2 rounded-t-lg'>
 
                                 <img
