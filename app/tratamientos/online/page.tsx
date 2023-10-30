@@ -74,7 +74,7 @@ export default function Online() {
                     <div>
                       <h1 className="font-bold mb-2 mt-2">{title}</h1>
                       <hr className="h-0.5 border-0 bg-black mt-2 mb-2 w-44"></hr>
-                      <p className="w-1/2">{documentToReactComponents(body)}</p>
+                      <p className="mr-3">{documentToReactComponents(body)}</p>
                     </div>
                   </div>
                 );

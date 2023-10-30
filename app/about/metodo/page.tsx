@@ -8,7 +8,7 @@ const landingMetodo = await getData("aboutUsMtodo");
 
 export default function Metodo() {
   return landingMetodo?.map((singlePost: any) => {
-    const { title, body, body2, body3 , photo, } = singlePost.fields;
+    const { title, titulo2, body, body2, body3 , photo, } = singlePost.fields;
     return (
       <div key={""} className="mt-5">
         <h1 className="font-bold text-5xl mb-5">{title}</h1>
@@ -20,6 +20,7 @@ export default function Metodo() {
           height="600"
         />
         </div>
+        <h2 className="mt-5 mb-5">{titulo2}</h2>
         {documentToReactComponents(body)}
         <div className="mt-5 mb-5">{documentToReactComponents(body2)}</div>
         <div className="mt-5 mb-5">{documentToReactComponents(body3)}</div>
