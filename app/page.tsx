@@ -49,6 +49,7 @@ export default async function Home() {
           nuestroCentro,
           botonEspecialidades,
           textoCentro,
+          mapa,
           texto900,
           fotoTorres,
           textoBlog,
@@ -98,10 +99,10 @@ export default async function Home() {
                 );
               })}
             </div>
-            <div className="text-center">
+            <div className="text-center mt-18">
               {documentToReactComponents(subtitulo2)}
             </div>
-            <div className="bg-slate-50 h-20 flex flex-col items-center justify-center">
+            <div className="bg-slate-50 mt-24 h-20 flex flex-col items-center justify-center">
               <div className="mt-5 mb-7 font-extrabold">{subtituloMejora}</div>
             </div>
             <div className="flex flex-row justify-center gap-x-2 mt-30">
@@ -112,11 +113,11 @@ export default async function Home() {
                 <Link href={"tel:644921185"}>{numTelefono}</Link>
               </div>
             </div>
-            <div className="text-center">
+            <div className="text-center mt-16">
               {documentToReactComponents(serviciosTratamientos)}
             </div>
             <h2 className="text-center mt-18">{tituloMadridCentro}</h2>
-            <div className="flex justify-evenly mb-6">
+            <div className="flex justify-evenly mt-4 mb-6">
               {landingCard1?.map((singleCard: any) => {
                 const { slug, fotoLanding, tituloLanding, subtituloLanding } =
                   singleCard.fields;
@@ -137,18 +138,18 @@ export default async function Home() {
                 );
               })}
             </div>
-            <div className="mt-6 grid grid-cols-2">
+            <div className="mt-12 grid grid-cols-2 gap-8">
               <video controls width={524} height={414}>
                 {"https://" + videoMiPsicologo.fields.file.url}
               </video>
               <div>
                 <h3 className="text-yellow-400">{tituloExperiencia}</h3>
-                <div className="text-sm">
+                <div className="text-sm mt-6">
                   {documentToReactComponents(textoSaludEmocional)}
                 </div>
               </div>
             </div>
-            <div className="text-center">
+            <div className="text-center mt-12">
               {documentToReactComponents(tratamientosPsicologos)}
             </div>
             <div className="text-center">
@@ -185,8 +186,10 @@ export default async function Home() {
             </div>
             <div className="grid grid-cols-2 mt-36 gap-x-9 items-center">
               <div>
-                <h2>{tituloConsulta}</h2>
-                <div>{documentToReactComponents(textoPrioridad)}</div>
+                <h2 className="text-yellow-400">{tituloConsulta}</h2>
+                <div className="mt-5">
+                  {documentToReactComponents(textoPrioridad)}
+                </div>
               </div>
               <img
                 src={"https://" + imagenElegante.fields.file.url}
@@ -245,18 +248,16 @@ export default async function Home() {
                 <Link href={"/tratamientos"}>{botonEspecialidades}</Link>
               </div>
             </div>
-            <div className="flex flex-row justify-center gap-x-2 mt-30">
+            <div className="flex flex-row justify-center gap-x-8 mt-30">
               <img
-                src={
-                  "https://images.ctfassets.net/06jdt9isp37n/4gyAHq4klFPmuNRlU6mylL/5955f2e1ee2d3e0612df9947ecb107f1/15081525278135.jpeg"
-                }
+                src={"https://" + mapa.fields.file.url}
                 alt="asdf"
                 width="524"
                 height="393"
               />
               <div>{documentToReactComponents(textoCentro)}</div>
             </div>
-            <div className="flex flex-row justify-center gap-x-2 mt-30">
+            <div className="flex flex-row justify-center gap-x-8 mt-30">
               <div>{documentToReactComponents(texto900)}</div>
               <img
                 src={"https://" + fotoTorres.fields.file.url}
@@ -266,8 +267,8 @@ export default async function Home() {
               />
             </div>
             <div className="text-center font-bold">{textoBlog}</div>
-            <h2 className="text-emerald-800">{textoVideo}</h2>
-            <div>
+            <h2 className="text-emerald-800 mt-12 text-center">{textoVideo}</h2>
+            <div className="mt-16 ml-16">
               <Link
                 href={
                   "https://www.youtube.com/watch?v=ihW_zHCskzs&feature=youtu.be"
@@ -281,10 +282,12 @@ export default async function Home() {
                 />
               </Link>
             </div>
-            <div>{documentToReactComponents(psicoEmdr)}</div>
-            <div>{faq}</div>
-            <div>{documentToReactComponents(preguntasFrecuentes)}</div>
-            <AutorRandom />
+            <div className="mt-12">{documentToReactComponents(psicoEmdr)}</div>
+            <div className="font-bold italic mt-7 text-center">{faq}</div>
+            <div className="faq">{documentToReactComponents(preguntasFrecuentes)}</div>
+            <div className="mb-18">
+              <AutorRandom />
+            </div>
           </div>
         );
       })}
