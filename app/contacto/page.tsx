@@ -26,7 +26,7 @@ export default function contactos() {
               </button>
               </div>
               {documentToReactComponents(body2)}
-              <div className='grid grid-cols-2 m-5 max-xl:block'>
+              <div className='grid grid-cols-2 m-5 max-lg:block'>
                 <p></p>
                 <div>
               {documentToReactComponents(body3)}

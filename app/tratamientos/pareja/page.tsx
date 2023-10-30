@@ -41,7 +41,7 @@ export default function Pareja() {
             <h2 className="font-bold mt-2 mb-2">{title2}</h2>
             {body}
             <div className="flex justify-center mt-10 mb-10">
-              <button className="bg-yellow-400 w-1/2 p-2 font-bold rounded-2xl font-bold  max-xl:w-fit">
+              <button className="bg-yellow-400 w-1/2 p-2 font-bold rounded-2xl font-bold  max-lg:w-fit">
                 <Link href="/tarifas"> {button}</Link>
                
               </button>
@@ -51,7 +51,7 @@ export default function Pareja() {
             <p className="mb-2">{documentToReactComponents(body3)}</p>
 
             <h1 className="font-bold text-2xl mt-5 mb-5">{title4}</h1>
-            <div className="flex max-xl:block">
+            <div className="flex max-lg:block">
               <img
                 src={"https://" + media2.fields.file.url}
                 alt="asdf"

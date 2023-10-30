@@ -39,7 +39,7 @@ export default function Aseguradoras() {
         <div className="mt-5">{documentToReactComponents(body6)}</div>
         <div className="mt-5">{documentToReactComponents(body7)}</div>
         <h3 className="font-bold mb-5 mt-5">{titleOne}</h3>
-        <div className="grid grid-cols-2 max-xl:block">
+        <div className="grid grid-cols-2 max-lg:block">
           <img
             src={"https://" + mediaOne.fields.file.url}
             alt="asdf"
@@ -50,7 +50,7 @@ export default function Aseguradoras() {
           {documentToReactComponents(textOne)}
         </div>
         <h3 className="font-bold mb-2 mt-5">{titleTwo}</h3>
-        <div className="flex max-xl:block">
+        <div className="flex max-lg:block">
           <img
             src={"https://" + mediaTwo.fields.file.url}
             alt="asdf"
@@ -62,7 +62,7 @@ export default function Aseguradoras() {
           {documentToReactComponents(textTwo)}
         </div>
         <h3 className="font-bold mb-2 mt-5">{titleThree}</h3>
-        <div className="flex max-xl:block">
+        <div className="flex max-lg:block">
           <img
             src={"https://" + mediaThree.fields.file.url}
             alt="asdf"

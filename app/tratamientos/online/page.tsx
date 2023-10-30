@@ -53,8 +53,8 @@ export default function Online() {
 
             {documentToReactComponents(text1)}
             <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-64 flex"></hr>
-            <div className="flex mt-5 mb-5 max-xl:block">
-              <div className="w-1/3 mr-4 max-xl:w-fit">{documentToReactComponents(text2)}</div>
+            <div className="flex mt-5 mb-5 max-lg:block">
+              <div className="w-1/3 mr-4 max-lg:w-fit">{documentToReactComponents(text2)}</div>
               <img
                 src={"https://" + media2.fields.file.url}
                 alt="asdf"
@@ -63,11 +63,11 @@ export default function Online() {
               />
             </div>
           <div className="flex justify-center">
-            <button className="bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-xl:w-fit">
+            <button className="bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit">
               {bottonText}
             </button>
             </div>
-            <div className="grid grid-cols-2 max-xl:block">
+            <div className="grid grid-cols-2 max-lg:block">
               {landingText?.map((singlePost: any) => {
                 const { title, body, id } = singlePost.fields;
                 return (
@@ -82,23 +82,23 @@ export default function Online() {
               })}
             </div>
             <div className="flex justify-center">
-            <button className="bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-xl:w-fit">
+            <button className="bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit">
               {bottonText}
             </button>
 </div>
-            <div className="grid grid-cols-2  mb-20 max-xl:block">
-              <div className="w-1/2 max-xl:w-fit">
+            <div className="grid grid-cols-2  mb-20 max-lg:block">
+              <div className="w-1/2 max-lg:w-fit">
                 {documentToReactComponents(text4)}
                 <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-64"></hr>
               </div>
-              <div className="w-1/2 max-xl:w-fit">
+              <div className="w-1/2 max-lg:w-fit">
                 {documentToReactComponents(text4bis)}
                 <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-64"></hr>
               </div>
             </div>
             {documentToReactComponents(text5)}
             <div className="flex justify-center">
-            <button className="text-yellow-400 bg-black w-1/3 p-2 rounded-2xl font-bold mt-10 mb-10  max-xl:w-fit">
+            <button className="text-yellow-400 bg-black w-1/3 p-2 rounded-2xl font-bold mt-10 mb-10  max-lg:w-fit">
               <Link href="/tarifas">{button2}</Link>
               
             </button>
@@ -107,7 +107,7 @@ export default function Online() {
             <h2 className="flex justify-center font-bold text-2xl mb-2">{title2}</h2>
             <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-1/2"></hr>
 
-            <div className="grid grid-cols-3 mb-10 max-xl:block">
+            <div className="grid grid-cols-3 mb-10 max-lg:block">
               {landingTextSix?.map((singlePost: any) => {
                 const { title, body, media } = singlePost.fields;
                 return (
@@ -119,7 +119,7 @@ export default function Online() {
                         width="150"
                         height="150"
                       />
-                      <h1 className="font-bold mb-2 mt-2 text-xl">{title}</h1>
+                      <h1 className="font-bold mb-2 mt-2 text-lg">{title}</h1>
                       <p className="w-1/2">
                         <hr className="h-1 border-0 bg-black mt-5 mb-5 w-1/3"></hr>
                         {body}
@@ -154,7 +154,7 @@ export default function Online() {
             </form>
             <h2 className="font-bold text-2xl mb-5">{title3}</h2>
 
-            <div className="grid grid-cols-3 mb-10 max-xl:block max-xl:gap-5">
+            <div className="grid grid-cols-3 mb-10 max-lg:block max-lg:gap-5">
               {landingMedia?.map((singlePost: any) => {
                 const { media } = singlePost.fields;
                 return (
@@ -180,7 +180,7 @@ export default function Online() {
 
             {documentToReactComponents(text8)}
 
-            <div className="grid grid-cols-2 mb-10 mt-10 max-xl:block">
+            <div className="grid grid-cols-2 mb-10 mt-10 max-lg:block">
               <div>
                 <img
                   src={"https://" + media5.fields.file.url}
@@ -188,7 +188,7 @@ export default function Online() {
                   width="450"
                   height="450"
                 />
-                <p className="font-bold text-xl mb-2">{title5}</p>
+                <p className="font-bold text-lg mb-2">{title5}</p>
               </div>
               <div>
                 <img
@@ -197,7 +197,7 @@ export default function Online() {
                   width="450"
                   height="450"
                 />
-                <p className="font-bold text-xl mb-2">{title6}</p>
+                <p className="font-bold text-lg mb-2">{title6}</p>
               </div>
             </div>
 
