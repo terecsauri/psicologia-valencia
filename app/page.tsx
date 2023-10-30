@@ -14,7 +14,7 @@ const landingCardIcon = await getData("cardIconoLanding");
 
 export default async function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex min-h-screen flex-col items-center justify-between ">
       {landingEntries?.map((singlePost: any) => {
         const {
           slug,
@@ -60,8 +60,8 @@ export default async function Home() {
           preguntasFrecuentes,
         } = singlePost.fields;
         return (
-          <div key={slug}>
-            <h1>{ttulo}</h1>
+          <div key={slug} className="flex flex-col justify-center items-center max-lg:max-w-fit">
+            <h1 className="max-lg:px-4 xl:text-left">{ttulo}</h1>
             <div className="flex justify-center">
               <img
                 src={"https://" + imagenUnica.fields.file.url}
@@ -70,10 +70,10 @@ export default async function Home() {
                 height="271"
               />
             </div>
-            <div className="text-center">
+            <div className="text-center max-lg:truncate">
               {documentToReactComponents(descripcion2)}
             </div>
-            <div className="grid grid-cols-4 text-base gap-x-20">
+            <div className="grid grid-cols-4 text-base gap-x-20 max-lg:grid-cols-2 max-md:grid-cols-1 justify-center max-lg:items-center">
               {landingTeam?.map((singleMember: any) => {
                 const { id, fotoEquipo, nombreEquipo, cargo, colegiadoEquipo } =
                   singleMember.fields;
@@ -284,7 +284,9 @@ export default async function Home() {
             </div>
             <div className="mt-12">{documentToReactComponents(psicoEmdr)}</div>
             <div className="font-bold italic mt-7 text-center">{faq}</div>
-            <div className="faq">{documentToReactComponents(preguntasFrecuentes)}</div>
+            <div className="faq">
+              {documentToReactComponents(preguntasFrecuentes)}
+            </div>
             <div className="mb-18">
               <AutorRandom />
             </div>
