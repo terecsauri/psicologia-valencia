@@ -268,7 +268,7 @@ export default async function Home() {
             </div>
             <div className="text-center font-bold">{textoBlog}</div>
             <h2 className="text-emerald-800 mt-12 text-center">{textoVideo}</h2>
-            <div className="mt-16">
+            <div className="mt-16 ml-16">
               <Link
                 href={
                   "https://www.youtube.com/watch?v=ihW_zHCskzs&feature=youtu.be"
