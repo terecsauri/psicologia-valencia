@@ -3,7 +3,7 @@
 "use client"
 import React from 'react'
 import { useState } from 'react';
-
+import Link from 'next/link';
 
 export default function Whats() {
 
@@ -50,8 +50,10 @@ export default function Whats() {
                             </div>
                             <div className='w-64 p-2 border rounded-b-lg'>
                                 <p className='text-green-400 text-xs'>Online</p>
-                                <p className='font-bolder underline'>Mi psicólogo Valencia</p>
-                                <p className='text-sm underline'>Escribeme si me ves conectado</p>
+                               
+                                <Link href={"/contacto"}> <p className='font-bold underline'>Mi psicólogo Valencia</p></Link>
+                                <Link href={"/contacto"}>  <p className='text-sm underline'>Escribeme si me ves conectado</p></Link>
+                              
                             </div>
                             <div className='bg-green-400 rounded-full w-16 h-16 mt-5'>
                                 <img
