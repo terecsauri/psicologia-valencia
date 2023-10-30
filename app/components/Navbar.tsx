@@ -23,7 +23,7 @@ export default function Navbar() {
             {hover ?
               <div className='bg-white'>
                 <Link href="/about">SOBRE NOSOTROS</Link>
-                <ul className='absolute bg-white border-solid border-2 rounded-xl'>
+                <ul className='absolute bg-white border-solid border-2 rounded-xl z-10'>
                   <li className=" py-1 hover:underline">
                     <Link href="/about/donde" className=" py-2 px-4" >Donde Estamos</Link>
                   </li>
@@ -66,7 +66,7 @@ export default function Navbar() {
           {hoverDos ?
             <div>
               <Link href="/tratamientos">TRATAMIENTOS</Link>
-              <ul className='absolute bg-white border-solid border-2 rounded-xl'>
+              <ul className='absolute bg-white border-solid border-2 rounded-xl z-10'>
 
                 <li className=" py-1 hover:underline">
                   <Link href="/tratamientos/online" className=" py-2 px-4 " >Terapia Online</Link>
