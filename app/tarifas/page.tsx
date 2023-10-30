@@ -1,12 +1,16 @@
+
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { getData } from '../services/fetchService';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import AutorRandom from '@/app/components/autores/AutorRandom'
 
+
 const landingTarifas = await getData("tarifas");
 
 export default function Tarifas() {
+  
+ 
 
   return (
     landingTarifas?.map((singlePost: any) => {
