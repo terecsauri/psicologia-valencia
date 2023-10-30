@@ -21,7 +21,7 @@ export default function AboutPage() {
       <div key={id} className="ml-10 mt-10">
         <h1 className="font-bold text-4xl mb-5">{title}</h1>
         <div className="grid grid-cols-3 gap-10  max-lg:grid-cols-1">
-          <div className="p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center">
+          <div className="p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center max-xl:w-fit">
             <div className="flex justify-center">
             <img
               src={"https://" + media1.fields.file.url}
@@ -37,7 +37,7 @@ export default function AboutPage() {
             </button>
             </div>
           </div>
-          <div className="p-3 bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700 justify-center">
+          <div className="p-3 bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700 justify-center max-xl:w-fit">
             <img
               src={"https://" + media2.fields.file.url}
               alt="asdf"
@@ -51,7 +51,7 @@ export default function AboutPage() {
             </button>
             </div>
           </div>
-          <div className="p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center">
+          <div className="p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center max-xl:w-fit">
             <img
               src={"https://" + media3.fields.file.url}
               alt="asdf"

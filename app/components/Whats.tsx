@@ -20,7 +20,7 @@ export default function Whats() {
             <button onClick={toggleMenu}>
                 {
                     openMenu ?
-                        <div className='bg-green-400 rounded-full w-16 h-16 fixed ml-10 mt-5 left-[5px] bottom-[35px] max-xl:left-0 max-xl:ml-5'>
+                        <div className='bg-green-400 rounded-full w-16 h-16 fixed ml-10 mt-5 left-[5px] bottom-[35px] max-xl:left-0 max-xl:ml-5 max-xl:z-10'>
                             <img
                                 src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"}
                                 alt="asdf"

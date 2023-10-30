@@ -21,7 +21,7 @@ export default function Tarifas() {
         singlePost.fields;
       return (
         <div key={""} className="ml-10 mt-5">
-          <h1 className='mb-2' >{titulo}</h1>
+          <h1 className='mb-2 max-xl:text-lg' >{titulo}</h1>
           <div className='flex justify-center mb-5'>
           <img
             src={'https://' + media.fields.file.url} alt="asdf" width="750" height="750"
@@ -35,12 +35,12 @@ export default function Tarifas() {
               src={'https://' + media2.fields.file.url} alt="asdf" width="250" height="250"
             />
             
-            <div>
+            <div className=''>
               {documentToReactComponents(body2)}
             </div>
           </div>
           <div className='flex justify-center'>
-          <button className='bg-yellow-400 w-1/2 p-2 border-2 rounded-2xl font-bold mt-5 mb-5'>{button}</button>
+          <button className='bg-yellow-400 w-1/2 p-2 border-2 rounded-2xl font-bold mt-5 mb-5  max-xl:w-fit'>{button}</button>
           </div>
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
           <div className='flex justify-center m-5'>
@@ -60,7 +60,7 @@ export default function Tarifas() {
           <h2>{titulo3}</h2>
           {documentToReactComponents(body4)}
           <div className='flex justify-center'>
-          <button className='bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5 '>
+          <button className='bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-xl:w-fit'>
            <Link href="about/aseguradoras">{button2}</Link>
             
             </button>
