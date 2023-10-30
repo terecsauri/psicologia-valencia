@@ -19,7 +19,7 @@ export default function Tratamientos() {
 
               <h1 className='font-bold mb-2' >{title}</h1>
               <p className='mt-5 mb-5'>{body}</p>
-              <div className='grid grid-cols-2 gap-5'>
+              <div className='grid grid-cols-2 gap-5 max-xl:block'>
                 <div className="p-3 bg-white border border-gray-200 shadow  dark:bg-gray-800 dark:border-gray-700 justify-center" >
                   <Link href={"/tratamientos/adultos"}>
                     <img

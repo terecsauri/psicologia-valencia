@@ -12,8 +12,8 @@ export default function Navbar() {
   return (
 
     <nav>
-      <div className='flex justify-between mx-auto p-2'>
-        <Link href="/">HOME</Link>
+      <ul className='justify-between p-2 md:flex'>
+       <li className='md:my-0'><Link href="/">HOME</Link></li> 
         <div>
           <div
             onMouseEnter={() => setHover(true)}
@@ -21,9 +21,9 @@ export default function Navbar() {
 
           >
             {hover ?
-              <div className='bg-white'>
-                <Link href="/about">SOBRE NOSOTROS</Link>
-                <ul className='absolute bg-white border-solid border-2 rounded-xl'>
+              <div className='bg-white relative'>
+                <li className='md:my-0'><Link href="/about">SOBRE NOSOTROS</Link></li>
+                <ul className='absolute bg-white border-solid border-2 rounded-xl z-10 '>
                   <li className=" py-1 hover:underline">
                     <Link href="/about/donde" className=" py-2 px-4" >Donde Estamos</Link>
                   </li>
@@ -40,7 +40,8 @@ export default function Navbar() {
               </div>
               :
               <div>
-              <Link href="/about">SOBRE NOSOTROS</Link>
+                <li className='md:my-0'> <Link href="/about">SOBRE NOSOTROS</Link></li>
+             
               <ul className='hidden'>
                   <li className=" py-1 hover:underline">
                     <Link href="/about/donde" className=" py-2 px-4" >Donde Estamos</Link>
@@ -65,19 +66,19 @@ export default function Navbar() {
         >
           {hoverDos ?
             <div>
-              <Link href="/tratamientos">TRATAMIENTOS</Link>
-              <ul className='absolute bg-white border-solid border-2 rounded-xl'>
+              <li className='md:my-0'><Link href="/tratamientos">TRATAMIENTOS</Link></li>
+              <ul className='absolute bg-white border-solid border-2 rounded-xl z-10 '>
 
-                <li className=" py-1 hover:underline">
+                <li className=" py-1 hover:underline md:my-0">
                   <Link href="/tratamientos/online" className=" py-2 px-4 " >Terapia Online</Link>
                 </li>
-                <li className=" py-1 hover:underline">
+                <li className=" py-1 hover:underline md:my-0">
                   <Link href="/tratamientos/adultos" className=" py-2 px-4 " >Terapia Adultos</Link>
                 </li>
-                <li className=" py-1 hover:underline">
+                <li className=" py-1 hover:underline md:my-0">
                   <Link href="/tratamientos/ninos" className=" py-2 px-4 " >Terapia Niños</Link>
                 </li>
-                <li className=" py-1 hover:underline">
+                <li className=" py-1 hover:underline md:my-0">
                   <Link href="/tratamientos/pareja" className=" py-2 px-4 " >Terapia Pareja</Link>
                 </li>
               </ul>
@@ -85,7 +86,8 @@ export default function Navbar() {
             </div>
             :
             <div>
-            <Link href="/tratamientos">TRATAMIENTOS</Link>
+              <li className='md:my-0'><Link href="/tratamientos">TRATAMIENTOS</Link></li>
+            
             <ul className='hidden'>
 
                 <li className=" py-1 hover:underline">
@@ -104,12 +106,15 @@ export default function Navbar() {
             </div>
           }
         </div>
-
-        <Link href="/tarifas">TARIFAS</Link>
-        <Link href="/cursos">CURSOS</Link>
-        <Link href="/blog">BLOG</Link>
-        <Link href="/contacto">CONTACTO</Link>
-      </div>
+<li className='md:my-0'><Link href="/tarifas">TARIFAS</Link></li>
+<li className='md:my-0'><Link href="/cursos">CURSOS</Link></li>
+<li className='md:my-0'> <Link href="/blog">BLOG</Link></li>
+<li className='md:my-0'><Link href="/contacto">CONTACTO</Link></li>
+        
+        
+       
+      
+      </ul>
       <hr></hr>
     </nav>
   )

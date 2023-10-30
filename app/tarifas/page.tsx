@@ -1,12 +1,17 @@
+
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { getData } from '../services/fetchService';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import AutorRandom from '@/app/components/autores/AutorRandom'
+import Link from 'next/link';
+
 
 const landingTarifas = await getData("tarifas");
 
 export default function Tarifas() {
+  
+ 
 
   return (
     landingTarifas?.map((singlePost: any) => {
@@ -24,7 +29,7 @@ export default function Tarifas() {
           </div>
           {documentToReactComponents(body)}
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
-          <div className='grid grid-cols-2'>
+          <div className='grid grid-cols-2 max-xl:block'>
             
             <img
               src={'https://' + media2.fields.file.url} alt="asdf" width="250" height="250"
@@ -55,7 +60,10 @@ export default function Tarifas() {
           <h2>{titulo3}</h2>
           {documentToReactComponents(body4)}
           <div className='flex justify-center'>
-          <button className='bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5 '>{button2}</button>
+          <button className='bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5 '>
+           <Link href="about/aseguradoras">{button2}</Link>
+            
+            </button>
           </div>
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
           {documentToReactComponents(body5)}
@@ -63,7 +71,7 @@ export default function Tarifas() {
           <p className='mt-5 mb-5'>{documentToReactComponents(body7)}</p>
           <p className='mt-5 mb-5'>{documentToReactComponents(body8)}</p>
           <h3>{titulo4}</h3>
-<div className='grid grid-cols-3 mt-10 gap-5'>
+<div className='grid grid-cols-3 mt-10 gap-5 max-lg:block'>
   <div className='p-2'>
   <img 
             src={'https://' + mediaGrid.fields.file.url} alt="asdf" width="350" height="180"

@@ -2,6 +2,7 @@
 import React from "react";
 import { getData } from "../services/fetchService";
 import AutorMain from "../components/autores/AutorMain";
+import Link from "next/link";
 const landingUs = await getData("aboutUsMain");
 
 export default function AboutPage() {
@@ -19,7 +20,7 @@ export default function AboutPage() {
     return (
       <div key={id} className="ml-10 mt-10">
         <h1 className="font-bold text-4xl mb-5">{title}</h1>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-3 gap-10  max-lg:grid-cols-1">
           <div className="p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center">
             <div className="flex justify-center">
             <img
@@ -31,7 +32,8 @@ export default function AboutPage() {
             </div>
             <div className="flex justify-center">
             <button className="bg-yellow-500 rounded flex justify-center font-bold p-1 bold mt-2">
-              {mediaText3}
+              <Link href="/about/donde"> {mediaText3}</Link>
+              
             </button>
             </div>
           </div>
@@ -44,7 +46,8 @@ export default function AboutPage() {
             />
             <div className="flex justify-center">
             <button className="bg-yellow-500 rounded w-40 flex justify-center font-bold p-1 bold mt-2">
-              {mediaText}
+              <Link href="/about/metodo">{mediaText}</Link>
+              
             </button>
             </div>
           </div>
@@ -57,7 +60,8 @@ export default function AboutPage() {
             />
             <div className="flex justify-center">
             <button className="bg-yellow-500 flex rounded flex justify-center w-40 font-bold p-1 bold mt-2">
-              {mediaText2}
+              <Link href="/about/equipo">{mediaText2}</Link>
+              
             </button>
             </div>
           </div>
