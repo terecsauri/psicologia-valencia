@@ -19,13 +19,13 @@ export default function Adultos() {
             <p className="mt-5 mb-5">{documentToReactComponents(body2)}</p>
             
 
-            <div className="grid grid-cols-3 mb-16 mt-16 gap-5">
+            <div className="grid grid-cols-3 mb-16 mt-16 gap-5 max-xl:block">
               {landingMedia?.map((singlePost: any) => {
                 const { title, media, id } = singlePost.fields;
                 return (
                   <div
                     key={id}
-                    className=" p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center "
+                    className=" p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center max-xl:w-fit "
                   >
                     <img
                       src={"https://" + media.fields.file.url}

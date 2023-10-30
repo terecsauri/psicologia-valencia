@@ -29,7 +29,7 @@ export default function Tarifas() {
           </div>
           {documentToReactComponents(body)}
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
-          <div className='grid grid-cols-2'>
+          <div className='grid grid-cols-2 max-xl:block'>
             
             <img
               src={'https://' + media2.fields.file.url} alt="asdf" width="250" height="250"
@@ -71,7 +71,7 @@ export default function Tarifas() {
           <p className='mt-5 mb-5'>{documentToReactComponents(body7)}</p>
           <p className='mt-5 mb-5'>{documentToReactComponents(body8)}</p>
           <h3>{titulo4}</h3>
-<div className='grid grid-cols-3 mt-10 gap-5'>
+<div className='grid grid-cols-3 mt-10 gap-5 max-lg:block'>
   <div className='p-2'>
   <img 
             src={'https://' + mediaGrid.fields.file.url} alt="asdf" width="350" height="180"

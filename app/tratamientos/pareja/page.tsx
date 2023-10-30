@@ -51,13 +51,14 @@ export default function Pareja() {
             <p className="mb-2">{documentToReactComponents(body3)}</p>
 
             <h1 className="font-bold text-2xl mt-5 mb-5">{title4}</h1>
-            <div className="flex">
+            <div className="flex max-xl:block">
               <img
                 src={"https://" + media2.fields.file.url}
                 alt="asdf"
                 width="250"
                 height="250"
                 className="mr-10 mt-2 mb-2"
+                
               />
               {body4}
             </div>
