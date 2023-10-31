@@ -15,7 +15,7 @@ export default function Navbar() {
 
 
       <nav className='max-lg:hidden'>
-        <ul className='justify-between p-2 md:flex'>
+        <ul className='justify-between p-2 m-1 md:flex'>
           <li className='md:my-0'><Link href="/">HOME</Link></li>
           <div>
             <div
@@ -26,7 +26,7 @@ export default function Navbar() {
               {hover ?
                 <div className='bg-white relative'>
                   <li className='md:my-0 flex'>
-                    <Link href="/about">SOBRE NOSOTROS</Link>
+                    <Link href="/about" className='truncate' >SOBRE NOSOTROS</Link>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 pl-1">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
                   </svg>
@@ -49,7 +49,7 @@ export default function Navbar() {
                 :
                 <div>
                   <li className='md:my-0 flex'>
-                     <Link href="/about">SOBRE NOSOTROS</Link>
+                     <Link href="/about" className='truncate'>SOBRE NOSOTROS</Link>
                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 pl-1 mt-1">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
                   </svg>
@@ -110,11 +110,8 @@ export default function Navbar() {
 
         </ul>
         <hr></hr>
-      </nav>
-      <nav className='xl:2xl:hidden lg:hidden flex h-16 w-16 rounded-full bg-black left-[45px] top-[20px] fixed ml-5º'>
+      </nav>   
         <Burguer></Burguer >
-      </nav>
-
     </div>
   )
 }
