@@ -27,8 +27,8 @@ export default function Navbar() {
                 <div className='bg-white relative'>
                   <li className='md:my-0 flex'>
                     <Link href="/about" className='truncate' >SOBRE NOSOTROS</Link>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 pl-1">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-Width="1.5" stroke="currentColor" className="w-6 h-6 pl-1">
+                    <path stroke-Linecap="round" stroke-Linejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
                   </svg>
                   </li>
                   <ul className='absolute bg-white border-solid border-2 rounded-xl z-10 '>
@@ -50,8 +50,8 @@ export default function Navbar() {
                 <div>
                   <li className='md:my-0 flex'>
                      <Link href="/about" className='truncate'>SOBRE NOSOTROS</Link>
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 pl-1 mt-1">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 pl-1 mt-1">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
                   </svg>
                      </li>
 
@@ -93,8 +93,8 @@ export default function Navbar() {
               <div>
                 <li className='md:my-0 flex'>
                   <Link href="/tratamientos">TRATAMIENTOS</Link>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 pl-1 mt-1">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 pl-1 mt-1">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
                   </svg>
                   </li>
               </div>
