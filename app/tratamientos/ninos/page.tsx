@@ -49,7 +49,7 @@ export default function Niños() {
           mediaGrid7,
         } = singlePost.fields;
         return (
-          <div key={""} className="ml-10 mt-5">
+          <div key={""} className="mt-5">
             <h1 className="font-bold mb-2 text-4xl">{titulo}</h1>
             <div className="flex justify-center m-5">
             <img

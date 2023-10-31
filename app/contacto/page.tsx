@@ -11,7 +11,7 @@ export default function contactos() {
       const { titulo, titulo2, media, media2, button, button2, body, body2, body3, body4, body5 } =
           singlePost.fields;
       return (
-          <div key={""} className="ml-10 mt-5">
+          <div key={""} className="mt-5">
               <h1 className='font-bold mb-2' >{titulo}</h1>
               <div className='flex justify-center mb-5'>
               <img

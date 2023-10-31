@@ -11,7 +11,7 @@ export default function DondeEstamos() {
     const { title, photo, adress, photoMaps, body, body2, sofa, contacto } =
       singlePost.fields;
     return (
-      <div key={""} className="ml-10 mt-5">
+      <div key={""} className="mt-5">
         <h1 className="font-bold mb-2">{title}</h1>
         <div className="flex justify-center mb-5">
         <img

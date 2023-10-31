@@ -13,7 +13,7 @@ export default function Adultos() {
       {landingAdults?.map((singlePost: any) => {
         const { title, body, body2, body3, body4 } = singlePost.fields;
         return (
-          <div key={""} className="ml-10 mt-5">
+          <div key={""} className="mt-5">
             <h1 className="font-bold mb-6">{title}</h1>
             {documentToReactComponents(body)}
             <p className="mt-5 mb-5">{documentToReactComponents(body2)}</p>

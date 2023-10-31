@@ -15,7 +15,7 @@ export default function Tratamientos() {
           const { title, body, media, media2, mediaText, mediaText2 } =
             singlePost.fields;
           return (
-            <div key={""} className="ml-10 mt-5">
+            <div key={""} className="mt-5">
 
               <h1 className='font-bold mb-2' >{title}</h1>
               <p className='mt-5 mb-5'>{body}</p>

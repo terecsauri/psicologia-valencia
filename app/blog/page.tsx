@@ -11,7 +11,7 @@ export default function Blog() {
         gridMedia2, gridMedia3, gridMedia4, gridMedia5, gridMedia6, gridMedia7, gridMedia8, gridMedia9 } =
         singlePost.fields;
       return (
-        <div key={""} className="ml-10 mt-5">
+        <div key={""} className="mt-5">
           <div className='grid grid-cols-3 relative max-lg:block'>
             <div className=' bg-gradient-to-r from-gray-600 to-gray-300 relative max-lg:hidden'> 
               <h3 className='font-bold text-white m-5 absolute bottom-0 max-lg:hidden' >{gridTitle}</h3>

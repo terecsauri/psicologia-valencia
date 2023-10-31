@@ -20,7 +20,7 @@ export default function Tarifas() {
         mediaGrid, mediaGrid2, mediaGrid3, mediaGrid4, mediaGrid5, mediaGrid6, mediaGrid7, mediaGrid8, mediaGrid9 } =
         singlePost.fields;
       return (
-        <div key={""} className="ml-10 mt-5">
+        <div key={""} className="mt-5">
           <h1 className='mb-2 max-lg:text-lg' >{titulo}</h1>
           <div className='flex justify-center mb-5'>
           <img

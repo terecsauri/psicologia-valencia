@@ -18,9 +18,9 @@ export default function AboutPage() {
       mediaText3,
     } = singlePost.fields;
     return (
-      <div key={id} className="ml-10 mt-10">
+      <div key={id} className="mt-10">
         <h1 className="font-bold text-4xl mb-5">{title}</h1>
-        <div className="grid grid-cols-3 gap-10  max-lg:grid-cols-1">
+        <div className="grid grid-cols-3 gap-10  max-lg:grid-cols-1" >
           <div className="p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center max-lg:w-fit">
             <div className="flex justify-center">
             <img

@@ -12,7 +12,7 @@ export default function Equipo() {
   return landingTeam?.map((singlePost: any) => {
     const { title, body, bodyMid, bodyBot, photo, button } = singlePost.fields;
     return (
-      <div key={""} className="ml-10 mt-5">
+      <div key={""} className="mt-5">
         <h1 className="font-bold mb-2">{title}</h1>
         <img
           src={"https://" + photo.fields.file.url}

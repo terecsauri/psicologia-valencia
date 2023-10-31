@@ -38,7 +38,7 @@ export default function Online() {
           title6,
         } = singlePost.fields;
         return (
-          <div key={""} className="ml-10 mt-5">
+          <div key={""} className="mt-5">
             <hr className="mb-10 mt-10"></hr>
             <h1 className="font-bold mb-6 text-6xl ">{title}</h1>
             <div className="flex justify-center">

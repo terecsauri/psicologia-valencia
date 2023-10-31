@@ -30,7 +30,7 @@ export default function Whats() {
                             />
                         </div>
                         :
-                        <div className='fixed ml-10 mt-5 left-[5px] bottom-[35px] z-10 '>
+                        <div className='fixed ml-10 mt-5 left-[5px] bottom-[35px] z-10'>
                             <div className='bg-green-400 flex gap-2 w-64 p-2 rounded-t-lg'>
 
                                 <img

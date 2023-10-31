@@ -19,6 +19,8 @@ body {
 @media (max-width: 1024px) {
   body {
     padding: 3px;
+    margin-right: 15px;
+    margin-left: 15px;
   
     
   }
