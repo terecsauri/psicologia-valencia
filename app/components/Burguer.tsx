@@ -29,8 +29,8 @@ export default function Burguer() {
                     :
                     <div >
                         <p className='text-white pl-6'>X</p>
-                        <div className='absolute p-2 mt-10 bg-white z-100'>
-                            <ul className='justify-between p-2'>
+                        <div className='absolute p-2 mt-5 bg-white z-100'>
+                            <ul className='justify-between p-2 relative bg-white z-100 right-30'>
                                 <li ><Link href="/">HOME</Link></li>
                                 <div>
                                     <div
@@ -39,7 +39,7 @@ export default function Burguer() {
 
                                     >
                                         {hover ?
-                                            <div className='bg-white relative'>
+                                            <div className='bg-white relative right-50'>
                                                 <li className='md:my-0'><Link href="/about">SOBRE NOSOTROS</Link></li>
                                                 <ul className='absolute bg-white border-solid border-2 rounded-xl z-10 ml-48 w-48'>
                                                     <li className=" py-1 hover:underline">
