@@ -41,7 +41,7 @@ export default function Burguer() {
                                         {hover ?
                                             <div className='bg-white relative'>
                                                 <li className='md:my-0'><Link href="/about">SOBRE NOSOTROS</Link></li>
-                                                <ul className='absolute bg-white border-solid border-2 rounded-xl z-10 ml-48 w-48'>
+                                                <ul className='absolute bg-white border-solid border-2 rounded-xl z-10 ml-40 w-48'>
                                                     <li className=" py-1 hover:underline">
                                                         <Link href="/about/donde" className=" py-2 px-4" >Donde Estamos</Link>
                                                     </li>
@@ -70,7 +70,7 @@ export default function Burguer() {
                                     {hoverDos ?
                                         <div>
                                             <li className='md:my-0'><Link href="/tratamientos">TRATAMIENTOS</Link></li>
-                                            <ul className='absolute bg-white border-solid border-2 rounded-xl z-10 ml-48 w-48 mt-36'>
+                                            <ul className='absolute bg-white border-solid border-2 rounded-xl z-10 ml-40 w-48 mt-36'>
 
                                                 <li className=" py-1 hover:underline md:my-0">
                                                     <Link href="/tratamientos/online" className=" py-2 px-4 " >Terapia Online</Link>

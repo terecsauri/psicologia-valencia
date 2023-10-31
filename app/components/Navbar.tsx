@@ -89,7 +89,7 @@ export default function Navbar() {
       </ul>
       <hr></hr>
     </nav>
-    <nav className='xl:2xl:hidden lg:hidden flex h-16 w-16 rounded-full bg-black left-[15px] top-[20px] fixed ml-5'>
+    <nav className='xl:2xl:hidden lg:hidden flex h-16 w-16 rounded-full bg-black left-[15px] top-[20px] fixed ml-5º'>
 <Burguer></Burguer >      
     </nav>
     
