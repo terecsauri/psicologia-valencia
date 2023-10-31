@@ -3,6 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import '../globals.css'
 import { useState } from 'react'
+import Burguer from './Burguer'
 
 export default function Navbar() {
 
@@ -10,10 +11,12 @@ export default function Navbar() {
   const [hoverDos, setHoverDos] = useState(false)
 
   return (
+<div>
 
-    <nav>
+
+    <nav className='max-lg:hidden'>
       <ul className='justify-between p-2 md:flex'>
-       <li className='md:my-0'><Link href="/">HOME</Link></li> 
+        <li className='md:my-0'><Link href="/">HOME</Link></li>
         <div>
           <div
             onMouseEnter={() => setHover(true)}
@@ -41,21 +44,6 @@ export default function Navbar() {
               :
               <div>
                 <li className='md:my-0'> <Link href="/about">SOBRE NOSOTROS</Link></li>
-             
-              <ul className='hidden'>
-                  <li className=" py-1 hover:underline">
-                    <Link href="/about/donde" className=" py-2 px-4" >Donde Estamos</Link>
-                  </li>
-                  <li className=" py-1 hover:underline">
-                    <Link href="/about/equipo" className=" py-2 px-4">Equipo</Link>
-                  </li>
-                  <li className=" py-1 hover:underline">
-                    <Link href="/about/metodo" className=" py-2 px-4">Método</Link>
-                  </li>
-                  <li className=" py-1 hover:underline">
-                    <Link href="/about/aseguradoras" className=" py-2 px-4" >Aseguradoras</Link>
-                  </li>
-                </ul>
               </div>
             }
           </div>
@@ -87,35 +75,24 @@ export default function Navbar() {
             :
             <div>
               <li className='md:my-0'><Link href="/tratamientos">TRATAMIENTOS</Link></li>
-            
-            <ul className='hidden'>
-
-                <li className=" py-1 hover:underline">
-                  <Link href="/tratamientos/online" className=" py-2 px-4 " >Terapia Online</Link>
-                </li>
-                <li className=" py-1 hover:underline">
-                  <Link href="/tratamientos/adultos" className=" py-2 px-4 " >Terapia Adultos</Link>
-                </li>
-                <li className=" py-1 hover:underline">
-                  <Link href="/tratamientos/ninos" className=" py-2 px-4 " >Terapia Niños</Link>
-                </li>
-                <li className=" py-1 hover:underline">
-                  <Link href="/tratamientos/pareja" className=" py-2 px-4 " >Terapia Pareja</Link>
-                </li>
-              </ul>
             </div>
           }
         </div>
-<li className='md:my-0'><Link href="/tarifas">TARIFAS</Link></li>
-<li className='md:my-0'><Link href="/cursos">CURSOS</Link></li>
-<li className='md:my-0'> <Link href="/blog">BLOG</Link></li>
-<li className='md:my-0'><Link href="/contacto">CONTACTO</Link></li>
-        
-        
-       
-      
+        <li className='md:my-0'><Link href="/tarifas">TARIFAS</Link></li>
+        <li className='md:my-0'><Link href="/cursos">CURSOS</Link></li>
+        <li className='md:my-0'> <Link href="/blog">BLOG</Link></li>
+        <li className='md:my-0'><Link href="/contacto">CONTACTO</Link></li>
+
+
+
+
       </ul>
       <hr></hr>
     </nav>
+    <nav className='xl:2xl:hidden lg:hidden flex gap-5 h-16 w-16 rounded-full bg-black'>
+<Burguer></Burguer >      
+    </nav>
+    
+    </div>
   )
 }
