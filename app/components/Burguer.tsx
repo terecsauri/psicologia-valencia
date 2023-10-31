@@ -11,9 +11,16 @@ export default function Burguer() {
         setOpenMenu(!openMenu)
     }
 
+
     const [hover, setHover] = useState(false)
     const [hoverDos, setHoverDos] = useState(false)
 
+    const toggleHover = () => {
+        setHover(!hover)
+    }
+    const toggleHoverDos = () => {
+        setHoverDos(!hoverDos)
+    }
 
     return (
 
@@ -24,9 +31,9 @@ export default function Burguer() {
                     <div>
                         <p className='text-white text-sm pl-2 ml-2.5'>
 
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-</svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
 
                         </p>
 
@@ -35,7 +42,7 @@ export default function Burguer() {
                     :
                     <div >
                         <p className='text-white pl-6 '>X</p>
-                        <div className='absolute p-2-5 mt-10 bg-white z-100'>
+                        <div className='absolute mt-10 bg-white border-solid border-2 rounded-xl z-100'>
                             <ul className='justify-between p-2'>
                                 <li ><Link href="/">HOME</Link></li>
                                 <div>
@@ -46,8 +53,10 @@ export default function Burguer() {
                                     >
                                         {hover ?
                                             <div className='bg-white relative'>
-                                                <li className='md:my-0'><Link href="/about">SOBRE NOSOTROS</Link></li>
-                                                <ul className='absolute bg-white border-solid border-2 rounded-xl z-10 ml-40 w-48'>
+                                                <li className='md:my-0' onClick={toggleHover}>
+                                                    <Link href="/about">SOBRE NOSOTROS</Link>
+                                                </li>
+                                                <ul className='absolute bg-white border-solid border-2 rounded-xl z-10 ml-40 top-0 w-48'>
                                                     <li className=" py-1 hover:underline">
                                                         <Link href="/about/donde" className=" py-2 px-4" >Donde Estamos</Link>
                                                     </li>
@@ -63,8 +72,9 @@ export default function Burguer() {
                                                 </ul>
                                             </div>
                                             :
-                                            <div>
+                                            <div className='flex'>
                                                 <li className='md:my-0'> <Link href="/about">SOBRE NOSOTROS</Link></li>
+
                                             </div>
                                         }
                                     </div>
@@ -75,10 +85,12 @@ export default function Burguer() {
                                 >
                                     {hoverDos ?
                                         <div>
-                                            <li className='md:my-0'><Link href="/tratamientos">TRATAMIENTOS</Link></li>
-                                            <ul className='absolute bg-white border-solid border-2 rounded-xl z-10 ml-40 w-48 mt-36'>
+                                            <li className=' flex' onClick={toggleHoverDos}>
+                                                <Link href="/tratamientos">TRATAMIENTOS</Link>
+                                                </li>
+                                            <ul className='absolute bg-white border-solid border-2 rounded-xl z-10 ml-40 w-48 top-20 mt-36'>
 
-                                                <li className=" py-1 hover:underline md:my-0">
+                                                <li className=" py-1 hover:underline md:my-0" >
                                                     <Link href="/tratamientos/online" className=" py-2 px-4 " >Terapia Online</Link>
                                                 </li>
                                                 <li className=" py-1 hover:underline md:my-0">
@@ -94,8 +106,9 @@ export default function Burguer() {
 
                                         </div>
                                         :
-                                        <div>
+                                        <div className='flex'>
                                             <li className='md:my-0'><Link href="/tratamientos">TRATAMIENTOS</Link></li>
+
                                         </div>
                                     }
                                 </div>
