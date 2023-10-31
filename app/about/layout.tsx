@@ -22,6 +22,7 @@ export default async function RootLayout({
   return (
 
     <div className={inter.className}>
+      
       {children}
       <Footer />
     </div>

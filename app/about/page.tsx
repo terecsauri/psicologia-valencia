@@ -26,8 +26,9 @@ export default function AboutPage() {
             <img
               src={"https://" + media1.fields.file.url}
               alt="asdf"
-              width="280"
+              width="350"
               height="128"
+              className="h-44"
             />
             </div>
             <div className="flex justify-center">
@@ -42,7 +43,8 @@ export default function AboutPage() {
               src={"https://" + media2.fields.file.url}
               alt="asdf"
               width="350"
-              height="180"
+              height="200"
+              className="h-3/4"
             />
             <div className="flex justify-center">
             <button className="bg-yellow-500 rounded w-40 flex justify-center font-bold p-1 bold mt-2">
@@ -56,7 +58,8 @@ export default function AboutPage() {
               src={"https://" + media3.fields.file.url}
               alt="asdf"
               width="350"
-              height="180"
+              height="200"
+              className="h-3/4"
             />
             <div className="flex justify-center">
             <button className="bg-yellow-500 flex rounded flex justify-center w-40 font-bold p-1 bold mt-2">
