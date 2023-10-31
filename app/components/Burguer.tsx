@@ -22,14 +22,20 @@ export default function Burguer() {
             {
                 openMenu ?
                     <div>
-                        <p className='text-white text-sm pl-2'>MENU</p>
+                        <p className='text-white text-sm pl-2 ml-2.5'>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+
+                        </p>
 
                     </div>
 
                     :
                     <div >
-                        <p className='text-white pl-6'>X</p>
-                        <div className='absolute p-2 mt-10 bg-white z-100'>
+                        <p className='text-white pl-6 '>X</p>
+                        <div className='absolute p-2-5 mt-10 bg-white z-100'>
                             <ul className='justify-between p-2'>
                                 <li ><Link href="/">HOME</Link></li>
                                 <div>
