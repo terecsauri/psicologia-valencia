@@ -14,7 +14,7 @@ const landingCardIcon = await getData("cardIconoLanding");
 
 export default async function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between ">
+    <main className="max-lg:block">
       {landingEntries?.map((singlePost: any) => {
         const {
           slug,
@@ -70,7 +70,7 @@ export default async function Home() {
                 height="271"
               />
             </div>
-            <div className="text-center max-lg:truncate">
+            <div className="text-center">
               {documentToReactComponents(descripcion2)}
             </div>
             <div className="grid grid-cols-4 text-base gap-x-20 max-lg:grid-cols-2 max-md:grid-cols-1 justify-center max-lg:items-center">
@@ -105,11 +105,11 @@ export default async function Home() {
             <div className="bg-slate-50 mt-24 h-20 flex flex-col items-center justify-center">
               <div className="mt-5 mb-7 font-extrabold">{subtituloMejora}</div>
             </div>
-            <div className="flex flex-row justify-center gap-x-2 mt-30">
+            <div className="flex flex-row justify-center gap-x-2 mt-30 max-lg:block">
               <div className="w-75 h-13 bg-emerald-800 text-white rounded-2xl flex items-center justify-center text-center">
                 <Link href={"/contacto"}>{reservar}</Link>
               </div>
-              <div className="w-75 h-13 bg-yellow-400 rounded-2xl flex items-center justify-center text-center font-bold">
+              <div className="w-75 h-13 bg-yellow-400 rounded-2xl flex items-center justify-center text-center font-bold max-lg:mt-5">
                 <Link href={"tel:644921185"}>{numTelefono}</Link>
               </div>
             </div>
@@ -117,14 +117,14 @@ export default async function Home() {
               {documentToReactComponents(serviciosTratamientos)}
             </div>
             <h2 className="text-center mt-18">{tituloMadridCentro}</h2>
-            <div className="flex justify-evenly mt-4 mb-6">
+            <div className="flex justify-evenly mt-4 mb-6 max-lg:block">
               {landingCard1?.map((singleCard: any) => {
                 const { slug, fotoLanding, tituloLanding, subtituloLanding } =
                   singleCard.fields;
                 return (
                   <div
                     key={slug}
-                    className="w-85 flex flex-col justify-center items-center"
+                    className="flex gap-5 mr-5 flex-col"
                   >
                     <img
                       src={"https://" + fotoLanding.fields.file.url}
@@ -138,8 +138,8 @@ export default async function Home() {
                 );
               })}
             </div>
-            <div className="mt-12 grid grid-cols-2 gap-8">
-              <video controls width={524} height={414}>
+            <div className="mt-12 grid grid-cols-2 gap-8 max-lg:block">
+              <video controls width={524} height={414} className="max-lg:mb-5">
                 {"https://" + videoMiPsicologo.fields.file.url}
               </video>
               <div>
@@ -167,14 +167,14 @@ export default async function Home() {
               <div>{pacientes}</div>
               <div>{textoPsicosEspecialistas}</div>
             </div>
-            <div className="grid grid-cols-4 gap-x-8">
+            <div className="grid grid-cols-4 gap-x-8 max-lg:block">
               {landingCardIcon?.map((singleCardIcon: any) => {
                 const { id, tituloIcono, descripcionIcono } =
                   singleCardIcon.fields;
                 return (
                   <div
                     key={id}
-                    className="flex flex-col items-center text-center"
+                    className="flex flex-col text-center max-lg:mt-5"
                   >
                     <h3>{tituloIcono}</h3>
                     <div className="leading-7">
@@ -184,10 +184,10 @@ export default async function Home() {
                 );
               })}
             </div>
-            <div className="grid grid-cols-2 mt-36 gap-x-9 items-center">
+            <div className="grid grid-cols-2 mt-36 gap-x-9 items-center max-lg:block">
               <div>
                 <h2 className="text-yellow-400">{tituloConsulta}</h2>
-                <div className="mt-5">
+                <div className="mt-5 max-lg:mb-5">
                   {documentToReactComponents(textoPrioridad)}
                 </div>
               </div>
@@ -209,18 +209,19 @@ export default async function Home() {
             <h3 className="text-yellow-400 text-center my-14">
               {madridPsicologos}
             </h3>
-            <div className="grid grid-cols-2 items-center mb-12">
+            <div className="grid grid-cols-2  mb-12 max-lg:block">
               <img
                 src={"https://" + fotoEleccion.fields.file.url}
                 alt="asdf"
                 width="536"
                 height="365"
+                className="max-lg:mb-5"
               />
               <div className="mx-11">
                 {documentToReactComponents(textoEleccion)}
               </div>
             </div>
-            <div className="grid grid-cols-2 items-center mb-12">
+            <div className="grid grid-cols-2 items-center mb-12 max-lg:block">
               <div className="mx-11">
                 {documentToReactComponents(textoAyuda)}
               </div>
@@ -229,41 +230,44 @@ export default async function Home() {
                 alt="asdf"
                 width="536"
                 height="365"
+                className="max-lg:mt-5"
               />
             </div>
             <div className="bg-slate-50 h-20 mt-18 mb-24 flex flex-col items-center justify-center">
               <div>{textoProceso}</div>
             </div>
-            <div className="flex flex-row justify-center gap-x-2 mt-30">
-              <div className="w-75 h-13 bg-emerald-800 text-white rounded-2xl flex items-center justify-center text-center">
+            <div className="flex flex-row justify-center gap-x-2 mt-30 max-lg:block ">
+              <div className="w-75 h-13 bg-emerald-800 text-white rounded-2xl flex items-center justify-center text-center max-lg:mb-5">
                 <Link href={"/contacto"}>{reservar}</Link>
               </div>
               <div className="w-75 h-13 bg-yellow-400 rounded-2xl flex items-center justify-center text-center font-bold">
                 <Link href={"tel:644921185"}>{numTelefono}</Link>
               </div>
             </div>
-            <div className="h-70 flex flex-col items-center justify-center">
+            <div className="h-70 flex flex-col items-center justify-center ">
               <h3 className="text-yellow-400">{nuestroCentro}</h3>
               <div className="w-96 h-13 mt-5 bg-emerald-800 text-white rounded-2xl flex items-center justify-center text-center">
                 <Link href={"/tratamientos"}>{botonEspecialidades}</Link>
               </div>
             </div>
-            <div className="flex flex-row justify-center gap-x-8 mt-30">
+            <div className="flex flex-row justify-center gap-x-8 mt-30 max-lg:block">
               <img
                 src={"https://" + mapa.fields.file.url}
                 alt="asdf"
                 width="524"
                 height="393"
+                className="max-lg:mb-5"
               />
               <div>{documentToReactComponents(textoCentro)}</div>
             </div>
-            <div className="flex flex-row justify-center gap-x-8 mt-30">
+            <div className="flex flex-row justify-center gap-x-8 mt-30 max-lg:block">
               <div>{documentToReactComponents(texto900)}</div>
               <img
                 src={"https://" + fotoTorres.fields.file.url}
                 alt="asdf"
                 width="524"
                 height="393"
+                className="mt-5 mb-5"
               />
             </div>
             <div className="text-center font-bold">{textoBlog}</div>
