@@ -118,14 +118,14 @@ export default async function Home() {
               {documentToReactComponents(serviciosTratamientos)}
             </div>
             <h2 className="text-center mt-18">{tituloMadridCentro}</h2>
-            <div className="mt-4 mb-6 grid grid-cols-3 max-lg:flex max-lg:flex-col max-lg:gap-5">
+            <div className="mt-4 mb-6 grid grid-cols-3 max-lg:flex max-lg:flex-col  ">
               {landingCard1?.map((singleCard: any) => {
                 const { slug, fotoLanding, tituloLanding, subtituloLanding } =
                   singleCard.fields;
                 return (
                   <div
                     key={slug}
-                    className="gap-5 mr-5 max-lg:flex "
+                    className="gap-5 mr-5 max-lg:text-center  max-lg:items-center max-lg:flex max-lg:flex-col  "
                   >
                     <img
                       src={"https://" + fotoLanding.fields.file.url}
@@ -133,11 +133,11 @@ export default async function Home() {
                       width="152"
                       height="152"
                     />
-                    <div>
+                    
                     <div>{documentToReactComponents(tituloLanding)}</div>
                     <div>{subtituloLanding}</div>
 
-                    </div>
+                   
                   </div>
                 );
               })}
@@ -260,7 +260,7 @@ export default async function Home() {
                 alt="asdf"
                 width="524"
                 height="393"
-                className="max-lg:mb-5"
+                className="max-lg:mb-5 max-lg:max-h-10"
               />
               <div>{documentToReactComponents(textoCentro)}</div>
             </div>
