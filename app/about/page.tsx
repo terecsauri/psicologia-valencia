@@ -38,14 +38,17 @@ export default function AboutPage() {
             </button>
             </div>
           </div>
-          <div className="p-3 bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700 justify-center max-lg:w-fit">
+          <div className="p-3 bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700 max-lg:w-fit">
+            <div className="flex justify-center">
+
             <img
               src={"https://" + media2.fields.file.url}
               alt="asdf"
               width="350"
               height="200"
-              className="h-3/4"
-            />
+              className="h-44"
+              />
+              </div>
             <div className="flex justify-center">
             <button className="bg-yellow-500 rounded w-40 flex justify-center font-bold p-1 bold mt-2">
               <Link href="/about/metodo">{mediaText}</Link>
@@ -53,14 +56,17 @@ export default function AboutPage() {
             </button>
             </div>
           </div>
-          <div className="p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center max-lg:w-fit">
+          <div className="p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center ">
+            <div className="flex justify-center">
+
             <img
               src={"https://" + media3.fields.file.url}
               alt="asdf"
               width="350"
               height="200"
-              className="h-3/4"
-            />
+              className="h-44"
+              />
+              </div>
             <div className="flex justify-center">
             <button className="bg-yellow-500 flex rounded flex justify-center w-40 font-bold p-1 bold mt-2">
               <Link href="/about/equipo">{mediaText2}</Link>
