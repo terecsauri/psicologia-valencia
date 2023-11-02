@@ -78,7 +78,7 @@ export default function Niños() {
             <h1 className="font-bold mb-2 text-green-700 text-3xl mt-5 mb-5">
               {titulo6}
             </h1>
-            <div className="grid grid-cols-3 max-lg:block">
+            <div className="grid grid-cols-3 max-lg:flex max-lg:flex-col max-lg:items-center ">
               <div className="p-3 bg-white border border-gray-200 shadow m-5 dark:bg-gray-800 dark:border-gray-700 justify-center max-lg:w-fit ">
                 <img
                   src={"https://" + mediaGrid1.fields.file.url}

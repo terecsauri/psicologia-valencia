@@ -68,6 +68,7 @@ export default async function Home() {
                 alt="asdf"
                 width="900"
                 height="271"
+                className="mt-5 mb-5"
               />
             </div>
             <div className="text-center">
@@ -117,14 +118,14 @@ export default async function Home() {
               {documentToReactComponents(serviciosTratamientos)}
             </div>
             <h2 className="text-center mt-18">{tituloMadridCentro}</h2>
-            <div className="flex justify-evenly mt-4 mb-6 max-lg:block">
+            <div className="flex mt-4 mb-6">
               {landingCard1?.map((singleCard: any) => {
                 const { slug, fotoLanding, tituloLanding, subtituloLanding } =
                   singleCard.fields;
                 return (
                   <div
                     key={slug}
-                    className="flex gap-5 mr-5 flex-col"
+                    className="flex gap-5 mr-5 flex-col max-lg:items-center"
                   >
                     <img
                       src={"https://" + fotoLanding.fields.file.url}

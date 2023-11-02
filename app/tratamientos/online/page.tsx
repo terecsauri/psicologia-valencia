@@ -105,13 +105,13 @@ export default function Online() {
             </div>
             
             <h2 className="flex justify-center font-bold text-2xl mb-2">{title2}</h2>
-            <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-1/2"></hr>
+            <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-1/2 "></hr>
 
-            <div className="grid grid-cols-3 mb-10 max-lg:block">
+            <div className="grid grid-cols-3 mb-10 max-lg:grid-cols-1">
               {landingTextSix?.map((singlePost: any) => {
-                const { title, body, media } = singlePost.fields;
+                const { title, body, media, items } = singlePost.fields;
                 return (
-                  <div key={""}>
+                  <div key={items}>
                     <div>
                       <img
                         src={"https://" + media.fields.file.url}
