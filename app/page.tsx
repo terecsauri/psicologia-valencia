@@ -107,10 +107,10 @@ export default async function Home() {
               <div className="mt-5 mb-7 font-extrabold">{subtituloMejora}</div>
             </div>
             <div className="flex flex-row justify-center gap-x-2 mt-30 max-lg:block">
-              <div className="w-75 h-13 bg-emerald-800 text-white rounded-2xl flex items-center justify-center text-center">
+              <div className="w-75 h-13 bg-emerald-800 hover:bg-emerald-600 text-white rounded-2xl flex items-center justify-center text-center">
                 <Link href={"/contacto"}>{reservar}</Link>
               </div>
-              <div className="w-75 h-13 bg-yellow-400 rounded-2xl flex items-center justify-center text-center font-bold max-lg:mt-5">
+              <div className="w-75 h-13 bg-yellow-400  hover:bg-yellow-500 rounded-2xl flex items-center justify-center text-center font-bold max-lg:mt-5">
                 <Link href={"tel:644921185"}>{numTelefono}</Link>
               </div>
             </div>
@@ -241,16 +241,16 @@ export default async function Home() {
               <div>{textoProceso}</div>
             </div>
             <div className="flex flex-row justify-center gap-x-2 mt-30 max-lg:block ">
-              <div className="w-75 h-13 bg-emerald-800 text-white rounded-2xl flex items-center justify-center text-center max-lg:mb-5">
+              <div className="w-75 h-13 bg-emerald-800 hover:bg-emerald-600 text-white rounded-2xl flex items-center justify-center text-center max-lg:mb-5">
                 <Link href={"/contacto"}>{reservar}</Link>
               </div>
-              <div className="w-75 h-13 bg-yellow-400 rounded-2xl flex items-center justify-center text-center font-bold">
+              <div className="w-75 h-13 bg-yellow-400 hover:bg-yellow-500 rounded-2xl flex items-center justify-center text-center font-bold">
                 <Link href={"tel:644921185"}>{numTelefono}</Link>
               </div>
             </div>
             <div className="h-70 flex flex-col items-center justify-center ">
               <h3 className="text-yellow-400">{nuestroCentro}</h3>
-              <div className="w-96 h-13 mt-5 bg-emerald-800 text-white rounded-2xl flex items-center justify-center text-center">
+              <div className="w-96 h-13 mt-5 bg-emerald-800 hover:bg-emerald-600 text-white rounded-2xl flex items-center justify-center text-center">
                 <Link href={"/tratamientos"}>{botonEspecialidades}</Link>
               </div>
             </div>

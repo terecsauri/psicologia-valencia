@@ -24,7 +24,7 @@ export default function Burguer() {
 
     return (
         <div>
-<nav className='xl:2xl:hidden lg:hidden flex h-16 w-16 rounded-full bg-black left-[45px] top-[20px] fixed ml-5º'>
+<nav className='xl:2xl:hidden lg:hidden flex h-16 w-16 rounded-full bg-black left-[45px] top-[20px] fixed ml-5'>
         <button onClick={toggleMenu} className='m-auto' >
 
             {

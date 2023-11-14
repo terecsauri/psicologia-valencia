@@ -32,7 +32,7 @@ export default function AboutPage() {
             />
             </div>
             <div className="flex justify-center">
-            <button className="bg-yellow-500 rounded flex justify-center font-bold p-1 bold mt-2">
+            <button className="bg-yellow-400 hover:bg-yellow-500 rounded flex justify-center font-bold p-1 bold mt-2">
               <Link href="/about/donde"> {mediaText3}</Link>
               
             </button>
@@ -50,7 +50,7 @@ export default function AboutPage() {
               />
               </div>
             <div className="flex justify-center">
-            <button className="bg-yellow-500 rounded w-40 flex justify-center font-bold p-1 bold mt-2">
+            <button className="bg-yellow-400 hover:bg-yellow-500 rounded w-40 flex justify-center font-bold p-1 bold mt-2">
               <Link href="/about/metodo">{mediaText}</Link>
               
             </button>
@@ -68,7 +68,7 @@ export default function AboutPage() {
               />
               </div>
             <div className="flex justify-center">
-            <button className="bg-yellow-500 flex rounded flex justify-center w-40 font-bold p-1 bold mt-2">
+            <button className="bg-yellow-400 hover:bg-yellow-500 flex rounded flex justify-center w-40 font-bold p-1 bold mt-2">
               <Link href="/about/equipo">{mediaText2}</Link>
               
             </button>

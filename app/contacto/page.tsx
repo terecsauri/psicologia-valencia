@@ -21,7 +21,7 @@ export default function contactos() {
               </div>
               {documentToReactComponents(body)}
               <div className='flex justify-center'>
-              <button className='bg-yellow-400 p-2 border-2 border-black rounded-3xl font-bold mt-5 mb-5'>
+              <button className='bg-yellow-400 hover:bg-yellow-500 p-2 border-2 border-black rounded-3xl font-bold mt-5 mb-5'>
               {documentToReactComponents(button)}
               </button>
               </div>
@@ -54,7 +54,7 @@ export default function contactos() {
           </div>
               {documentToReactComponents(body5)}
               <div className='flex justify-center'>
-              <button className='bg-yellow-400 p-2 border-2 border-black rounded-3xl font-bold mt-10 mb-5'>
+              <button className='bg-yellow-400 hover:bg-yellow-500 p-2 border-2 border-black rounded-3xl font-bold mt-10 mb-5'>
               {documentToReactComponents(button2)}
               </button>
               </div>

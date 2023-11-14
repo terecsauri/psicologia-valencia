@@ -41,7 +41,7 @@ export default function Pareja() {
             <h2 className="font-bold mt-2 mb-2">{title2}</h2>
             {body}
             <div className="flex justify-center mt-10 mb-10">
-              <button className="bg-yellow-400 w-1/2 p-2 font-bold rounded-2xl font-bold  max-lg:w-fit">
+              <button className="bg-yellow-400 hover:bg-yellow-500 w-1/2 p-2 font-bold rounded-2xl font-bold  max-lg:w-fit">
                 <Link href="/tarifas"> {button}</Link>
                
               </button>
@@ -69,10 +69,10 @@ export default function Pareja() {
             
             
             <div className="flex justify-center mb-5 mt-5">
-            <button className="bg-blue-600 rounded-xl text-white p-2 hover:bg-blue-800">601 406 025</button>
+            <button className="bg-blue-600 hover:bg-blue-700 rounded-xl text-white p-2 hover:bg-blue-800">601 406 025</button>
             </div>
             <div className="flex justify-center">
-            <button className="bg-blue-600 rounded-xl text-white p-2 hover:bg-blue-800"><p className="underline">Pedir Cita</p></button>
+            <button className="bg-blue-600 hover:bg-blue-700 rounded-xl text-white p-2 hover:bg-blue-800"><p className="underline">Pedir Cita</p></button>
             </div>
             </div>
           </div>

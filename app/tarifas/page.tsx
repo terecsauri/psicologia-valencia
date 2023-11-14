@@ -40,7 +40,7 @@ export default function Tarifas() {
             </div>
           </div>
           <div className='flex justify-center'>
-          <button className='bg-yellow-400 w-1/2 p-2 border-2 rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit'>{button}</button>
+          <button className='bg-yellow-400 hover:bg-yellow-500 w-1/2 p-2 border-2 rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit'>{button}</button>
           </div>
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
           <div className='flex justify-center m-5'>
@@ -60,7 +60,7 @@ export default function Tarifas() {
           <h2>{titulo3}</h2>
           {documentToReactComponents(body4)}
           <div className='flex justify-center'>
-          <button className='bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit'>
+          <button className='bg-yellow-400 hover:bg-yellow-500 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit'>
            <Link href="about/aseguradoras">{button2}</Link>
             
             </button>

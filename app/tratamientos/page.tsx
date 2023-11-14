@@ -28,7 +28,7 @@ export default function Tratamientos() {
                     />
 
                   </Link>
-                  <h2 className='font-bold text-xl'>{mediaText}</h2>
+                  <h2 className='font-bold text-xl text-center'>{mediaText}</h2>
                 </div>
                 <div className="p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center" >
                   <Link href={"/tratamientos/ninos"}>
@@ -36,7 +36,7 @@ export default function Tratamientos() {
                       src={'https://' + media2.fields.file.url} alt="asdf" width="550" height="550"
                     />
                   </Link>
-                  <h2 className='font-bold text-xl'>{mediaText2}</h2>
+                  <h2 className='font-bold text-xl text-center'>{mediaText2}</h2>
                 </div>
               </div>
             </div>

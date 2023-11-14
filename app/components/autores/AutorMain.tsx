@@ -18,7 +18,7 @@ export default function AutorMain() {
             <h1 className='font-bold text-3xl mt-10'>{subtitle}</h1>
           <div 
           
-            className="p-6 bg-white border border-gray-200 rounded-lg flex mt-5 max-lg:w-fit max-lg:block"
+            className="p-6 bg-white border border-gray-200 rounded-lg flex mt-5 max-lg:w-fit max-lg:flex max-sm:flex-col max-sm:gap-4 max-sm:items-center"
           >
            
             <img

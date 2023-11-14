@@ -48,13 +48,13 @@ export default function Whats() {
                                 </div>
 
                             </div>
-                            <div className='w-64 p-2 border rounded-b-lg bg-white'>
-                                <p className='text-green-400 text-xs'>Online</p>
-                               
-                                <Link href={"/contacto"}> <p className='font-bold underline'>Mi psicólogo Valencia</p></Link>
-                                <Link href={"/contacto"}>  <p className='text-sm underline'>Escribeme si me ves conectado</p></Link>
-                              
-                            </div>
+                            <Link href="/contacto">
+                                <div className='w-64 p-2 border rounded-b-lg bg-white hover:bg-slate-100'>
+                                    <p className='text-green-400 text-xs'>Online</p>
+                                    <p className='font-bold underline'>Mi psicólogo Valencia</p>
+                                    <p className='text-sm underline'>Escribeme si me ves conectado</p>
+                                </div>
+                            </Link>
                             <div className='bg-green-400 rounded-full w-16 h-16 mt-5'>
                                 <img
                                     src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"}

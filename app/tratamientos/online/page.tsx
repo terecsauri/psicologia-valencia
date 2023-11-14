@@ -63,7 +63,7 @@ export default function Online() {
               />
             </div>
           <div className="flex justify-center">
-            <button className="bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit">
+            <button className="bg-yellow-400 hover:bg-yellow-500 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit">
               {bottonText}
             </button>
             </div>
@@ -82,7 +82,7 @@ export default function Online() {
               })}
             </div>
             <div className="flex justify-center">
-            <button className="bg-yellow-400 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit">
+            <button className="bg-yellow-400 hover:bg-yellow-500 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit">
               {bottonText}
             </button>
 </div>
@@ -98,7 +98,7 @@ export default function Online() {
             </div>
             {documentToReactComponents(text5)}
             <div className="flex justify-center">
-            <button className="text-yellow-400 bg-black w-1/3 p-2 rounded-2xl font-bold mt-10 mb-10  max-lg:w-fit">
+            <button className="text-yellow-400 bg-black hover:bg-gray-800 w-1/3 p-2 rounded-2xl font-bold mt-10 mb-10  max-lg:w-fit">
               <Link href="/tarifas">{button2}</Link>
               
             </button>
