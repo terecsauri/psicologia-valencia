@@ -11,124 +11,68 @@ export default function Burguer() {
         setOpenMenu(!openMenu)
     }
 
-
-    const [hover, setHover] = useState(false)
-    const [hoverDos, setHoverDos] = useState(false)
-
-    const toggleHover = () => {
-        setHover(!hover)
-    }
-    const toggleHoverDos = () => {
-        setHoverDos(!hoverDos)
-    }
-
     return (
         <div>
-<nav className='xl:2xl:hidden lg:hidden flex h-16 w-16 rounded-full bg-black left-3 top-[20px] fixed z-10'>
-        <button onClick={toggleMenu} className='m-auto' >
+    
+<nav className='fixed flex z-10 left-5 top-5'>
 
-            {
-                openMenu ?
-                    <div>
-                        <div className='text-white text-sm '>
+        {!openMenu ? 
+        <div className='bg-white border w-fit   px-3 z-100 top-1 left-1 pl-5 rounded-xl xl:2xl:hidden lg:hidden'>
+    <div className=''>
+    <nav className='bg-white rounded-xl'>
+      <ul className='  flex-col text-left'>   
 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>
+      <button onClick={toggleMenu} className=' bg-white  mt-1' >
+      <p className='text-red-400'>X</p>
+      </button>
+      
 
-                        </div>
+        <li><Link href="/">Home</Link></li>
+        <li className=' group  dropdown  z-10'>
+          <li><Link href="about">Sobre Nosotros</Link></li>
+          <div className='group-hover:block dropdown-menu absolute ml-40 top-0 hidden h-auto z-100 '>
+          <ul className='bg-white   w-max rounded p-3 absolute border border-2 z-10'>
+            <li className='hover:bg-gray-100 '><Link href="about//donde">Donde Estamos</Link></li>
+            <li className='hover:bg-gray-100 '><Link href="about/equipo">Equipo</Link></li>
+            <li className='hover:bg-gray-100 '><Link href="about/metodo">Método de Trabajo</Link></li>
+            <li className='hover:bg-gray-100 '><Link href="about/aseguradoras">Aseguradoras con las que trabajamos</Link></li>
+  
 
-                    </div>
+          </ul>
+          </div>
+        </li>
+        <li className=' group  dropdown  z-10'>
+          <li><Link href="tratamientos">Tratamientos</Link></li>
+          <div className='group-hover:block dropdown-menu ml-40 absolute hidden h-auto top-0 z-100 '>
+          <ul className='bg-white  w-max rounded p-3 absolute z-10 border rounded'>
+            <li className='hover:bg-gray-100 '><Link href="tratamientos/adultos"></Link>Terapia Online</li>
+            <li className='hover:bg-gray-100 '><Link href="tratamientos/online"></Link>Terapia Adultos</li>
+            <li className='hover:bg-gray-100 '><Link href="tratamientos/niños">Terapia Niños</Link></li>
+            <li className='hover:bg-gray-100 '><Link href="tratamientos/pareja">Terapia Pareja</Link></li>
 
-                    :
-                    <div >
-                        <p className='text-white'>X</p>
-                        <div className='absolute mt-10 bg-white border-solid border-2 rounded-xl z-100'>
-                            <ul className='justify-between p-2'>
-                                <li ><Link href="/">HOME</Link></li>
-                                <div>
-                                    <div
-                                        onMouseEnter={() => setHover(true)}
-                                        onMouseLeave={() => setHover(false)}
+          </ul>
+          </div>
+        </li>
+        <li><Link href="/tarifas">Tarifas</Link></li>
+        <li><Link href="/cursos">Cursos</Link></li>
+        <li><Link href="/blog">Blog</Link></li>
+        <li><Link href="/contacto">Contacto</Link></li>
+    
+      </ul>
 
-                                    >
-                                        {hover ?
-                                            <div className='bg-white relative'>
-                                                <li className='md:my-0' onClick={toggleHover}>
-                                                    <Link href="/about">SOBRE NOSOTROS</Link>
-                                                </li>
-                                                <ul className='absolute bg-white border-solid border-2 rounded-xl z-10 ml-40 top-0 w-48'>
-                                                    <li className=" py-1 hover:underline">
-                                                        <Link href="/about/donde" className=" py-2 px-4" >Donde Estamos</Link>
-                                                    </li>
-                                                    <li className=" py-1 hover:underline">
-                                                        <Link href="/about/equipo" className=" py-2 px-4">Equipo</Link>
-                                                    </li>
-                                                    <li className=" py-1 hover:underline">
-                                                        <Link href="/about/metodo" className=" py-2 px-4">Método</Link>
-                                                    </li>
-                                                    <li className=" py-1 hover:underline">
-                                                        <Link href="/about/aseguradoras" className=" py-2 px-4" >Aseguradoras</Link>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            :
-                                            <div className='flex'>
-                                                <li className='md:my-0'> <Link href="/about">SOBRE NOSOTROS</Link></li>
+    </nav>
+  </div>
+ </div>
+  : 
+  <button onClick={toggleMenu} className='m-auto bg-white  justify-center flex text-center text-white mt-2 ml-1 p-1  top-0 left-0 z-10 rounded-full border border-2 xl:2xl:hidden lg:hidden' >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 p-1 text-black">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
 
-                                            </div>
-                                        }
-                                    </div>
-                                </div>
-                                <div
-                                    onMouseEnter={() => setHoverDos(true)}
-                                    onMouseLeave={() => setHoverDos(false)}
-                                >
-                                    {hoverDos ?
-                                        <div>
-                                            <li className=' flex' onClick={toggleHoverDos}>
-                                                <Link href="/tratamientos">TRATAMIENTOS</Link>
-                                                </li>
-                                            <ul className='absolute bg-white border-solid border-2 rounded-xl z-10 ml-40 w-48 top-20 mt-36'>
-
-                                                <li className=" py-1 hover:underline md:my-0" >
-                                                    <Link href="/tratamientos/online" className=" py-2 px-4 " >Terapia Online</Link>
-                                                </li>
-                                                <li className=" py-1 hover:underline md:my-0">
-                                                    <Link href="/tratamientos/adultos" className=" py-2 px-4 " >Terapia Adultos</Link>
-                                                </li>
-                                                <li className=" py-1 hover:underline md:my-0">
-                                                    <Link href="/tratamientos/ninos" className=" py-2 px-4 " >Terapia Niños</Link>
-                                                </li>
-                                                <li className=" py-1 hover:underline md:my-0">
-                                                    <Link href="/tratamientos/pareja" className=" py-2 px-4 " >Terapia Pareja</Link>
-                                                </li>
-                                            </ul>
-
-                                        </div>
-                                        :
-                                        <div className='flex'>
-                                            <li className='md:my-0'><Link href="/tratamientos">TRATAMIENTOS</Link></li>
-
-                                        </div>
-                                    }
-                                </div>
-                                <li className='md:my-0'><Link href="/tarifas">TARIFAS</Link></li>
-                                <li className='md:my-0'><Link href="/cursos">CURSOS</Link></li>
-                                <li className='md:my-0'> <Link href="/blog">BLOG</Link></li>
-                                <li className='md:my-0'><Link href="/contacto">CONTACTO</Link></li>
-
-
-
-
-                            </ul>
-                        </div>
-                    </div>
-
-            }
-        </button>
-              </nav>
-              </div>
+  </button>
+    }
+    </nav>
+    </div>
 
     )
 }

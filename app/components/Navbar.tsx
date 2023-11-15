@@ -14,7 +14,7 @@ export default function Navbar() {
     <div>
 
 
-      <nav className='max-lg:hidden'>
+      <nav className='max-lg:hidden gap-5 max-xl:justify-between'>
         <ul className='justify-between p-2 m-1 md:flex'>
           <li className='md:my-0'><Link href="/">HOME</Link></li>
           <div>
