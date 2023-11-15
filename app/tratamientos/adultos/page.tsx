@@ -19,7 +19,7 @@ export default function Adultos() {
             <p className="mt-5 mb-5">{documentToReactComponents(body2)}</p>
             
 
-            <div className="grid grid-cols-3 mb-16 mt-16 gap-5 max-lg:flex max-lg:flex-col max-lg:items-center">
+            <div className="grid grid-cols-3 mb-16 mt-16 gap-5 max-lg:flex max-lg:flex-col max-lg:items-center text-center">
               {landingMedia?.map((singlePost: any) => {
                 const { title, media, id } = singlePost.fields;
                 return (
@@ -33,7 +33,7 @@ export default function Adultos() {
                       width="350"
                       height="180"
                     />
-                    <p className="font-bold mb-2">{title}</p>
+                    <p className="font-bold">{title}</p>
                   </div>
                 );
               })}

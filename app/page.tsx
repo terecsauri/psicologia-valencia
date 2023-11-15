@@ -92,7 +92,7 @@ export default async function Home() {
                     />
 
                     <p className="mb-3.5 text-sm font-extrabold">
-                      {nombreEquipo}
+                      {nombreEquipo}  
                     </p>
                     <p className="mb-6 text-lg">{cargo}</p>
                     <p className="text-lg">{colegiadoEquipo}</p>
@@ -110,7 +110,7 @@ export default async function Home() {
               <div className="w-75 h-13 bg-emerald-800 hover:bg-emerald-600 text-white rounded-2xl flex items-center justify-center text-center">
                 <Link href={"/contacto"}>{reservar}</Link>
               </div>
-              <div className="w-75 h-13 bg-yellow-400  hover:bg-yellow-500 rounded-2xl flex items-center justify-center text-center font-bold max-lg:mt-5">
+              <div className="w-75 h-13 bg-yellow-400  hover:bg-yellow-400 rounded-2xl flex items-center justify-center text-center font-bold max-lg:mt-5">
                 <Link href={"tel:644921185"}>{numTelefono}</Link>
               </div>
             </div>
@@ -124,7 +124,7 @@ export default async function Home() {
                   singleCard.fields;
                 return (
                   <div
-                    key={slug}
+                    key={"fotoLanding"}
                     className="gap-5 mr-5 max-lg:text-center  max-lg:items-center max-lg:flex max-lg:flex-col  "
                   >
                     <img
@@ -133,11 +133,11 @@ export default async function Home() {
                       width="152"
                       height="152"
                     />
-                    
+
                     <div>{documentToReactComponents(tituloLanding)}</div>
                     <div>{subtituloLanding}</div>
 
-                   
+
                   </div>
                 );
               })}
@@ -177,7 +177,7 @@ export default async function Home() {
                   singleCardIcon.fields;
                 return (
                   <div
-                    key={id}
+                    key={""}
                     className="flex flex-col text-center max-lg:mt-5"
                   >
                     <h3>{tituloIcono}</h3>

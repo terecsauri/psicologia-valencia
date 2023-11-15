@@ -13,7 +13,7 @@ export default function AutorInes() {
         const { title, photo, name, body,footer} =
           singleMember.fields;
         return (
-          <div key={""}>
+          <div key={""} className='mb-5'>
             <h1 className='font-bold text-3xl mt-10'>{title}</h1>
           <div 
           

@@ -9,7 +9,7 @@ export default async function Footer() {
             const { tittle, web, footer, id } =
                 singlePost.fields;
             return (
-                <div key={id} className="ml-10 mt-5">
+                <div key={id} className="ml-10 mt-5 footer">
                     <hr className="mb-10 mt-10"></hr>
                     <p className='font-bold mb-2' >{tittle}</p>
                     {documentToReactComponents(footer)}

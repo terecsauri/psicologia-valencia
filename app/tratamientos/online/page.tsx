@@ -73,7 +73,7 @@ export default function Online() {
                 return (
                   <div key={id}>
                     <div>
-                      <h1 className="font-bold mb-2 mt-2">{title}</h1>
+                      <h2 className="font-bold mb-2 mt-2">{title}</h2>
                       <hr className="h-0.5 border-0 bg-black mt-2 mb-2 w-44"></hr>
                       <p className="mr-3">{documentToReactComponents(body)}</p>
                     </div>
@@ -86,7 +86,7 @@ export default function Online() {
               {bottonText}
             </button>
 </div>
-            <div className="grid grid-cols-2  mb-20 max-lg:block">
+            <div className="flex gap-5 mb-20 max-lg:block">
               <div className="w-1/2 max-lg:w-fit">
                 {documentToReactComponents(text4)}
                 <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-64"></hr>
@@ -119,7 +119,7 @@ export default function Online() {
                         width="150"
                         height="150"
                       />
-                      <h1 className="font-bold mb-2 mt-2 text-lg">{title}</h1>
+                      <h2 className="font-bold mb-2 mt-2 text-lg">{title}</h2>
                       <p className="w-1/2">
                         <hr className="h-1 border-0 bg-black mt-5 mb-5 w-1/3"></hr>
                         {body}
@@ -169,14 +169,17 @@ export default function Online() {
                 );
               })}
             </div>
-            <h2 className="font-bold text-2xl mb-5">{title4}</h2>
+            <h2 className="font-bold  mb-5 justify-center flex">{title4}</h2>
+            <div className="flex justify-center">
+
             <img
               src={"https://" + media4.fields.file.url}
               alt="asdf"
               width="650"
               height="650"
-              className="mb-5"
-            />
+              className="mb-5 flex"
+              />
+              </div>
 
             {documentToReactComponents(text8)}
 

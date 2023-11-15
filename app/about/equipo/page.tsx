@@ -19,6 +19,7 @@ export default function Equipo() {
           alt="asdf"
           width="1250"
           height="550"
+          className="mb-5"
         />
         {documentToReactComponents(body)}
         <div className="flex justify-center">

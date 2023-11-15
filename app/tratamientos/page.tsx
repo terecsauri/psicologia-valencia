@@ -19,18 +19,18 @@ export default function Tratamientos() {
 
               <h1 className='font-bold mb-2' >{title}</h1>
               <p className='mt-5 mb-5'>{body}</p>
-              <div className='grid grid-cols-2 gap-5 max-lg:block'>
-                <div className="p-3 bg-white border border-gray-200 shadow  dark:bg-gray-800 dark:border-gray-700 justify-center" >
+              <div className='flex gap-5 max-lg:flex-col justify-center w-fit '>
+                <div className="p-3 bg-white border border-gray-200 shadow  dark:bg-gray-800 dark:border-gray-700 justify-center items-center flex flex-col" >
                   <Link href={"/tratamientos/adultos"}>
                     <img
-                      src={'https://' + media.fields.file.url} alt="asdf" width="550" height="550"
+                      src={'https://' + media.fields.file.url} alt="asdf" width="550" height="550" className=''
 
                     />
 
                   </Link>
                   <h2 className='font-bold text-xl text-center'>{mediaText}</h2>
                 </div>
-                <div className="p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center" >
+                <div className="p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center flex flex-col items-center" >
                   <Link href={"/tratamientos/ninos"}>
                     <img
                       src={'https://' + media2.fields.file.url} alt="asdf" width="550" height="550"

@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 default: 'Psicología Valencia',
 template: '%s',
   },
-  description: 'Psicólogo en Valencia. Más de 10 años de experiencia con clientes felices. Cumplimos con el tiempo y el presupuesto',
-  keywords: ['Reformas', 'Valencia', 'Reformas Áticos', 'Reformas baños', 'Reformas cocinas', 'Reformas Edificios',  
-  'Reformas Fachadas', 'Reformas Locales', 'Reformas Oficinas', 'Reformas Terrazas',],
+
+  description: 'Psicólogo en Valencia. Más de 10 años de experiencia, más de 2000 pacientes confían en nuestros psicólogos.',
+  keywords: ['psicólogo', 'terapia de pareja', 'psicólogo infantil', 'psicólogo barato', 'depresión', 'TDH'],
   robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
 }
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={montserrat.className} style={{ position: "relative" }}>
         <Whats/>  
         <Navbar/>

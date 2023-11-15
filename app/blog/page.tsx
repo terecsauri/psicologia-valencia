@@ -12,20 +12,20 @@ export default function Blog() {
         singlePost.fields;
       return (
         <div key={""} className="mt-5">
-          <div className='grid grid-cols-3 relative max-lg:block'>
-            <div className=' bg-gradient-to-r from-gray-600 to-gray-300 relative max-lg:hidden'> 
+          <div className='grid grid-cols-3 relative max-lg:flex gap-5'>
+            <div className=' bg-gradient-to-r from-gray-600 to-gray-300 relative max-lg:hidden pr-5'> 
               <h3 className='font-bold text-white m-5 absolute bottom-0 max-lg:hidden' >{gridTitle}</h3>
             </div>
             <div className='relative'>
               <img
-                src={'https://' + media.fields.file.url} alt="asdf" width="560" height="380"
+                src={'https://' + media.fields.file.url} alt="asdf" width="560" height="380" className='w-fit'
                 
               />
               <div className='font-extrabold absolute text-white text-2xl bottom-0 m-5 ' >{gridTitle2}</div>
             </div>
             <div className='relative'>
               <img
-                src={'https://' + media2.fields.file.url} alt="asdf" width="600" height="380"
+                src={'https://' + media2.fields.file.url} alt="asdf" width="600" height="380" className='w-fit'
                 
               />
               <div className='font-extrabold absolute text-white text-2xl bottom-0 m-5' >{gridTitle3}</div>

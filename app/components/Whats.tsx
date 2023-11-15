@@ -20,7 +20,7 @@ export default function Whats() {
             <button onClick={toggleMenu}>
                 {
                     openMenu ?
-                        <div className='bg-green-400 rounded-full w-16 h-16 fixed ml-10 mt-5 left-[5px] bottom-[35px] max-lg:z-10'>
+                        <div className='bg-green-400 rounded-full w-16 h-16 fixed  mt-5 left-3 bottom-[35px] max-lg:z-10 '>
                             <img
                                 src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"}
                                 alt="asdf"
@@ -30,7 +30,7 @@ export default function Whats() {
                             />
                         </div>
                         :
-                        <div className='fixed ml-10 mt-5 left-[5px] bottom-[35px] z-10'>
+                        <div className='fixed mt-2 left-3 bottom-[35px] z-10'>
                             <div className='bg-green-400 flex gap-2 w-64 p-2 rounded-t-lg'>
 
                                 <img
@@ -49,13 +49,13 @@ export default function Whats() {
 
                             </div>
                             <Link href="/contacto">
-                                <div className='w-64 p-2 border rounded-b-lg bg-white hover:bg-slate-100'>
+                                <div className='w-64 p-2 border rounded-b-lg bg-white '>
                                     <p className='text-green-400 text-xs'>Online</p>
                                     <p className='font-bold underline'>Mi psicólogo Valencia</p>
                                     <p className='text-sm underline'>Escribeme si me ves conectado</p>
                                 </div>
                             </Link>
-                            <div className='bg-green-400 rounded-full w-16 h-16 mt-5'>
+                            <div className='bg-green-400 rounded-full w-16 h-16 mt-5 '>
                                 <img
                                     src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"}
                                     alt="asdf"

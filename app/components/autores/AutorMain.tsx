@@ -14,7 +14,7 @@ export default function AutorMain() {
         const { cardTitle, card, cardButton, cardText, subtitle} =
           singleMember.fields;
         return (
-          <div key={""}>
+          <div key={""} className='mb-5'>
             <h1 className='font-bold text-3xl mt-10'>{subtitle}</h1>
           <div 
           

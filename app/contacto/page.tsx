@@ -2,6 +2,7 @@
 import React from 'react'
 import { getData } from '../services/fetchService';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import Form from '../components/Form';
 
 const landingFooter = await getData("contacto");
 
@@ -27,22 +28,12 @@ export default function contactos() {
               </div>
               {documentToReactComponents(body2)}
               <div className='grid grid-cols-2 m-5 max-lg:block'>
-                <p></p>
+      
                 <div>
               {documentToReactComponents(body3)}
                 </div>
               </div>
-              <form className='flex flex-col mt-5 items-center'>
-            <p className='font-bold'>Nombre (requerido)</p>
-            <label> <input type="text" name="name" className='border-2 border-gray w-fit' /> </label>
-            <p className='font-bold'>Correo Electrónico (requerido)</p>
-            <label> <input type="text" name="email" className='border-2 border-gray w-fit'/> </label>
-            <p className='font-bold'>Asunto</p>
-            <label>  <input type="text" name="asunto" className='border-2 border-gray w-fit'/> </label>
-            <p className='font-bold '>Mensaje</p>
-            <label> <textarea className='border-2 border-gray w-fit'/></label>
-            <input type="submit" value="Submit" className='border-2 border-black w-20'/>
-          </form>
+<Form></Form>
           <div className='mt-5 mb-5'>
           {documentToReactComponents(body4)}
           </div>

@@ -29,7 +29,7 @@ export default function Pareja() {
         } = singlePost.fields;
         return (
           <div key={""} className="mt-10">
-            <p className="font-bold text-4xl mb-2">{title}</p>
+            <h1 className="font-bold mb-2">{title}</h1>
             <div className="flex justify-center mb-10 mt-10">
             <img
               src={"https://" + media.fields.file.url}
@@ -47,17 +47,17 @@ export default function Pareja() {
               </button>
             </div>
             <p className="mb-2"> {documentToReactComponents(body2bis)} </p>
-            <h1 className="font-bold text-2xl mt-5 mb-5">{title3}</h1>
+            <h2 className="font-bold mt-5 mb-5">{title3}</h2>
             <p className="mb-2">{documentToReactComponents(body3)}</p>
 
-            <h1 className="font-bold text-2xl mt-5 mb-5">{title4}</h1>
-            <div className="flex max-lg:block">
+            <h2 className="font-bold mt-5 mb-5">{title4}</h2>
+            <div className="max-lg:block">
               <img
                 src={"https://" + media2.fields.file.url}
                 alt="asdf"
                 width="250"
                 height="250"
-                className="mr-10 mt-2 mb-2"
+                className="mr-10 mt-2 mb-2 float-left max-lg:float-none"
                 
               />
               {body4}

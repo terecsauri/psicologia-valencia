@@ -39,36 +39,36 @@ export default function Aseguradoras() {
         <div className="mt-5">{documentToReactComponents(body6)}</div>
         <div className="mt-5">{documentToReactComponents(body7)}</div>
         <h3 className="font-bold mb-5 mt-5">{titleOne}</h3>
-        <div className="grid grid-cols-2 max-lg:block">
+        <div className="flex flex-cols max-lg:block gap-5">
           <img
             src={"https://" + mediaOne.fields.file.url}
-            alt="asdf"
+            alt="saludon"
             width="500"
             height="450"
-            className="mr-5 "
+            className=""
           />
           {documentToReactComponents(textOne)}
         </div>
         <h3 className="font-bold mb-2 mt-5">{titleTwo}</h3>
-        <div className="flex max-lg:block">
+        <div className="flex flex-cols max-lg:block gap-5">
           <img
             src={"https://" + mediaTwo.fields.file.url}
-            alt="asdf"
+            alt="murimar"
             width="340"
             height="200"
-            className="mr-5 "
+            
             
           />
           {documentToReactComponents(textTwo)}
         </div>
         <h3 className="font-bold mb-2 mt-5">{titleThree}</h3>
-        <div className="flex max-lg:block">
+        <div className="flex max-lg:block gap-5">
           <img
             src={"https://" + mediaThree.fields.file.url}
-            alt="asdf"
+            alt="antares"
             width="450"
-            height="450"
-            className="mr-5 w-1/2 "
+            height="150"
+            
             
             
           />

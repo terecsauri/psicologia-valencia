@@ -55,7 +55,7 @@ export default function Tarifas() {
             src={'https://' + media4.fields.file.url} alt="asdf" width="650" height="650"
           />
           </div>
-          <p className='text-xl flex justify-center'>{titulo2}</p>
+          <h2 className='text-xl flex justify-center'>{titulo2}</h2>
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
           <h2>{titulo3}</h2>
           {documentToReactComponents(body4)}

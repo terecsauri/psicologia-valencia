@@ -12,7 +12,7 @@ export default function AutorRandom() {
         const { photo, title, text, text2 } =
           singleMember.fields;
         return (
-          <div key={""} >
+          <div key={""} className='mb-5' >
                 <p className='font-bold text-3xl mt-10' >{title}</p>
             <div className=" p-6 bg-white border border-gray-200 rounded-lg flex max-sm:flex max-sm:flex-col max-sm:gap-4 max-sm:items-center">
             <img

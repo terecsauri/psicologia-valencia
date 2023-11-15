@@ -17,7 +17,7 @@ export default function Cursos() {
         singlePost.fields;
       return (
         <div key={""} className="mt-5">
-          <p className='font-bold text-4xl mb-2' >{titulo}</p>
+          <h1 className='font-bold text-4xl mb-2' >{titulo}</h1>
           <div className='grid grid-cols-2 mb-10 bg-gradient-to-r from-green-600 max-lg:block '>
             
             <img
