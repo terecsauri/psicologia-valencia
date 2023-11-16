@@ -24,15 +24,15 @@ export default function Tarifas() {
           <h1 className='mb-2 max-lg:text-3xl' >{titulo}</h1>
           <div className='flex justify-center mb-5'>
           <img
-            src={'https://' + media.fields.file.url} alt="asdf" width="750" height="750"
+            src={'https://' + media.fields.file.url} alt="asdf" width="450" height="450"
           />
           </div>
           {documentToReactComponents(body)}
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
-          <div className='grid grid-cols-2 max-lg:block'>
+          <div className='flex max-2xl:flex-col'>
             
             <img
-              src={'https://' + media2.fields.file.url} alt="asdf" width="250" height="250"
+              src={'https://' + media2.fields.file.url} alt="asdf" width="550" height="550" className=' h-fit'
             />
             
             <div className=''>
@@ -44,16 +44,11 @@ export default function Tarifas() {
           </div>
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
           <div className='flex justify-center m-5'>
-          <img
-            src={'https://' + media3.fields.file.url} alt="asdf" width="850" height="850"
-            className='m-5'
-          />
+         
           </div>
           {documentToReactComponents(body3)}
           <div className='flex justify-center m-5'>
-          <img
-            src={'https://' + media4.fields.file.url} alt="asdf" width="650" height="650"
-          />
+
           </div>
           <h2 className='text-xl flex justify-center'>{titulo2}</h2>
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
@@ -61,7 +56,7 @@ export default function Tarifas() {
           {documentToReactComponents(body4)}
           <div className='flex justify-center'>
           <button className='bg-yellow-400 hover:bg-yellow-500 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit'>
-           <Link href="about/aseguradoras">{button2}</Link>
+           <Link href="about/tratamientos">{button2}</Link>
             
             </button>
           </div>
@@ -71,63 +66,60 @@ export default function Tarifas() {
           <p className='mt-5 mb-5'>{documentToReactComponents(body7)}</p>
           <p className='mt-5 mb-5'>{documentToReactComponents(body8)}</p>
           <h3>{titulo4}</h3>
-<div className='grid grid-cols-3 mt-10 gap-5 max-lg:flex max-lg:flex-col max-lg:items-center'>
-  <div className='p-2'>
+<div className='grid grid-cols-3 my-10 gap-10 max-lg:grid-cols-2 max-md:flex max-md flex-col max-lg:flex-col max-lg:items-center h-full'>
+  <div className='mb-5'>
   <img 
-            src={'https://' + mediaGrid.fields.file.url} alt="asdf" width="350" height="180"
+            src={'https://' + mediaGrid.fields.file.url} alt="asdf" width="350" height="350" className='h-full'
           />
-          <p className='font-bold'>{titleGrid}</p>
+          <p className='font-bold text-sm'>{titleGrid}</p>
           
   </div>
-  <div>
+  <div className=' mb-5'>
+    <Link href="/">
   <img
-            src={'https://' + mediaGrid2.fields.file.url} alt="asdf" width="350" height="180"
-          />
-          <p className='font-bold'>{titleGrid2}</p>
+            src={'https://' + mediaGrid2.fields.file.url} alt="asdf" width="350" height="350" className='h-full'
+            />
+          <p className='font-bold text-sm'>{titleGrid2}</p>
+            </Link>
           
   </div>
-  <div>
+  <div className=' mb-5'>
   <img
-            src={'https://' + mediaGrid3.fields.file.url} alt="asdf" width="350" height="350"
+            src={'https://' + mediaGrid3.fields.file.url} alt="asdf" width="350" height="350" className='h-full'
           />
-          <p className='font-bold'>{titleGrid3}</p>       
+          <p className='font-bold text-sm'>{titleGrid3}</p>       
   </div>
-  <div>
+  <div className=' mb-5'>
   <img
-            src={'https://' + mediaGrid4.fields.file.url} alt="asdf" width="350" height="350"
+            src={'https://' + mediaGrid4.fields.file.url} alt="asdf" width="350" height="350" className='h-full'
           />
-          <p className='font-bold'>{titleGrid4}</p>
+          <p className='font-bold text-sm'>{titleGrid4}</p>
   </div>
-  <div>
+  <div className=' mb-5'>
   <img
-            src={'https://' + mediaGrid5.fields.file.url} alt="asdf" width="350" height="350"
+            src={'https://' + mediaGrid5.fields.file.url} alt="asdf" width="350" height="350" className='h-full'
           />
-          <p className='font-bold'>{titleGrid5}</p>
+          <p className='font-bold text-sm'>{titleGrid5}</p>
   </div>
-  <div>
+  <div className=' mb-5'>
   <img
-            src={'https://' + mediaGrid6.fields.file.url} alt="asdf" width="350" height="350"
+            src={'https://' + mediaGrid6.fields.file.url} alt="asdf" width="350" height="350" className='h-full'
           />
-          <p className='font-bold'>{titleGrid6}</p>
+          <p className='font-bold text-sm'>{titleGrid6}</p>
   </div>
-  <div>
+  <div className=' mb-5'>
   <img
-            src={'https://' + mediaGrid7.fields.file.url} alt="asdf" width="350" height="350"
+            src={'https://' + mediaGrid7.fields.file.url} alt="asdf" width="350" height="350" className='h-full'
           />
-          <p className='font-bold'>{titleGrid7}</p>
+          <p className='font-bold text-sm'>{titleGrid7}</p>
   </div>
-  <div>
+  <div className=' mb-5'>
   <img
-            src={'https://' + mediaGrid8.fields.file.url} alt="asdf" width="350" height="350"
+            src={'https://' + mediaGrid8.fields.file.url} alt="asdf" width="350" height="350" className='h-full'
           />
-          <p className='font-bold'>{titleGrid8}</p>
+          <p className='font-bold text-sm'>{titleGrid8}</p>
   </div>
-  <div>
-  <img
-            src={'https://' + mediaGrid9.fields.file.url} alt="asdf" width="350" height="350" 
-          />
-          <p className='font-bold'>{titleGrid9}</p>
-  </div>
+
 </div>
 <p className='mt-5'>{documentToReactComponents(body6)}</p>
 <AutorRandom/>

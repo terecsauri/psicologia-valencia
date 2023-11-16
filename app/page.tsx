@@ -61,10 +61,10 @@ export default async function Home() {
         return (
           <div key={id} className="flex flex-col justify-center items-center max-lg:max-w-fit ">
             <div>
-              <div className='mb-10 bg-gradient-to-r from-emerald-600 to-amber-500  max-lg:block w-screen'>
+              <div className='mb-10 bg-gradient-to-r from-emerald-600 to-amber-500  max-lg:block w-screen '>
                 <div className='font-bold gap-5 mt-5 text-3xl ml-5 max-lg:font-semibold h-max py-5 flex flex-col mx-5'>
                   <h1 className="xl:text-left justify-center">{ttulo}</h1>
-                  <h2 className="text-white justify-center flex   titulo">Cuida tu mente a un precio que puedes asumir</h2>
+                  <h2 className="text-white justify-center flex   titulo">Cuida tu mente a un precio que te puedas permitir</h2>
                 </div>
               </div>
             </div>

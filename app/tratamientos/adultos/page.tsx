@@ -25,13 +25,14 @@ export default function Adultos() {
                 return (
                   <div
                     key={id}
-                    className=" p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center max-lg:w-fit "
+                    className=" gap-5 m-5 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 justify-center max-lg:m-0 "
                   >
                     <img
                       src={"https://" + media.fields.file.url}
                       alt="asdf"
                       width="350"
                       height="180"
+                      className="h-full"
                     />
                     <p className="font-bold">{title}</p>
                   </div>

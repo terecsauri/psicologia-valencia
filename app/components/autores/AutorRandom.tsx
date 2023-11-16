@@ -17,7 +17,7 @@ export default function AutorRandom() {
             <div className=" p-6 bg-white border border-gray-200 rounded-lg flex max-sm:flex max-sm:flex-col max-sm:gap-4 max-sm:items-center">
             <img
               src={'https://' + photo.fields.file.url} alt="asdf" width="70" height="70"
-              className='mr-5 rounded-full mr-5 h-14 w-14'
+              className='mr-5 rounded-full  h-14 w-14'
             />
             <div>
               <p className='font-bold underline text-blue-800'>{text}</p>

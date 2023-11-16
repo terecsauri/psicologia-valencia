@@ -30,11 +30,11 @@ export default function Pareja() {
         return (
           <div key={""} className="mt-10">
             <h1 className="font-bold mb-2">{title}</h1>
-            <div className="flex justify-center mb-10 mt-10">
+            <div className="flex justify-center my-5">
             <img
               src={"https://" + media.fields.file.url}
               alt="asdf"
-              width="900"
+              width="600"
               height="650"
             />
             </div>
@@ -57,7 +57,7 @@ export default function Pareja() {
                 alt="asdf"
                 width="250"
                 height="250"
-                className="mr-10 mt-2 mb-2 float-left max-lg:float-none"
+                className="mr-10 mt-2 mb-2 float-left m-auto max-sm:float-none max-sm:m-1" 
                 
               />
               {body4}

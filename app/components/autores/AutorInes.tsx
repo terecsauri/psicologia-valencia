@@ -17,12 +17,12 @@ export default function AutorInes() {
             <h1 className='font-bold text-3xl mt-10'>{title}</h1>
           <div 
           
-            className="p-6 bg-white border border-gray-200 rounded-lg flex mt-5 max-lg:w-fit max-lg:flex max-sm:flex-col max-sm:items-center"
+            className="p-6 bg-white border border-gray-200 rounded-lg flex mt-5 max-lg:w-fit max-lg:flex max-sm:flex-col  max-sm:gap-4 max-sm:items-center"
           >
            
             <img
-              src={'https://' + photo.fields.file.url} alt="asdf" width="50" height="50"
-              className='mr-5 rounded-full h-14 w-14'
+              src={'https://' + photo.fields.file.url} alt="asdf" width="100" height="100"
+              className='mr-5 rounded-full h-18 w-18'
             />
             <div>
               <p className='font-bold underline text-blue-800'>{name}</p>

@@ -21,10 +21,10 @@ export default async function RootLayout({
 
   return (
 
-    <div className={inter.className}>
+    <main className={inter.className}>
       {children}
       <Footer />
-    </div>
+    </main>
 
   )
 }

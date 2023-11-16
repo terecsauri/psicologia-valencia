@@ -1,11 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { getData } from '@/app/services/fetchService'
-
-
+import React from 'react'
 
 const landingAutor = await getData("aboutUsMain")
 
-import React from 'react'
 
 export default function AutorMain() {
   return (
@@ -15,7 +13,7 @@ export default function AutorMain() {
           singleMember.fields;
         return (
           <div key={id} className='mb-5'>
-            <h1 className='font-bold text-3xl mt-10'>{subtitle}</h1>
+            <p className='font-bold text-3xl mt-10'>{subtitle}</p>
           <div 
           
             className="p-6 bg-white border border-gray-200 rounded-lg flex mt-5 max-lg:w-fit max-lg:flex max-sm:flex-col max-sm:gap-4 max-sm:items-center"
@@ -27,8 +25,7 @@ export default function AutorMain() {
             />
             <div>
               <p className='font-bold underline text-blue-800'>{cardTitle}</p>
-              <p>{cardText}</p>
-              
+              <p>{cardText}</p> 
               <button className='bg-indigo-500 text-white rounded-lg p-1 mt-2 hover:bg-indigo-700'>{cardButton}</button>
             </div>
 

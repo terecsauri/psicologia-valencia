@@ -55,7 +55,7 @@ export default function Niños() {
             <img
               src={"https://" + media.fields.file.url}
               alt="asdf"
-              width="850"
+              width="650"
               height="650"
             />
             </div>
@@ -168,8 +168,8 @@ export default function Niños() {
             <img
               src={"https://" + media3.fields.file.url}
               alt="asdf"
-              width="850"
-              height="850"
+              width="650"
+              height="650"
             />
             </div>
             <h2 className="font-bold mt-5 mb-2 text-green-700 text-3xl mt-5 mb-5">
