@@ -9,7 +9,7 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: {
 default: 'Psicología Valencia',
-template: '%s',
+template: '%s | Psicología Valencia',
   },
 
   description: 'Psicólogo en Valencia. Más de 10 años de experiencia, más de 2000 pacientes confían en nuestros psicólogos.',

@@ -3,19 +3,23 @@ import React from 'react'
 import AutorRandom from '../components/autores/AutorRandom'
 import { getData } from '../services/fetchService';
 import Link from 'next/link';
+
+export const metadata = {
+  title: 'Tratamiento',
+}
+
+
 const landingTratamiento = await getData("tratamientosMain");
-
-
 
 export default function Tratamientos() {
   return (
     <div>
       {
         landingTratamiento?.map((singlePost: any) => {
-          const { title, body, media, media2, mediaText, mediaText2 } =
+          const { title, body, media, media2, mediaText, mediaText2, tratamiento} =
             singlePost.fields;
           return (
-            <div key={""} className="mt-5">
+            <div key={tratamiento} className="mt-5">
 
               <h1 className='font-bold mb-2' >{title}</h1>
               <p className='mt-5 mb-5'>{body}</p>

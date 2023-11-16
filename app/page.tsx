@@ -59,7 +59,7 @@ export default async function Home() {
           id
         } = singlePost.fields;
         return (
-          <div key={id} className="flex flex-col justify-center items-center max-lg:max-w-fit ">
+          <div key={ttulo} className="flex flex-col justify-center items-center max-lg:max-w-fit ">
             <div>
               <div className='mb-10 bg-gradient-to-r from-emerald-600 to-amber-500  max-lg:block w-screen '>
                 <div className='font-bold gap-5 mt-5 text-3xl ml-5 max-lg:font-semibold h-max py-5 flex flex-col mx-5'>
@@ -73,11 +73,11 @@ export default async function Home() {
             </div>
             <div className="grid grid-cols-4 text-base gap-x-20 max-lg:grid-cols-2 max-md:grid-cols-1 justify-center max-lg:items-center">
               {landingTeam?.map((singleMember: any) => {
-                const { id, fotoEquipo, nombreEquipo, cargo, colegiadoEquipo } =
+                const { fotoEquipo, nombreEquipo, cargo, colegiadoEquipo } =
                   singleMember.fields;
                 return (
                   <div
-                    key={id}
+                    key={nombreEquipo}
                     className="mb-6 flex flex-col justify-center items-center text-center w-62 mx-5"
                   >
                     <img
@@ -157,11 +157,11 @@ export default async function Home() {
             </div>
             <div className="grid grid-cols-4 gap-x-8 max-lg:block">
               {landingCardIcon?.map((singleCardIcon: any) => {
-                const { id, tituloIcono, descripcionIcono } =
+                const {  tituloIcono, descripcionIcono } =
                   singleCardIcon.fields;
                 return (
                   <div
-                    key={id}
+                    key={tituloIcono}
                     className="flex flex-col text-center max-lg:mt-5"
                   >
                     <h3>{tituloIcono}</h3>

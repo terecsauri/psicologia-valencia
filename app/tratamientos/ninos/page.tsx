@@ -4,6 +4,9 @@ import React from "react";
 import { getData } from "@/app/services/fetchService";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
+export const metadata = {
+  title: 'Tratamiento Infantil',
+}
 const landingNinos = await getData("tratamientosNios");
 
 export default function Niños() {
@@ -47,9 +50,10 @@ export default function Niños() {
           mediaGrid5,
           mediaGrid6,
           mediaGrid7,
+          ninos
         } = singlePost.fields;
         return (
-          <div key={""} className="mt-5">
+          <div key={ninos} className="mt-5">
             <h1 className="font-bold mb-2 ">{titulo}</h1>
             <div className="flex justify-center m-5">
             <img

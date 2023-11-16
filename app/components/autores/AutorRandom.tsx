@@ -10,10 +10,10 @@ export default function AutorRandom() {
   return (
    
     landingAutor?.map((singleMember: any) => {
-        const { photo, title, text, text2, id  } =
+        const { photo, title, text, text2, autor  } =
           singleMember.fields;
         return (
-          <div key={id} className='mb-5' >
+          <div key={autor} className='mb-5' >
                 <p className='font-bold text-3xl mt-10' >{title}</p>
             <div className=" p-6 bg-white border border-gray-200 rounded-lg flex max-sm:flex max-sm:flex-col max-sm:gap-4 max-sm:items-center">
             <img

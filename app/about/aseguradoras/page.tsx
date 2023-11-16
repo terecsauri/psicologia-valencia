@@ -7,6 +7,9 @@ import AutorMain from "@/app/components/autores/AutorMain";
 
 const landingAseguradoras = await getData("aboutUsAseguradoras");
 
+export const metadata = {
+  title: 'Aseguradoras',
+}
 export default function Aseguradoras() {
   return landingAseguradoras?.map((singlePost: any) => {
     const {
@@ -28,10 +31,10 @@ export default function Aseguradoras() {
       titleThree,
 
       textThree,
-      id
+      aseguradoras
     } = singlePost.fields;
     return (
-      <div key={id} className="mt-5 mb-5">
+      <div key={aseguradoras} className="mt-5 mb-5">
         <h1 className="font-bold mb-2">{title}</h1>
         {documentToReactComponents(body)}
         <div className="mt-5">{documentToReactComponents(body2)}</div>

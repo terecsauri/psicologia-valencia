@@ -10,10 +10,10 @@ export default function AutorMain() {
   return (
     
     landingAutor?.map((singleMember: any) => {
-        const { cardTitle, card, cardButton, cardText, subtitle, id} =
+        const { cardTitle, card, cardButton, cardText, subtitle, autor} =
           singleMember.fields;
         return (
-          <div key={id} className='mb-5'>
+          <div key={autor} className='mb-5'>
             <p className='font-bold text-3xl mt-10'>{subtitle}</p>
           <div 
           

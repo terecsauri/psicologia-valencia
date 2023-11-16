@@ -6,6 +6,10 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import AutorMain from '../components/autores/AutorMain';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Cursos',
+}
+
 const landingCursos = await getData("cursos");
 
 export default function Cursos() {

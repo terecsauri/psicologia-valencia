@@ -5,6 +5,11 @@ import AutorMain from "../components/autores/AutorMain";
 import Link from "next/link";
 const landingUs = await getData("aboutUsMain");
 
+export const metadata = {
+  title: 'Sobre Nosotros',
+}
+
+
 export default function AboutPage() {
   return landingUs?.map((singlePost: any) => {
     const {

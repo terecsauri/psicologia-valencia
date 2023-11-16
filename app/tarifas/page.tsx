@@ -6,8 +6,10 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import AutorRandom from '@/app/components/autores/AutorRandom'
 import Link from 'next/link';
 
-
 const landingTarifas = await getData("tarifas");
+export const metadata = {
+  title: 'Tarifas',
+}
 
 export default function Tarifas() {
   
@@ -17,10 +19,10 @@ export default function Tarifas() {
     landingTarifas?.map((singlePost: any) => {
       const { titulo, titulo2, titulo3, titulo4, media, media2, media3, media4, body, body2, body3, body4, body5, body6, body7, body8, body9,
         button, button2, titleGrid, titleGrid2, titleGrid3, titleGrid4, titleGrid5, titleGrid6, titleGrid7, titleGrid8, titleGrid9,
-        mediaGrid, mediaGrid2, mediaGrid3, mediaGrid4, mediaGrid5, mediaGrid6, mediaGrid7, mediaGrid8, mediaGrid9, id } =
+        mediaGrid, mediaGrid2, mediaGrid3, mediaGrid4, mediaGrid5, mediaGrid6, mediaGrid7, mediaGrid8, tarifas } =
         singlePost.fields;
       return (
-        <div key={id} className="mt-5">
+        <div key={tarifas} className="mt-5">
           <h1 className='mb-2 max-lg:text-3xl' >{titulo}</h1>
           <div className='flex justify-center mb-5'>
           <img
@@ -56,7 +58,7 @@ export default function Tarifas() {
           {documentToReactComponents(body4)}
           <div className='flex justify-center'>
           <button className='bg-yellow-400 hover:bg-yellow-500 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit'>
-           <Link href="about/tratamientos ">{button2}</Link>
+           <Link href="/tratamientos ">{button2}</Link>
             
             </button>
           </div>

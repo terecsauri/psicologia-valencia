@@ -26,9 +26,10 @@ export default function Pareja() {
           media,
           media2,
           button,
+          pareja
         } = singlePost.fields;
         return (
-          <div key={""} className="mt-10">
+          <div key={pareja} className="mt-10">
             <h1 className="font-bold mb-2">{title}</h1>
             <div className="flex justify-center my-5">
             <img

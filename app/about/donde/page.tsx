@@ -7,15 +7,17 @@ import AutorRandom from "@/app/components/autores/AutorRandom";
 import Form from "@/app/components/Form";
 
 const landingWhere = await getData("aboutUsWhere");
-
+export const metadata = {
+  title: 'Dónde estamos',
+}
 export default function DondeEstamos() {
   
 
   return landingWhere?.map((singlePost: any) => {
-    const { title, photo, adress, photoMaps, body, body2, sofa, contacto, id } =
+    const { title, photo, adress, photoMaps, body, body2, sofa, contacto, donde } =
       singlePost.fields;
     return (
-      <div key={id} className="mt-5">
+      <div key={donde} className="mt-5">
         <h1 className="font-bold mb-2">{title}</h1>
         <div className="flex justify-center mb-5">
         <img

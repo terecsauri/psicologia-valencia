@@ -6,6 +6,10 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Link from "next/link";
 import Form from "@/app/components/Form";
 
+export const metadata = {
+  title: 'Tratamiento Online',
+}
+
 const landingOnline = await getData("tratamientosOnline");
 const landingText = await getData("tratamientosOnlineText3");
 const landingTextSix = await getData("tratamientosOnlineText6");
@@ -37,9 +41,10 @@ export default function Online() {
           media6,
           title5,
           title6,
+          pareja
         } = singlePost.fields;
         return (
-          <div key={""} className="mt-5">
+          <div key={pareja.id} className="mt-5">
             <hr className="mb-10 mt-10"></hr>
             <h1 className="font-bold mb-6 text-6xl ">{title}</h1>
             <div className="flex justify-center">
@@ -131,7 +136,7 @@ export default function Online() {
               {landingMedia?.map((singlePost: any) => {
                 const { media } = singlePost.fields;
                 return (
-                  <div key={""} className="mb-3">
+                  <div key={media} className="mb-3">
                     <img
                       src={"https://" + media.fields.file.url}
                       alt="asdf"

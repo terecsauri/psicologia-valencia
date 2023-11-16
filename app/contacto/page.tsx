@@ -9,10 +9,10 @@ const landingFooter = await getData("contacto");
 export default function contactos() {
   return (
     landingFooter?.map((singlePost: any) => {
-      const { titulo, titulo2, media, media2, button, button2, body, body2, body3, body4, body5 } =
+      const { titulo, titulo2, media, media2, button, button2, body, body2, body3, body4, body5, contacto } =
           singlePost.fields;
       return (
-          <div key={""} className="mt-5">
+          <div key={contacto} className="mt-5">
               <h1 className='font-bold mb-2' >{titulo}</h1>
               <div className='flex justify-center mb-5'>
               <img

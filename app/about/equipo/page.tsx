@@ -5,17 +5,21 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import AutorMain from "@/app/components/autores/AutorMain";
 import Link from "next/link";
 
+export const metadata = {
+  title: 'Equipo',
+}
+
 const landingTeam = await getData("aboutUsEquipo");
 const landingAutor = await getData("autorUno");
 
 export default function Equipo() {
   return landingTeam?.map((singlePost: any) => {
-    const { title, body, bodyMid, bodyBot, photo, button, id } = singlePost.fields;
+    const { title, body, bodyMid, bodyBot, photo, button, equipo } = singlePost.fields;
     return (
-      <div key={id} className="mt-5">
+      <div key={equipo} className="mt-5">
         <h1 className="font-bold mb-2">{title}</h1>
 
-        <div className="flex justify-center relative ">
+        <div className="flex justify-center relative z-0">
         <img
           src={"https://" + photo.fields.file.url}
           alt="equipo"
