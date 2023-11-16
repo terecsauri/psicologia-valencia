@@ -64,16 +64,16 @@ export default function Tarifas() {
           </div>
           <hr className='h-1 border-0 bg-black mt-5 mb-5'></hr>
           {documentToReactComponents(body5)}
-          <p className='mt-5 mb-5'>{documentToReactComponents(body6)}</p>
-          <p className='mt-5 mb-5'>{documentToReactComponents(body7)}</p>
-          <p className='mt-5 mb-5'>{documentToReactComponents(body8)}</p>
+          <article className='mt-5 mb-5'>{documentToReactComponents(body6)}</article>
+          <article className='mt-5 mb-5'>{documentToReactComponents(body7)}</article>
+          <article className='mt-5 mb-5'>{documentToReactComponents(body8)}</article>
           <h3>{titulo4}</h3>
 <div className='grid grid-cols-3 my-10 gap-10 max-lg:grid-cols-2 max-md:flex max-md flex-col max-lg:flex-col max-lg:items-center h-full'>
   <div className='mb-5'>
   <img 
             src={'https://' + mediaGrid.fields.file.url} alt="asdf" width="350" height="350" className='h-full'
           />
-          <p className='font-bold text-sm'>{titleGrid}</p>
+          <h3 className='font-bold text-sm'>{titleGrid}</h3>
           
   </div>
   <div className=' mb-5'>
@@ -81,7 +81,7 @@ export default function Tarifas() {
   <img
             src={'https://' + mediaGrid2.fields.file.url} alt="asdf" width="350" height="350" className='h-full'
             />
-          <p className='font-bold text-sm'>{titleGrid2}</p>
+          <h3 className='font-bold text-sm'>{titleGrid2}</h3>
             </Link>
           
   </div>
@@ -89,41 +89,41 @@ export default function Tarifas() {
   <img
             src={'https://' + mediaGrid3.fields.file.url} alt="asdf" width="350" height="350" className='h-full'
           />
-          <p className='font-bold text-sm'>{titleGrid3}</p>       
+          <h3 className='font-bold text-sm'>{titleGrid3}</h3>       
   </div>
   <div className=' mb-5'>
   <img
             src={'https://' + mediaGrid4.fields.file.url} alt="asdf" width="350" height="350" className='h-full'
           />
-          <p className='font-bold text-sm'>{titleGrid4}</p>
+          <h3 className='font-bold text-sm'>{titleGrid4}</h3>
   </div>
   <div className=' mb-5'>
   <img
             src={'https://' + mediaGrid5.fields.file.url} alt="asdf" width="350" height="350" className='h-full'
           />
-          <p className='font-bold text-sm'>{titleGrid5}</p>
+          <h3 className='font-bold text-sm'>{titleGrid5}</h3>
   </div>
   <div className=' mb-5'>
   <img
             src={'https://' + mediaGrid6.fields.file.url} alt="asdf" width="350" height="350" className='h-full'
           />
-          <p className='font-bold text-sm'>{titleGrid6}</p>
+          <h3 className='font-bold text-sm'>{titleGrid6}</h3>
   </div>
   <div className=' mb-5'>
   <img
             src={'https://' + mediaGrid7.fields.file.url} alt="asdf" width="350" height="350" className='h-full'
           />
-          <p className='font-bold text-sm'>{titleGrid7}</p>
+          <h3 className='font-bold text-sm'>{titleGrid7}</h3>
   </div>
   <div className=' mb-5'>
   <img
             src={'https://' + mediaGrid8.fields.file.url} alt="asdf" width="350" height="350" className='h-full'
           />
-          <p className='font-bold text-sm'>{titleGrid8}</p>
+          <h3 className='font-bold text-sm'>{titleGrid8}</h3>
   </div>
 
 </div>
-<p className='mt-5'>{documentToReactComponents(body6)}</p>
+<article className='mt-5'>{documentToReactComponents(body6)}</article>
 <AutorRandom/>
         </div>
       )

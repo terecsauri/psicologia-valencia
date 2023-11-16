@@ -20,7 +20,7 @@ export default function Adultos() {
           <div key={title.id} className="mt-5">
             <h1 className="font-bold mb-6">{title}</h1>
             {documentToReactComponents(body)}
-            <p className="mt-5 mb-5">{documentToReactComponents(body2)}</p>
+            <article className="mt-5 mb-5">{documentToReactComponents(body2)}</article>
             
 
             <div className="grid grid-cols-3 mb-16 mt-16 gap-5 max-lg:flex max-lg:flex-col max-lg:items-center text-center">
@@ -38,13 +38,13 @@ export default function Adultos() {
                       height="180"
                       className="h-full"
                     />
-                    <p className="font-bold">{title}</p>
+                    <h2 className="font-bold">{title}</h2>
                   </div>
                 );
               })}
             </div>
-            <p className="mt-5 mb-5"> {documentToReactComponents(body3)}</p>
-            <p className="mt-5 mb-5"> {documentToReactComponents(body4)}</p>
+            <article className="mt-5 mb-5"> {documentToReactComponents(body3)}</article>
+            <article className="mt-5 mb-5"> {documentToReactComponents(body4)}</article>
           </div>
         );
       })}

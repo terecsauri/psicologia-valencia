@@ -33,7 +33,7 @@ export default function Burguer() {
         <li><Link href="/">Home</Link></li>
         <ul className=' group  dropdown  z-10'>
           <li><Link href="/about">Sobre Nosotros</Link></li>
-          <div className='group-hover:block dropdown-menu absolute ml-40 top-0 hidden h-auto z-100 '>
+          <li className='group-hover:block dropdown-menu absolute ml-40 top-0 hidden h-auto z-100 '>
           <ul className='bg-white   w-max rounded p-3 absolute border border-2 z-10'>
             <li className='hover:bg-gray-100 '><Link href="/about//donde">Donde Estamos</Link></li>
             <li className='hover:bg-gray-100 '><Link href="/about/equipo">Equipo</Link></li>
@@ -42,11 +42,11 @@ export default function Burguer() {
   
 
           </ul>
-          </div>
+          </li>
         </ul>
         <ul className=' group  dropdown  z-10'>
           <li><Link href="/tratamientos">Tratamientos</Link></li>
-          <div className='group-hover:block dropdown-menu ml-40 absolute hidden h-auto top-0 z-100 '>
+          <li className='group-hover:block dropdown-menu ml-40 absolute hidden h-auto top-0 z-100 '>
           <ul className='bg-white  w-max rounded p-3 absolute z-10 border rounded'>
             <li className='hover:bg-gray-100 '><Link href="/tratamientos/online">Terapia Online</Link></li>
             <li className='hover:bg-gray-100 '><Link href="/tratamientos/adultos">Terapia Adultos</Link></li>
@@ -54,7 +54,7 @@ export default function Burguer() {
             <li className='hover:bg-gray-100 '><Link href="/tratamientos/pareja">Terapia Pareja</Link></li>
 
           </ul>
-          </div>
+          </li>
         </ul>
         <li><Link href="/tarifas">Tarifas</Link></li>
         <li><Link href="/cursos">Cursos</Link></li>

@@ -32,9 +32,9 @@ export default function Equipo() {
 <p className="titulo max-sm:text-sm">Conoce nuestro equipo, como somos y como lo hacemos</p>
         </div>
         </div>
-        <p className="my-12">
+        <article className="my-12">
         {documentToReactComponents(body)}
-        </p>
+        </article>
         <div className="flex justify-center">
         <button className="bg-yellow-400 hover:bg-yellow-500 p-2 border-2 border-black rounded-full font-bold mb-10">
           <Link href="/tarifas">{button}</Link>

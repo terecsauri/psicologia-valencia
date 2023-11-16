@@ -5,6 +5,8 @@ import { getData } from "@/app/services/fetchService";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Link from "next/link";
 import Form from "@/app/components/Form";
+import Carrousel from "@/app/components/Carrousel";
+import { slides } from "@/app/services/slider";
 
 export const metadata = {
   title: 'Tratamiento Online',
@@ -44,7 +46,7 @@ export default function Online() {
           pareja
         } = singlePost.fields;
         return (
-          <div key={pareja.id} className="mt-5">
+          <div key={pareja} className="mt-5">
             <hr className="mb-10 mt-10"></hr>
             <h1 className="font-bold mb-6 text-6xl ">{title}</h1>
             <div className="flex justify-center">
@@ -81,7 +83,8 @@ export default function Online() {
                     <div>
                       <h3 className="font-bold mb-2 mt-2">{title}</h3>
                       <hr className="h-0.5 border-0 bg-black mt-2 mb-2 w-44"></hr>
-                      <p className="mr-3">{documentToReactComponents(body)}</p>
+                      <article className="mr-3">{documentToReactComponents(body)}</article>
+                     
                     </div>
                   </div>
                 );
@@ -118,7 +121,7 @@ export default function Online() {
                 const { title, body, items } = singlePost.fields;
                 return (
                   <div key={items}>
-                      <p className="font-bold mb-2 mt-2 text-lg">{title}</p>
+                      <h1 className="font-bold mb-2 mt-2 text-lg">{title}</h1>
                         <hr className="h-1 border-0 bg-black mt-5 mb-5 w-1/3"></hr>
                         {body}  
                   </div>
@@ -130,24 +133,12 @@ export default function Online() {
 
 <Form></Form>
 
-            <h2 className="font-bold text-2xl mb-5">{title3}</h2>
-
-            <div className="grid grid-cols-3 mb-10 max-lg:block max-lg:gap-5">
-              {landingMedia?.map((singlePost: any) => {
-                const { media } = singlePost.fields;
-                return (
-                  <div key={media} className="mb-3">
-                    <img
-                      src={"https://" + media.fields.file.url}
-                      alt="asdf"
-                      width="350"
-                      height="350"
-                    />
-                  </div>
-                );
-              })}
-            </div>
-            <h2 className="font-bold  mb-5 justify-center flex">{title4}</h2>
+            <h2 className="font-bold text-2xl mb-5 text-center my-20">{title3}</h2>
+<div className="flex justify-center">
+            <Carrousel slides={slides} />
+</div>
+        
+            <h2 className="font-bold  my-10 justify-center flex">{title4}</h2>
             <div className="flex justify-center">
 
               <img
@@ -169,7 +160,7 @@ export default function Online() {
                   width="450"
                   height="450"
                 />
-                <p className="font-bold text-lg mb-2">{title5}</p>
+                <h2 className="font-bold text-lg mb-2">{title5}</h2>
               </div>
               <div>
                 <img
@@ -178,7 +169,7 @@ export default function Online() {
                   width="450"
                   height="450"
                 />
-                <p className="font-bold text-lg mb-2">{title6}</p>
+                <h2 className="font-bold text-lg mb-2">{title6}</h2>
               </div>
             </div>
 
