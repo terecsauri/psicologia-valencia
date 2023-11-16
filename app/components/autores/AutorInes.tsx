@@ -10,10 +10,10 @@ export default function AutorInes() {
   return (
     
     landingAutor?.map((singleMember: any) => {
-        const { title, photo, name, body,footer} =
+        const { title, photo, name, body,footer, id} =
           singleMember.fields;
         return (
-          <div key={""} className='mb-5'>
+          <div key={id} className='mb-5'>
             <h1 className='font-bold text-3xl mt-10'>{title}</h1>
           <div 
           

@@ -11,10 +11,10 @@ export default function AutorMain() {
   return (
     
     landingAutor?.map((singleMember: any) => {
-        const { cardTitle, card, cardButton, cardText, subtitle} =
+        const { cardTitle, card, cardButton, cardText, subtitle, id} =
           singleMember.fields;
         return (
-          <div key={""} className='mb-5'>
+          <div key={id} className='mb-5'>
             <h1 className='font-bold text-3xl mt-10'>{subtitle}</h1>
           <div 
           
@@ -23,7 +23,7 @@ export default function AutorMain() {
            
             <img
               src={'https://' + card.fields.file.url} alt="asdf" width="50" height="50"
-              className='mr-5 rounded-full h-14 w-14'
+              className='mr-5 rounded-full h-18 w-18'
             />
             <div>
               <p className='font-bold underline text-blue-800'>{cardTitle}</p>

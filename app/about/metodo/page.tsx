@@ -8,9 +8,9 @@ const landingMetodo = await getData("aboutUsMtodo");
 
 export default function Metodo() {
   return landingMetodo?.map((singlePost: any) => {
-    const { title, titulo2, body, body2, body3 , photo, } = singlePost.fields;
+    const { title, titulo2, body, body2, body3 , photo, id } = singlePost.fields;
     return (
-      <div key={""} className="mt-5">
+      <div key={id} className="mt-5">
         <h1 className="font-bold text-5xl mb-5">{title}</h1>
         <div className="flex justify-center mb-5">
         <img

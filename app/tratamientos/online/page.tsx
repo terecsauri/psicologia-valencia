@@ -4,6 +4,7 @@ import React from "react";
 import { getData } from "@/app/services/fetchService";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Link from "next/link";
+import Form from "@/app/components/Form";
 
 const landingOnline = await getData("tratamientosOnline");
 const landingText = await getData("tratamientosOnlineText3");
@@ -42,17 +43,17 @@ export default function Online() {
             <hr className="mb-10 mt-10"></hr>
             <h1 className="font-bold mb-6 text-6xl ">{title}</h1>
             <div className="flex justify-center">
-            <img
-              src={"https://" + photo1.fields.file.url}
-              alt="asdf"
-              width="600"
-              height="600"
-              className="mb-10"
-            />
+              <img
+                src={"https://" + photo1.fields.file.url}
+                alt="asdf"
+                width="600"
+                height="600"
+                className="mb-10"
+              />
             </div>
-
             {documentToReactComponents(text1)}
-            <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-64 flex"></hr>
+            <hr className="h-1 m-auto border-0 bg-yellow-400 mt-5 mb-5 w-64"></hr>
+
             <div className="flex mt-5 mb-5 max-lg:block">
               <div className="w-1/3 mr-4 max-lg:w-fit">{documentToReactComponents(text2)}</div>
               <img
@@ -62,18 +63,18 @@ export default function Online() {
                 height="650"
               />
             </div>
-          <div className="flex justify-center">
-            <button className="bg-yellow-400 hover:bg-yellow-500 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit">
-              {bottonText}
-            </button>
+            <div className="flex justify-center">
+              <button className="bg-yellow-400 hover:bg-yellow-500 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit">
+                {bottonText}
+              </button>
             </div>
             <div className="grid grid-cols-2 max-lg:block">
               {landingText?.map((singlePost: any) => {
                 const { title, body, id } = singlePost.fields;
                 return (
-                  <div key={id}>
+                  <div key={id} className="gap-5">
                     <div>
-                      <h2 className="font-bold mb-2 mt-2">{title}</h2>
+                      <h3 className="font-bold mb-2 mt-2">{title}</h3>
                       <hr className="h-0.5 border-0 bg-black mt-2 mb-2 w-44"></hr>
                       <p className="mr-3">{documentToReactComponents(body)}</p>
                     </div>
@@ -82,76 +83,48 @@ export default function Online() {
               })}
             </div>
             <div className="flex justify-center">
-            <button className="bg-yellow-400 hover:bg-yellow-500 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit">
-              {bottonText}
-            </button>
-</div>
-            <div className="flex gap-5 mb-20 max-lg:block">
+              <button className="bg-yellow-400 hover:bg-yellow-500 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit">
+                {bottonText}
+              </button>
+            </div>
+            <div className="flex gap-5 my-10 max-lg:block ">
               <div className="w-1/2 max-lg:w-fit">
                 {documentToReactComponents(text4)}
-                <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-64"></hr>
+                <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-full"></hr>
               </div>
               <div className="w-1/2 max-lg:w-fit">
                 {documentToReactComponents(text4bis)}
-                <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-64"></hr>
+                <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-full"></hr>
               </div>
             </div>
             {documentToReactComponents(text5)}
             <div className="flex justify-center">
-            <button className="text-yellow-400 bg-black hover:bg-gray-800 w-1/3 p-2 rounded-2xl font-bold mt-10 mb-10  max-lg:w-fit">
-              <Link href="/tarifas">{button2}</Link>
-              
-            </button>
-            </div>
-            
-            <h2 className="flex justify-center font-bold text-2xl mb-2">{title2}</h2>
-            <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-1/2 "></hr>
+              <button className="text-yellow-400 bg-black hover:bg-gray-800 w-1/3 p-2 rounded-2xl font-bold mt-10 mb-10  max-lg:w-fit">
+                <Link href="/tarifas">{button2}</Link>
 
-            <div className="grid grid-cols-3 mb-10 max-lg:grid-cols-1">
+              </button>
+            </div>
+
+            <h3 className="flex justify-center font-bold  mb-2">{title2}</h3>
+            <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-1/2 mx-auto "></hr>
+
+            <div className="flex mb-10 max-lg:grid-cols-1 gap-5 ">
               {landingTextSix?.map((singlePost: any) => {
-                const { title, body, media, items } = singlePost.fields;
+                const { title, body, items } = singlePost.fields;
                 return (
                   <div key={items}>
-                    <div>
-                      <img
-                        src={"https://" + media.fields.file.url}
-                        alt="asdf"
-                        width="150"
-                        height="150"
-                      />
-                      <h2 className="font-bold mb-2 mt-2 text-lg">{title}</h2>
-                      <p className="w-1/2">
+                      <p className="font-bold mb-2 mt-2 text-lg">{title}</p>
                         <hr className="h-1 border-0 bg-black mt-5 mb-5 w-1/3"></hr>
-                        {body}
-                      </p>
-                    </div>
+                        {body}  
                   </div>
                 );
               })}
             </div>
-            <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-1/2"></hr>
+            <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-1/2 mx-auto"></hr>
             {documentToReactComponents(text7)}
 
-            <form className="flex flex-col mb-10 mt-10">
-              <p className="font-bold flex justify-center">Nombre</p>
-              <label className="flex justify-center">
-                {" "}
-                <input type="text" name="name" className="border-2 border-gray w-1/2 " placeholder="Juan" />{" "}
-              </label>
-              <p className="font-bold flex justify-center ">Correo Electrónico</p>
-              <label className="flex justify-center">
-                {" "}
-                <input type="text" name="email" className="border-2 border-gray w-1/2" placeholder="pepito@ejemplo.es "/>{" "}
-              </label>
-              <p className="font-bold flex justify-center">Mensaje</p>
-              <label className="flex justify-center">
-                {" "}
-                <textarea className="border-2 border-gray w-1/2 " placeholder="introduce tu mensaje "/>
-              </label >
-              <div className="flex justify-center mt-6">
-              <input type="submit" value="Submit" className="font-bold border-2 border-black w-1/4 rounded-3xl"/>
-              </div>
-            </form>
+<Form></Form>
+
             <h2 className="font-bold text-2xl mb-5">{title3}</h2>
 
             <div className="grid grid-cols-3 mb-10 max-lg:block max-lg:gap-5">
@@ -172,14 +145,14 @@ export default function Online() {
             <h2 className="font-bold  mb-5 justify-center flex">{title4}</h2>
             <div className="flex justify-center">
 
-            <img
-              src={"https://" + media4.fields.file.url}
-              alt="asdf"
-              width="650"
-              height="650"
-              className="mb-5 flex"
+              <img
+                src={"https://" + media4.fields.file.url}
+                alt="asdf"
+                width="650"
+                height="650"
+                className="mb-5 flex"
               />
-              </div>
+            </div>
 
             {documentToReactComponents(text8)}
 

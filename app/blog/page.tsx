@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { getData } from '../services/fetchService';
+import Link from 'next/link';
 
 const landingFooter = await getData("blog");
 
@@ -8,13 +9,15 @@ export default function Blog() {
   return (
     landingFooter?.map((singlePost: any) => {
       const { gridTitle, gridTitle2, gridTitle3, gridTitle4, gridTitle5, gridTitle6, gridTitle7, gridTitle8, gridTitle9, gridTitle10, media, media2,
-        gridMedia2, gridMedia3, gridMedia4, gridMedia5, gridMedia6, gridMedia7, gridMedia8, gridMedia9 } =
+        gridMedia2, gridMedia3, gridMedia4, gridMedia5, gridMedia6, gridMedia7, gridMedia8, gridMedia9, id } =
         singlePost.fields;
       return (
-        <div key={""} className="mt-5">
-          <div className='grid grid-cols-3 relative max-lg:flex gap-5'>
+        <div key={id} className="mt-5">
+          <div className='grid grid-cols-3 relative max-lg:flex gap-5 max-sm:flex max-sm:flex-col'>
             <div className=' bg-gradient-to-r from-gray-600 to-gray-300 relative max-lg:hidden pr-5'> 
+            <Link href="/cursos relative">
               <h3 className='font-bold text-white m-5 absolute bottom-0 max-lg:hidden' >{gridTitle}</h3>
+            </Link>
             </div>
             <div className='relative'>
               <img

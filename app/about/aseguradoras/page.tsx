@@ -18,63 +18,41 @@ export default function Aseguradoras() {
       body5,
       body6, 
       body7,
+      titleFour,
       titleOne,
-      mediaOne,
+
       textOne,
       titleTwo,
-      mediaTwo,
+
       textTwo,
       titleThree,
-      mediaThree,
+
       textThree,
+      id
     } = singlePost.fields;
     return (
-      <div key={""} className="mt-5 mb-5">
+      <div key={id} className="mt-5 mb-5">
         <h1 className="font-bold mb-2">{title}</h1>
         {documentToReactComponents(body)}
         <div className="mt-5">{documentToReactComponents(body2)}</div>
         <div className="mt-5">{documentToReactComponents(body3)}</div>
         <div className="mt-5">{documentToReactComponents(body4)}</div>
         <div className="mt-5">{documentToReactComponents(body5)}</div>
+        <h4 className="font-bold mb-2 mt-5">{titleFour}</h4>
         <div className="mt-5">{documentToReactComponents(body6)}</div>
         <div className="mt-5">{documentToReactComponents(body7)}</div>
-        <h3 className="font-bold mb-5 mt-5">{titleOne}</h3>
-        <div className="flex flex-cols max-lg:block gap-5">
-          <img
-            src={"https://" + mediaOne.fields.file.url}
-            alt="saludon"
-            width="500"
-            height="450"
-            className=""
-          />
+        <h4 className="font-bold mb-5 mt-5">{titleOne}</h4>
+        <div className="gap-5">
           {documentToReactComponents(textOne)}
         </div>
-        <h3 className="font-bold mb-2 mt-5">{titleTwo}</h3>
-        <div className="flex flex-cols max-lg:block gap-5">
-          <img
-            src={"https://" + mediaTwo.fields.file.url}
-            alt="murimar"
-            width="340"
-            height="200"
-            
-            
-          />
+        <h4 className="font-bold mb-2 mt-5">{titleTwo}</h4>
+        <div className="gap-5">
           {documentToReactComponents(textTwo)}
         </div>
-        <h3 className="font-bold mb-2 mt-5">{titleThree}</h3>
-        <div className="flex max-lg:block gap-5">
-          <img
-            src={"https://" + mediaThree.fields.file.url}
-            alt="antares"
-            width="450"
-            height="150"
-            
-            
-            
-          />
+        <h4 className="font-bold mb-2 mt-5">{titleThree}</h4>
+        <div className="gap-5">
           {documentToReactComponents(textThree)}
         </div>
-
         <AutorMain />
       </div>
     );

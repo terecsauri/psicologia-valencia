@@ -8,7 +8,7 @@ const landingUs = await getData("aboutUsMain");
 export default function AboutPage() {
   return landingUs?.map((singlePost: any) => {
     const {
-      id,
+      index,
       title,
       media1,
       media2,
@@ -18,7 +18,7 @@ export default function AboutPage() {
       mediaText3,
     } = singlePost.fields;
     return (
-      <div key={id} className="mt-10">
+      <div key={index} className="mt-10">
         <h1 className="font-bold text-4xl mb-5">{title}</h1>
         <div className="grid grid-cols-3 gap-10  max-lg:flex max-lg:flex-col max-lg:items-center " >
           <div className="p-3 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 max-lg:w-fit">

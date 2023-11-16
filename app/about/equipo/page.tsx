@@ -10,25 +10,34 @@ const landingAutor = await getData("autorUno");
 
 export default function Equipo() {
   return landingTeam?.map((singlePost: any) => {
-    const { title, body, bodyMid, bodyBot, photo, button } = singlePost.fields;
+    const { title, body, bodyMid, bodyBot, photo, button, id } = singlePost.fields;
     return (
-      <div key={""} className="mt-5">
+      <div key={id} className="mt-5">
         <h1 className="font-bold mb-2">{title}</h1>
+
+        <div className="flex justify-center relative ">
         <img
           src={"https://" + photo.fields.file.url}
-          alt="asdf"
-          width="1250"
-          height="550"
-          className="mb-5"
+          alt="equipo"
+          width="1600"
+          height="500"
+          className="mb-5 blur-sm"
         />
+        <div className="absolute mt-20 max-sm:top-0 max-sm:mt-2 z-10 text-white text-center flex flex-col ">
+<h3 className="font-bold titulo">Así somos</h3>
+<p className="titulo max-sm:text-sm">Conoce nuestro equipo, como somos y como lo hacemos</p>
+        </div>
+        </div>
+        <p className="my-12">
         {documentToReactComponents(body)}
+        </p>
         <div className="flex justify-center">
-        <button className="bg-yellow-400 hover:bg-yellow-500 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5">
+        <button className="bg-yellow-400 hover:bg-yellow-500 p-2 border-2 border-black rounded-full font-bold mb-10">
           <Link href="/tarifas">{button}</Link>
         </button>
         </div>
         {documentToReactComponents(bodyMid)}
-        <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5"></hr>
+        <hr className="h-1 border-0 bg-yellow-400 my-10"></hr>
         {documentToReactComponents(bodyBot)}
         <hr className="h-1  border-0 bg-yellow-400 mt-5 mb-5"></hr>
         <AutorMain />

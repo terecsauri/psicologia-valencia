@@ -12,10 +12,10 @@ export default function DondeEstamos() {
   
 
   return landingWhere?.map((singlePost: any) => {
-    const { title, photo, adress, photoMaps, body, body2, sofa, contacto } =
+    const { title, photo, adress, photoMaps, body, body2, sofa, contacto, id } =
       singlePost.fields;
     return (
-      <div key={""} className="mt-5">
+      <div key={id} className="mt-5">
         <h1 className="font-bold mb-2">{title}</h1>
         <div className="flex justify-center mb-5">
         <img
