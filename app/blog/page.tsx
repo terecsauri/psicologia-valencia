@@ -15,7 +15,7 @@ export default function Blog() {
         <div key={id} className="mt-5">
           <div className='grid grid-cols-3 relative max-lg:flex gap-5 max-sm:flex max-sm:flex-col'>
             <div className=' bg-gradient-to-r from-gray-600 to-gray-300 relative max-lg:hidden pr-5'> 
-            <Link href="/cursos relative">
+            <Link href="/cursos">
               <h3 className='font-bold text-white m-5 absolute bottom-0 max-lg:hidden' >{gridTitle}</h3>
             </Link>
             </div>

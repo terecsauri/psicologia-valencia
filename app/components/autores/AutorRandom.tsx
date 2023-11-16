@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { getData } from '../../services/fetchService';
+import Link from 'next/link';
 
 
 const landingAutor = await getData("autorUno")
@@ -21,8 +22,9 @@ export default function AutorRandom() {
             />
             <div>
               <p className='font-bold underline text-blue-800'>{text}</p>
-              
+              <Link href="/blog">
               <button className='bg-indigo-500 text-white rounded-lg p-1 mt-2 hover:bg-indigo-700'>{text2}</button>
+              </Link>
             </div>
             </div>
 
