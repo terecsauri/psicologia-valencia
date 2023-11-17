@@ -265,7 +265,7 @@ export default async function Home() {
             </div>
             <button className="font-bold border border-2 rounded-full p-1 px-4 mt-10"><Link href="/blog">{textoBlog}</Link></button>
 
-            <div className="mt-12">{documentToReactComponents(psicoEmdr)}</div>
+            <div className="mt-12 flex flex-col items-center">{documentToReactComponents(psicoEmdr)}</div>
             <div className="font-bold italic mt-7 text-center">{faq}</div>
             <div className="faq">
               {documentToReactComponents(preguntasFrecuentes)}

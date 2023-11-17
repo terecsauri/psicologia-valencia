@@ -7,30 +7,30 @@ export default function Form() {
         alert("Solicitud enviada correctamente") 
       }
   return (
-    <div className=' flex flex-col items-center'>
-                <form className=" mt-5 " onSubmit={handleSubmit} >
-          <p className="font-bold">Nombre (requerido)</p>
+    <div className=''>
+                <form className=" mt-5 w-96 mx-auto flex flex-col" onSubmit={handleSubmit} >
+          <p className="font-bold text-center">Nombre (requerido)</p>
           <label>
             {" "}
             <input type="text" name="name" required className="border-2 border-gray w-full" />{" "}
           </label>
-          <p className="font-bold">Correo Electrónico (requerido)</p>
+          <p className="font-bold text-center">Correo Electrónico (requerido)</p>
           <label>
             {" "}
             <input type="text" name="email" required className="border-2 border-gray w-full"/>{" "}
           </label>
-          <p className="font-bold">Asunto</p>
+          <p className="font-bold text-center">Asunto</p>
           <label>
             {" "}
             <input type="text" name="asunto" className="border-2 border-gray w-full"/>{" "}
           </label>
-          <p className="font-bold">Mensaje</p>
+          <p className="font-bold text-center">Mensaje</p>
           <label >
             {" "}
             <textarea className="border-2 border-gray w-full"/>
           </label>
           <div>
-          <input type="submit" value="Submit" className="border border-2 rounded-xl w-fit font-bold px-2 cursor-pointer"/>
+          <input type="submit" value="Submit" className="w-min float-right border border-2 rounded-xl w-full font-bold px-2 cursor-pointer"/>
           </div>
         </form>
     </div>
