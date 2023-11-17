@@ -33,8 +33,8 @@ export default function Burguer() {
         <li><Link href="/">Home</Link></li>
         <ul className=' group  dropdown  z-10'>
           <li><Link href="/about">Sobre Nosotros</Link></li>
-          <li className='group-hover:block dropdown-menu absolute ml-40 top-0 hidden h-auto z-100 '>
-          <ul className='bg-white   w-max rounded p-3 absolute border border-2 z-10'>
+          <li className='group-hover:block dropdown-menu absolute ml-40 top-0 hidden h-auto z-100'>
+          <ul className='bg-white w-max rounded p-3 absolute border border-2 z-10'>
             <li className='hover:bg-gray-100 '><Link href="/about//donde">Donde Estamos</Link></li>
             <li className='hover:bg-gray-100 '><Link href="/about/equipo">Equipo</Link></li>
             <li className='hover:bg-gray-100 '><Link href="/about/metodo">Método de Trabajo</Link></li>
