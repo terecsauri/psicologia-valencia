@@ -253,12 +253,12 @@ export default async function Home() {
               />
               <div className="flex flex-col items-center">{documentToReactComponents(textoCentro)}</div>
             </div>
-            <div className="grid grid-cols-2  items-center gap-x-8 mt-30 max-lg:flex max-lg:flex-col">
+            <div className="grid grid-cols-2  items-center gap-x-8 mt-30 max-2xl:flex max-2xl:flex-col">
               <div>{documentToReactComponents(texto900)}</div>
               <img
                 src={"https://" + fotoTorres.fields.file.url}
                 alt="asdf"
-                width="624"
+                width="524"
                 height="493"
                 className="mt-5 mb-5"
                 />
