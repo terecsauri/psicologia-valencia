@@ -174,7 +174,7 @@ export default async function Home() {
             </div>
             <div className=" mt-10 gap-x-9 items-center max-xl:block">
                 <h2 className="text-yellow-400 mt-10 flex mb-10 justify-center">{tituloConsulta}</h2>
-              <div className="flex gap-5 max-xl:block">
+              <div className="flex gap-5 max-2xl:flex-col max-2xl:items-center">
                 <span className="mt-5 max-lg:mb-5">
                   {documentToReactComponents(textoPrioridad)}
                 </span>
@@ -183,7 +183,7 @@ export default async function Home() {
                 alt="asdf"
                 width={537}
                 height={318}
-                className="float-right h-min"
+                className="float-right h-min max-lg:float-none"
               />
               </div>
             </div>
@@ -198,7 +198,7 @@ export default async function Home() {
             <h3 className="text-yellow-400 text-center my-14">
               {madridPsicologos}
             </h3>
-            <div className="grid grid-cols-2  mb-12 max-lg:block">
+            <div className="grid grid-cols-2 gap-5 mb-12 max-2xl:flex max-2xl:flex-col items-center">
               <img
                 src={"https://" + fotoEleccion.fields.file.url}
                 alt="asdf"
@@ -210,7 +210,7 @@ export default async function Home() {
                 {documentToReactComponents(textoEleccion)}
               </div>
             </div>
-            <div className="grid grid-cols-2 items-center mb-12 max-lg:block">
+            <div className="grid grid-cols-2 gap-5 items-center mb-12 max-2xl:flex max-2xl:flex-col">
               <div className="mx-11">
                 {documentToReactComponents(textoAyuda)}
               </div>
@@ -236,7 +236,7 @@ export default async function Home() {
             <div className=" flex flex-col items-center justify-center w-full ">
                     <hr className="h-1 border-0 bg-yellow-600 mt-5 mb-5 w-full"></hr>
               <h3 className="text-yellow-600 mt-20">{nuestroCentro}</h3>
-              <div className="w-75 max-sm:w-64 h-13 mt-5 mb-5 bg-emerald-800 hover:bg-emerald-600 text-white rounded-2xl flex items-center justify-center text-center">
+              <div className="w-75 max-sm:w-64 my-5 bg-emerald-800 hover:bg-emerald-600 text-white rounded-2xl flex items-center justify-center text-center">
                 <Link href={"/tratamientos"}>{botonEspecialidades}</Link>
               </div>
                     <hr className="h-1 border-0 bg-yellow-600 mt-5 mb-5 w-full"></hr>
