@@ -38,7 +38,7 @@ export default function Adultos() {
                       height="180"
                       className="h-full"
                     />
-                    <h2 className="font-bold">{title}</h2>
+                    <span className="font-bold">{title}</span>
                   </div>
                 );
               })}

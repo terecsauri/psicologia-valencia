@@ -36,7 +36,7 @@ export default function Equipo() {
         {documentToReactComponents(body)}
         </article>
         <div className="flex justify-center">
-        <button className="bg-yellow-400 hover:bg-yellow-500 p-2 border-2 border-black rounded-full font-bold mb-10">
+        <button className="bg-yellow-400 hover:bg-yellow-500 p-2 border-2 border-black rounded-2xl font-bold mb-10">
           <Link href="/tarifas">{button}</Link>
         </button>
         </div>

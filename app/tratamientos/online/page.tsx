@@ -71,7 +71,7 @@ export default function Online() {
               />
             </div>
             <div className="flex justify-center">
-              <button className="bg-yellow-400 hover:bg-yellow-500 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit">
+              <button className="w-75 max-sm:w-64 bg-yellow-400 hover:bg-yellow-500 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit">
                 {bottonText}
               </button>
             </div>
@@ -91,7 +91,7 @@ export default function Online() {
               })}
             </div>
             <div className="flex justify-center">
-              <button className="bg-yellow-400 hover:bg-yellow-500 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit">
+              <button className="w-75 max-sm:w-64 bg-yellow-400 hover:bg-yellow-500 w-1/2 p-2 border-2 border-black rounded-2xl font-bold mt-5 mb-5  max-lg:w-fit">
                 {bottonText}
               </button>
             </div>
@@ -107,7 +107,7 @@ export default function Online() {
             </div>
             {documentToReactComponents(text5)}
             <div className="flex justify-center">
-              <button className="text-yellow-400 bg-black hover:bg-gray-800 w-1/3 p-2 rounded-2xl font-bold mt-10 mb-10  max-lg:w-fit">
+              <button className="w-75 max-sm:w-64   text-yellow-400 bg-black hover:bg-gray-800 w-1/3 p-2 rounded-2xl font-bold mt-10 mb-10  max-lg:w-fit">
                 <Link href="/tarifas">{button2}</Link>
 
               </button>
@@ -116,7 +116,7 @@ export default function Online() {
             <h3 className="flex justify-center font-bold  mb-2">{title2}</h3>
             <hr className="h-1 border-0 bg-yellow-400 mt-5 mb-5 w-1/2 mx-auto "></hr>
 
-            <div className="flex mb-10 max-lg:grid-cols-1 gap-5 ">
+            <div className="flex mb-10 max-lg:flex-col gap-5 ">
               {landingTextSix?.map((singlePost: any) => {
                 const { title, body, items } = singlePost.fields;
                 return (

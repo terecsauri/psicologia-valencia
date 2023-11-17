@@ -14,7 +14,7 @@ export default function Carrusel({ slides }: any) {
     return (
         <div
             style={{
-                width: "50vw"
+                width: "70vw"
                 
             }}
             

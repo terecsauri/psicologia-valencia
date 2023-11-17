@@ -90,7 +90,7 @@ export default function Niños() {
                   width="350"
                   height="180"
                 />
-                <h3 className="font-bold">{tituloGrid1}</h3>
+                <span className="font-bold">{tituloGrid1}</span>
               </div>
               <div className="p-3 bg-white border border-gray-200 shadow m-5 dark:bg-gray-800 dark:border-gray-700 justify-center max-lg:w-fit">
                 <img
@@ -99,7 +99,7 @@ export default function Niños() {
                   width="350"
                   height="180"
                 />
-                <h3 className="font-bold">{tituloGrid3}</h3>
+                <span className="font-bold">{tituloGrid3}</span>
               </div>
               <div className="p-3 bg-white border border-gray-200 shadow m-5 dark:bg-gray-800 dark:border-gray-700 justify-center max-lg:w-fit">
                 <img
@@ -108,7 +108,7 @@ export default function Niños() {
                   width="350"
                   height="180"
                 />
-                <h3 className="font-bold ">{tituloGrid2}</h3>
+                <span className="font-bold ">{tituloGrid2}</span>
               </div>
               <div className="p-3 bg-white mt-5 border border-gray-200 shadow m-5 dark:bg-gray-800 dark:border-gray-700 justify-center max-lg:w-fit">
                 <img
@@ -117,7 +117,7 @@ export default function Niños() {
                   width="350"
                   height="180"
                 />
-                <h3 className="font-bold">{tituloGrid5}</h3>
+                <span className="font-bold">{tituloGrid5}</span>
               </div>
               <div className="p-3 bg-white border border-gray-200 shadow m-5 dark:bg-gray-800 dark:border-gray-700 justify-center max-lg:w-fit">
                 <img
@@ -126,7 +126,7 @@ export default function Niños() {
                   width="350"
                   height="180"
                 />
-                <h3 className="font-bold">{tituloGrid7}</h3>
+                <span className="font-bold">{tituloGrid7}</span>
               </div>
               <div className="p-3 bg-white border border-gray-200 shadow m-5 dark:bg-gray-800 dark:border-gray-700 justify-center max-lg:w-fit">
                 <img
@@ -135,7 +135,7 @@ export default function Niños() {
                   width={350}
                   height={180}
                 />
-                <h3 className="font-bold">{tituloGrid6}</h3>
+                <span className="font-bold">{tituloGrid6}</span>
               </div>
               <div className="p-3 bg-white border border-gray-200 shadow m-5 dark:bg-gray-800 dark:border-gray-700 justify-center max-lg:w-fit">
                 <img
@@ -144,7 +144,7 @@ export default function Niños() {
                   width="350"
                   height="180"
                 />
-                <h3 className="font-bold">{tituloGrid4}</h3>
+                <span className="font-bold">{tituloGrid4}</span>
               </div>
             </div>
             <h2 className="font-bold mt-5 mb-2 text-green-700 text-3xl mt-5 mb-5">
