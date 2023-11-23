@@ -85,7 +85,7 @@ export default async function Home() {
                       alt="foto equipo"
                       width="100"
                       height="100"
-                      className="rounded-full mb-4 mt-8 h-44 w-44"
+                      className="rounded-full mb-4 mt-8 h-44 w-44 object-cover"
                     />
                     <div className="flex flex-col">
 

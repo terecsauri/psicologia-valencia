@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://psicologia-valencia-927m.vercel.app/
+
+# Sitemaps
+Sitemap: https://psicologia-valencia-927m.vercel.app/sitemap.xml
